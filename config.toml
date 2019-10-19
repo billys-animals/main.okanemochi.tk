@@ -26,7 +26,7 @@ pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
 
 # disqusShortname = ""      # disqus_shortname
-# googleAnalytics = "UA-114508959-4"      # UA-XXXXXXXX-X
+googleAnalytics = "UA-114508959-1"      # UA-XXXXXXXX-X
 copyright = "sphia"       # default: author.name
 disqusShortname = "ＸＸＸ"
 
