@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>カスタムフィールド on しんこきゅう</title>
-    <link>https://okanemoti.tk/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89/</link>
+    <link>https://okanemochi.tk/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89/</link>
     <description>Recent content in カスタムフィールド on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Thu, 19 Jun 2014 00:51:00 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Themes→defualt→article.php</title>
-      <link>https://okanemoti.tk/post/2014-06-19-themesdefualtarticle-php/</link>
+      <link>https://okanemochi.tk/post/2014-06-19-themesdefualtarticle-php/</link>
       <pubDate>Thu, 19 Jun 2014 00:51:00 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2014-06-19-themesdefualtarticle-php/</guid>
+      <guid>https://okanemochi.tk/post/2014-06-19-themesdefualtarticle-php/</guid>
       <description>アンカーCMSでカスタムフィールドの値をテンプレート上で表示させるやり方 &amp;lt;span style=&amp;ldquo;color: #333333;&amp;ldquo;&amp;gt; &amp;lt;?php theme_include(&amp;lsquo;header&amp;rsquo;); ?&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;section class=&amp;ldquo;content wrap&amp;rdquo; id=&amp;ldquo;article-&amp;lt;?php echo article_id(); ?&amp;gt;&amp;ldquo;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;h1&amp;gt;&amp;lt;?php echo article_title(); ?&amp;gt;&amp;lt;/h1&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;article&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;?php echo article_markdown(); ?&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;ldquo;color: red;&amp;ldquo;&amp;gt;&amp;lt;b&amp;gt;&amp;lt;?php echo article_custom_field(&amp;lsquo;afiri01&amp;rsquo;, &amp;ldquo;); ?&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span</description>
     </item>
     

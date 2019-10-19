@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GAS on しんこきゅう</title>
-    <link>https://okanemoti.tk/categories/gas/</link>
+    <link>https://okanemochi.tk/categories/gas/</link>
     <description>Recent content in GAS on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Sun, 03 Jun 2018 23:53:08 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/categories/gas/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/categories/gas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>指定日時にトリガーを設定する</title>
-      <link>https://okanemoti.tk/computer_language/gas/259/</link>
+      <link>https://okanemochi.tk/computer_language/gas/259/</link>
       <pubDate>Sun, 03 Jun 2018 23:53:08 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/computer_language/gas/259/</guid>
+      <guid>https://okanemochi.tk/computer_language/gas/259/</guid>
       <description>function setTrigger() { // 2017年2月21日 7時30分に実行 var triggerDay = new Date(2016, (2 - 1), 21, 7, 30, 0, 0); ScriptApp.newTrigger(&#39;sendMail&#39;).timeBased().at(triggerDay).create(); } // 実行する関数 function sendMail() { // 自分へのメールの送信 var email = Session.getActiveUser().getEmail(); var subject = &#39;タイトル</description>
     </item>
     
     <item>
       <title>Chatwork APIによる指定場所への書き込み</title>
-      <link>https://okanemoti.tk/computer_language/gas/265/</link>
+      <link>https://okanemochi.tk/computer_language/gas/265/</link>
       <pubDate>Fri, 01 Jun 2018 22:14:49 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/computer_language/gas/265/</guid>
+      <guid>https://okanemochi.tk/computer_language/gas/265/</guid>
       <description>// チャットワークAPIのAPIトークン var api_token = &#39;チャットワークのAPIトークン&#39;; // 送信先のチャットのID var room_id = 送信先のチャットのID; //メ</description>
     </item>
     
     <item>
       <title>UrlFetchApp.fetch時のオプション値一覧</title>
-      <link>https://okanemoti.tk/computer_language/gas/256/</link>
+      <link>https://okanemochi.tk/computer_language/gas/256/</link>
       <pubDate>Thu, 31 May 2018 21:44:55 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/computer_language/gas/256/</guid>
+      <guid>https://okanemochi.tk/computer_language/gas/256/</guid>
       <description>GASでURLなどにアクセスして情報取得する際などに良く利用するUrlFetchApp.fetchを使うオプション値を貼り付けておきます。 パ</description>
     </item>
     
     <item>
       <title>Amazon MWS API FEED</title>
-      <link>https://okanemoti.tk/web_tecnology/api/211/</link>
+      <link>https://okanemochi.tk/web_tecnology/api/211/</link>
       <pubDate>Wed, 09 May 2018 13:39:49 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/web_tecnology/api/211/</guid>
+      <guid>https://okanemochi.tk/web_tecnology/api/211/</guid>
       <description>//Feed用 var namespace3 = &#34;http://mws.amazonaws.com/doc/2009-01-01/&#34;; var namespace4=&#39;&#34;http://www.w3.org/2001/XMLSchema-instance&#34; xsi:noNamespaceSchemaLocation=&#34;amzn-envelope.xsd&#34;&#39;; /************************************************************************* SubmitFeed FeedType=_POST_INVENTORY_AVAILABILITY_DATA_ ＜＜トランザクショ＞＞ SubmitFeed 「リクエスト送信してFeedSubmissionIdを取得」 =&amp;gt;GetFee</description>
     </item>
     
     <item>
       <title>GoogleDriveのフォルダ名とフォルダIDを取得する</title>
-      <link>https://okanemoti.tk/computer_language/gas/64/</link>
+      <link>https://okanemochi.tk/computer_language/gas/64/</link>
       <pubDate>Sun, 25 Feb 2018 09:59:16 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/computer_language/gas/64/</guid>
+      <guid>https://okanemochi.tk/computer_language/gas/64/</guid>
       <description>件名の通り「GoogleDriveのフォルダ名とフォルダID」を取得するサンプルコートを掲載します。 function getAllFolderID(){ var all_folders = DriveApp.getFolders(); while (all_folders.hasNext()){ var folder = all_folders.next(); Logger.l</description>
     </item>
     

@@ -2,193 +2,193 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>しんこきゅう</title>
-    <link>https://okanemoti.tk/</link>
+    <link>https://okanemochi.tk/</link>
     <description>Recent content on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Tue, 10 Sep 2019 15:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>.htaccess←AnchorCMS</title>
-      <link>https://okanemoti.tk/post/2014-06-18-htaccessanchorcms/</link>
+      <link>https://okanemochi.tk/post/2014-06-18-htaccessanchorcms/</link>
       <pubDate>Tue, 10 Sep 2019 15:00:00 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2014-06-18-htaccessanchorcms/</guid>
+      <guid>https://okanemochi.tk/post/2014-06-18-htaccessanchorcms/</guid>
       <description>#Options -indexes &amp;lt;IfModule mod_rewrite.c&amp;gt; RewriteEngine On RewriteBase / # Allow any files or directories that exist to be displayed directly RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d # Rewrite all other URLs to index.php/URL RewriteRule ^(.*)$ index.php?/$1 \[L] &amp;lt;/IfModule&amp;gt; &amp;lt;IfModule !mod_rewrite.c&amp;gt; ErrorDocument 404 index.php &amp;lt;/IfModule&amp;gt; #Options -indexes さくらサーバーはOptionが使えないからコメン</description>
     </item>
     
     <item>
       <title>自民党は嫌いだけど</title>
-      <link>https://okanemoti.tk/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/</link>
+      <link>https://okanemochi.tk/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/</link>
       <pubDate>Thu, 18 Jul 2019 22:34:30 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/</guid>
+      <guid>https://okanemochi.tk/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/</guid>
       <description>自民党は嫌いだけど今の野党はもっと嫌いだ。 やっぱり、2大政党とか3大政党の様に力が拮抗した党が複数なければ国民は政党を選べない。 自民一択の状</description>
     </item>
     
     <item>
       <title>先ほどやっとTL40になれました</title>
-      <link>https://okanemoti.tk/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://okanemochi.tk/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Fri, 21 Jun 2019 05:44:30 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://okanemochi.tk/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>長かったポケモンGOのグローバルゴール（TL40)。リリースされてわりと直ぐ始めたのですが、初期の頃は毎日やっていたわけでもなく、気が向いた</description>
     </item>
     
     <item>
       <title>令和という時代に入ってから、、、。</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/1028/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/1028/</link>
       <pubDate>Thu, 06 Jun 2019 10:24:58 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/1028/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/1028/</guid>
       <description>良くない事を時代のせいにする気はありません。が、令和に年号が変更される少し前から（平成最後の年の数年前から）高齢者ドライバーの交通事故、自動</description>
     </item>
     
     <item>
       <title>ポケモンGO雑感</title>
-      <link>https://okanemoti.tk/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/</link>
+      <link>https://okanemochi.tk/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/</link>
       <pubDate>Mon, 03 Jun 2019 09:42:33 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/</guid>
+      <guid>https://okanemochi.tk/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/</guid>
       <description>&amp;nbsp; 最近のポケモンＧＯは何だかつまらない。決定的だったのは少し前のユクシーの伝説レイドバトルからかも知れません。 何がツマラナイ？ 堅くてなかなか</description>
     </item>
     
     <item>
       <title>最近の人の日本語の力</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/995/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/995/</link>
       <pubDate>Fri, 29 Mar 2019 00:21:03 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/995/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/995/</guid>
       <description>最近の若い人のコトバって凄く退化している気がする。良い例が「ワンチャン」というコトバの使い方です。元々に使い方は「何かにチャレンジして勝てる</description>
     </item>
     
     <item>
       <title>10年以上自己流のタイピングで</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/touchtiping/986/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/touchtiping/986/</link>
       <pubDate>Sun, 03 Mar 2019 02:40:49 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/touchtiping/986/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/touchtiping/986/</guid>
       <description>およそ現在から15年ほど前に将来に不安を感じてプログラマーを目指し独学でAccess97のVBAを学習し始めました。その頃からずっと自己流の</description>
     </item>
     
     <item>
       <title>ナンバーズ３の買い方を考察した</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/981/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/981/</link>
       <pubDate>Sun, 27 Jan 2019 10:42:56 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/981/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/981/</guid>
       <description>ナンバーズ３で最も当選確率が高い購入方法は何でしょうか？ 自分は今までナンバーズ３のミニが最も当選確率が高い宝くじだと思ってました。 100分の</description>
     </item>
     
     <item>
       <title>SH-01K(Docomo) 購入レビュー</title>
-      <link>https://okanemoti.tk/mov_smaho/966/</link>
+      <link>https://okanemochi.tk/mov_smaho/966/</link>
       <pubDate>Sun, 28 Oct 2018 00:49:58 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/mov_smaho/966/</guid>
+      <guid>https://okanemochi.tk/mov_smaho/966/</guid>
       <description>前回、SIMフリーで普通に使えるスマホとして記事を書いた直後に自身でSH-01Kを購入しました。瞬間的に買うと決めた理由は以下です。 Doco</description>
     </item>
     
     <item>
       <title>女子バレー（世界選手権）</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/958/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/958/</link>
       <pubDate>Mon, 15 Oct 2018 01:08:37 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/958/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/958/</guid>
       <description>このあいだの対ブラジル戦において第3次ラウンドが決まった2セット奪取後が問題だと思う。 選手はある程度仕方ない 念願の3次ラウンド進出の権利を得</description>
     </item>
     
     <item>
       <title>普通に使えるSIMフリースマホで普通に日常使いするために必要なスマホ</title>
-      <link>https://okanemoti.tk/mov_smaho/951/</link>
+      <link>https://okanemochi.tk/mov_smaho/951/</link>
       <pubDate>Thu, 11 Oct 2018 07:34:24 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/mov_smaho/951/</guid>
+      <guid>https://okanemochi.tk/mov_smaho/951/</guid>
       <description>タイトルに書いた通りのスマホの候補として最も適切なのが、SHARP AQUOS PHONE SH-01Kだと思います。 発売からおよそ1年程度経ち、機能や仕様に関し</description>
     </item>
     
     <item>
       <title>古いアンドロイドOSのスマホはそろそろ限界かも</title>
-      <link>https://okanemoti.tk/mov_smaho/947/</link>
+      <link>https://okanemochi.tk/mov_smaho/947/</link>
       <pubDate>Tue, 09 Oct 2018 14:32:48 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/mov_smaho/947/</guid>
+      <guid>https://okanemochi.tk/mov_smaho/947/</guid>
       <description>アンドロイドOSはドンドン進化していますが、発売済みのスマホに対するアップデートは良いもので2年で2回から4回程度、酷い機種になると、発売以</description>
     </item>
     
     <item>
       <title>ナンバーズ3のミニが当選しました</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/943/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/943/</link>
       <pubDate>Mon, 08 Oct 2018 13:54:09 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/943/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/943/</guid>
       <description>ナンバーズ3のミニを買い続けて数年、もうずいぶん購入は控えていたのですがこのⅠ週間くらいは頑張って予想して1回1000円前後で購入していまし</description>
     </item>
     
     <item>
       <title>キャッシュレス時代を見越したおサイフケータイ</title>
-      <link>https://okanemoti.tk/mov_smaho/932/</link>
+      <link>https://okanemochi.tk/mov_smaho/932/</link>
       <pubDate>Mon, 01 Oct 2018 15:00:55 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/mov_smaho/932/</guid>
+      <guid>https://okanemochi.tk/mov_smaho/932/</guid>
       <description>今、意外にも遙か昔に使っていたスマホを再び使っています。 Sharp AquosPhone SH-01Dです。OSはAnadroid4.1でICSです。 何でこんなレトロなス</description>
     </item>
     
     <item>
       <title>キャッシュレス&amp;銀行ATM消失する直ぐ先の明日</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/911/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/911/</link>
       <pubDate>Fri, 28 Sep 2018 00:12:23 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/911/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/911/</guid>
       <description>銀行ATMがドンドン無くなっています。最寄り駅の周辺にも昔はATM待ちの行列ができていたのに最近はそういう行列を見る事もありません。圧倒的に</description>
     </item>
     
     <item>
       <title>中高生の74%がiPhoneを所有している異常な国、日本</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/909/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/909/</link>
       <pubDate>Fri, 28 Sep 2018 00:08:30 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/909/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/909/</guid>
       <description>大人の私でさえ未だにiPhoneを持った事がないのに今の中高生は74％もみんながiPhoneを使っているのですね。中でも女子は80%以上をi</description>
     </item>
     
     <item>
       <title>Android版のエクセルにOCR機能がもう直ぐ</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/907/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/907/</link>
       <pubDate>Thu, 27 Sep 2018 23:53:34 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/907/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/907/</guid>
       <description>Android版のエクセルにOCR機能がもう直ぐ実装されるようです。慌てて自分のスマホにエクセルを入れてみましたがまだ実装されていません。近</description>
     </item>
     
     <item>
       <title>賢威サポートの厚さを</title>
-      <link>https://okanemoti.tk/windows/901/</link>
+      <link>https://okanemochi.tk/windows/901/</link>
       <pubDate>Wed, 26 Sep 2018 11:01:35 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/windows/901/</guid>
+      <guid>https://okanemochi.tk/windows/901/</guid>
       <description>SEOテンプレート賢威をずっと使っています。2010年からなので今年で8年目になります。購入したのは賢威3だったのですが、一度の購入でもう4</description>
     </item>
     
     <item>
       <title>珊瑚と翡翠が高値らしいです</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/897/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/897/</link>
       <pubDate>Tue, 25 Sep 2018 14:06:42 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/897/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/897/</guid>
       <description>昔、2014年以前は金よりもプラチナな方が高騰していて値段が逆転していました。18金よりもプラチナの方が買取価格が高かったのです。2015年</description>
     </item>
     
     <item>
       <title>Nexus5のなめたネジを外したい</title>
-      <link>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/890/</link>
+      <link>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/890/</link>
       <pubDate>Mon, 24 Sep 2018 15:10:27 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/%E9%9B%91%E5%AD%A6/890/</guid>
+      <guid>https://okanemochi.tk/%E9%9B%91%E5%AD%A6/890/</guid>
       <description>Nexus5のWifiが動作しなくなった際にネジを外し点検してネジを普通に閉め直したつもりだったのですが、何故かいつの間にか？ネジ頭が潰れて</description>
     </item>
     

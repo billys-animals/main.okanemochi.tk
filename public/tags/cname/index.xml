@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CNAME on しんこきゅう</title>
-    <link>https://okanemoti.tk/tags/cname/</link>
+    <link>https://okanemochi.tk/tags/cname/</link>
     <description>Recent content in CNAME on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Wed, 18 Jun 2014 04:33:00 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/tags/cname/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/tags/cname/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Blogger の独自ドメイン運用</title>
-      <link>https://okanemoti.tk/post/2014-06-18-google-blogger-%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%81%8B%E7%94%A8/</link>
+      <link>https://okanemochi.tk/post/2014-06-18-google-blogger-%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%81%8B%E7%94%A8/</link>
       <pubDate>Wed, 18 Jun 2014 04:33:00 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2014-06-18-google-blogger-%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%81%8B%E7%94%A8/</guid>
+      <guid>https://okanemochi.tk/post/2014-06-18-google-blogger-%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%81%8B%E7%94%A8/</guid>
       <description>ブロガー上で独自ドメインを選択すると、以下の様な情報が表示されます。 &amp;lt;span style=&amp;ldquo;color: #333333;&amp;ldquo;&amp;gt;[Name]（名前）、[Lab</description>
     </item>
     
     <item>
       <title>Tumblrの独自ドメイン化</title>
-      <link>https://okanemoti.tk/post/2014-06-18-tumblr%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%8C%96/</link>
+      <link>https://okanemochi.tk/post/2014-06-18-tumblr%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%8C%96/</link>
       <pubDate>Wed, 18 Jun 2014 04:23:00 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2014-06-18-tumblr%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%8C%96/</guid>
+      <guid>https://okanemochi.tk/post/2014-06-18-tumblr%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%8C%96/</guid>
       <description>ホスト(wwwなど） ターゲット(domains.tumblr.com.) タイプ(CNAME)</description>
     </item>
     

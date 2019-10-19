@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wordpress on しんこきゅう</title>
-    <link>https://okanemoti.tk/categories/wordpress/</link>
+    <link>https://okanemochi.tk/categories/wordpress/</link>
     <description>Recent content in wordpress on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Tue, 18 Sep 2018 01:05:52 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/categories/wordpress/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/categories/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>賢威ver 8.0.0.0b2をkusanagi環境のこのサイトで試稼働</title>
-      <link>https://okanemoti.tk/wordpress/823/</link>
+      <link>https://okanemochi.tk/wordpress/823/</link>
       <pubDate>Tue, 18 Sep 2018 01:05:52 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/wordpress/823/</guid>
+      <guid>https://okanemochi.tk/wordpress/823/</guid>
       <description>賢威8がベータ公開されているとの事でしたのでテストサイトを作り試してみたところCSSが反映されずに少し困りました。適用したのが、CONOHA</description>
     </item>
     
     <item>
       <title>WordPressテンプレート 賢威７使ってます（感想・口コミ・本音）レビュー</title>
-      <link>https://okanemoti.tk/wordpress/565/</link>
+      <link>https://okanemochi.tk/wordpress/565/</link>
       <pubDate>Fri, 29 Jun 2018 10:56:34 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/wordpress/565/</guid>
+      <guid>https://okanemochi.tk/wordpress/565/</guid>
       <description>はじめて賢威を購入したのは（いや、１回しか購入してません）、賢威３だった様な気がします。 当時はまだ主力製品が、HTMLテンプレートとMT３用</description>
     </item>
     
     <item>
       <title>KUSANAGIで常時SSL化＆WWW無し設定の統一</title>
-      <link>https://okanemoti.tk/post/2018-06-25-kusanagi%E3%81%A7%E5%B8%B8%E6%99%82ssl%E5%8C%96/</link>
+      <link>https://okanemochi.tk/post/2018-06-25-kusanagi%E3%81%A7%E5%B8%B8%E6%99%82ssl%E5%8C%96/</link>
       <pubDate>Mon, 25 Jun 2018 05:53:29 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2018-06-25-kusanagi%E3%81%A7%E5%B8%B8%E6%99%82ssl%E5%8C%96/</guid>
+      <guid>https://okanemochi.tk/post/2018-06-25-kusanagi%E3%81%A7%E5%B8%B8%E6%99%82ssl%E5%8C%96/</guid>
       <description>Apacheの場合は.htaccessでhttpをhttpsに書き換えたりしますが、KUSANAGIは仮想空間ですし、nginxで動いている</description>
     </item>
     
     <item>
       <title>VPS(Conoha SSD)でKUSANAGIに感嘆</title>
-      <link>https://okanemoti.tk/web_tecnology/vps/429/</link>
+      <link>https://okanemochi.tk/web_tecnology/vps/429/</link>
       <pubDate>Sun, 24 Jun 2018 05:24:10 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/web_tecnology/vps/429/</guid>
+      <guid>https://okanemochi.tk/web_tecnology/vps/429/</guid>
       <description>wordPress用の超高速仮想環境であるKUSANAGIを導入して３日目です。最初は何だか良く分からなかったのですが、少し慣れてくるともう</description>
     </item>
     
     <item>
       <title>kusanagi環境に移行した経緯</title>
-      <link>https://okanemoti.tk/wordpress/424/</link>
+      <link>https://okanemochi.tk/wordpress/424/</link>
       <pubDate>Sat, 23 Jun 2018 05:29:32 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/wordpress/424/</guid>
+      <guid>https://okanemochi.tk/wordpress/424/</guid>
       <description>現在はこのブログはkusanagi環境で稼働しています。最初はWordPressのマルチサイト構成で作成しましたが、個別のサイト設定が不能と</description>
     </item>
     
     <item>
       <title>WordPressのネットワーク構築をやめた</title>
-      <link>https://okanemoti.tk/wordpress/422/</link>
+      <link>https://okanemochi.tk/wordpress/422/</link>
       <pubDate>Sat, 23 Jun 2018 05:18:49 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/wordpress/422/</guid>
+      <guid>https://okanemochi.tk/wordpress/422/</guid>
       <description>このブログですがこの２日くらいで色々と引っ越しを繰り返し、今の状態になりました。その内容を詳しく書くのはこの後の記事で書きますが、今日はその</description>
     </item>
     

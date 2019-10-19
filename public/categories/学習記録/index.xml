@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学習記録 on しんこきゅう</title>
-    <link>https://okanemoti.tk/categories/%E5%AD%A6%E7%BF%92%E8%A8%98%E9%8C%B2/</link>
+    <link>https://okanemochi.tk/categories/%E5%AD%A6%E7%BF%92%E8%A8%98%E9%8C%B2/</link>
     <description>Recent content in 学習記録 on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Wed, 14 Mar 2018 01:08:38 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/categories/%E5%AD%A6%E7%BF%92%E8%A8%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/categories/%E5%AD%A6%E7%BF%92%E8%A8%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>git覚書</title>
-      <link>https://okanemoti.tk/post/2018-03-14-git%E8%A6%9A%E6%9B%B8/</link>
+      <link>https://okanemochi.tk/post/2018-03-14-git%E8%A6%9A%E6%9B%B8/</link>
       <pubDate>Wed, 14 Mar 2018 01:08:38 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2018-03-14-git%E8%A6%9A%E6%9B%B8/</guid>
+      <guid>https://okanemochi.tk/post/2018-03-14-git%E8%A6%9A%E6%9B%B8/</guid>
       <description># git-hub利用時の初期設定 git config --global user.name &#34;ユーザー名&#34; git config --global user.email メールアドレス &amp;nbsp; 先ずは公開リポジトリにアクセス出来る様に↑の様に初期設定が必要</description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>google apps script on しんこきゅう</title>
-    <link>https://okanemoti.tk/tags/google-apps-script/</link>
+    <link>https://okanemochi.tk/tags/google-apps-script/</link>
     <description>Recent content in google apps script on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Sun, 25 Mar 2018 13:03:11 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/tags/google-apps-script/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/tags/google-apps-script/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GoogleAppsScriptでMD5ハッシュのバイナリー値取得する方法</title>
-      <link>https://okanemoti.tk/post/2018-03-25-googleappsscript%E3%81%A7md5%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%81%AE%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%BC%E5%80%A4%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link>
+      <link>https://okanemochi.tk/post/2018-03-25-googleappsscript%E3%81%A7md5%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%81%AE%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%BC%E5%80%A4%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link>
       <pubDate>Sun, 25 Mar 2018 13:03:11 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2018-03-25-googleappsscript%E3%81%A7md5%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%81%AE%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%BC%E5%80%A4%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://okanemochi.tk/post/2018-03-25-googleappsscript%E3%81%A7md5%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%81%AE%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%BC%E5%80%A4%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid>
       <description>アマゾンMWSでSubmitFeedというAPIがあります。このAPI、「ContentMD5Value」というMD5ハッシュ値をパラメータ</description>
     </item>
     

@@ -1,5 +1,26 @@
-@charset "UTF-8";
 /* custom css here */
+:root {
+  /* スフィア        */
+  --charno1 : url('https://sumaho.tk/wp-content/uploads/2019/07/d79fb14872b28fd45f2eede558f64caf-300x300.jpg');
+  /* リンク          */
+  --charno2 : url('https://sumaho.tk/wp-content/uploads/2018/06/line_1529897296323-150x150.jpg');
+  /* ナッキー        */
+  --charno3 : url('https://sumaho.tk/wp-content/uploads/2018/06/nacky1-150x150.jpg');
+  /* よしこ先生      */
+  --charno4 : url('https://sumaho.tk/wp-content/uploads/2018/07/59f22304d8a98fda3cdd7ae77db8a0b3.jpg');
+  /* 500円           */
+  --charno5 : url('https://sumaho.tk/wp-content/uploads/2018/07/0ac84bd4db08be2aec828256636a5af6.jpg');
+  /* コーヒーマスター */
+  --charno6 : url('https://sumaho.tk/wp-content/uploads/2018/07/aa5fb71af70bf729ec4214aa3a663453.jpg'); 
+  /* 宇宙人           */
+  --charno7 : url('https://sumaho.tk/wp-content/uploads/2018/07/illustrain10-bennkyou10-300x300.png');
+  /* 朱紺色えんぴつ   */
+  --charno8 : url('https://sumaho.tk/wp-content/uploads/2018/08/illustrain09-utyuu1-300x300.png');
+  /* 健康じいさん     */
+  --charno9 : url('https://sumaho.tk/wp-content/uploads/2018/08/illustrain04-kaigo02.png');
+}
+    }
+
 
 html,
 body {
@@ -87,7 +108,7 @@ aside {
   margin-top: 0.3rem;
 }
 
-/** 蜿ｳ蛛ｴ繧ｭ繝｣繝ｩ逕ｨ繧ｹ繧ｿ繧､繝ｫ */
+/** 右側キャラ用スタイル */
 .right{
   position: relative;
   display: block;
@@ -130,7 +151,7 @@ aside {
   background-repeat: no-repeat;
 }
 
-/** 蟾ｦ蛛ｴ繧ｭ繝｣繝ｩ逕ｨ繧ｹ繧ｿ繧､繝ｫ */
+/** 左側キャラ用スタイル */
 .left{
   position: relative;
   display: block;
@@ -168,7 +189,7 @@ aside {
   background-repeat: no-repeat;
 }
 
-/** PC蜷代￠ */
+/** PC向け */
 @media screen and (min-width: 700px){
   .right{
     margin-left: 160px;
@@ -195,21 +216,15 @@ aside {
 }
 
 /* --------------------------------
- * shortcode縺ｮ繝・じ繧､繝ｳ
+ * shortcodeのデザイン
  * -------------------------------- */
  .buy-box {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	border-width: 4px;
-	border-style: solid;
-	border-color: #dcdcdc;
-	padding-top: 2%;
-	padding-right: 2%;
-	padding-bottom: 2%;
-	padding-left: 2%;
-	background-color: teal;
-	color: #ffffff;
-}
+    display: grid;
+    grid-template-columns: 
+        1fr 1fr;
+    border: 4px solid #DCDCDC;
+    padding: 2%;
+ }
  .item-image {
      grid-column: 1;
  }
@@ -253,9 +268,9 @@ aside {
 }
 
 
-/* 蜑阪・繝ｼ繧ｸ縲∵ｬ｡繝壹・繧ｸ縺ｸ縺ｮ繝ｪ繝ｳ繧ｯ */
+/* 前ページ、次ページへのリンク */
 .xPrevNextLink::after {
-  /* float 縺ｫ繧医ｋ蝗槭ｊ霎ｼ縺ｿ縺ｮ隗｣髯､ */
+  /* float による回り込みの解除 */
   display: block;
   content: "";
   clear: both;
@@ -265,7 +280,7 @@ aside {
   float: left;
 }
 .xPrevNextLink_prev::before {
-  content: "竕ｪ";
+  content: "≪";
 }
 .xPrevNextLink_next {
   display: block;
@@ -274,5 +289,5 @@ aside {
 
 }
 .xPrevNextLink_next::after {
-  content: "竕ｫ";
+  content: "≫";
 }

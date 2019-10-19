@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSL on しんこきゅう</title>
-    <link>https://okanemoti.tk/categories/ssl/</link>
+    <link>https://okanemochi.tk/categories/ssl/</link>
     <description>Recent content in SSL on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Wed, 12 Sep 2018 00:57:30 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/categories/ssl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/categories/ssl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>「このサイトへの接続は完全には保護されていません」の原因特定</title>
-      <link>https://okanemoti.tk/web_tecnology/ssl/789/</link>
+      <link>https://okanemochi.tk/web_tecnology/ssl/789/</link>
       <pubDate>Wed, 12 Sep 2018 00:57:30 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/web_tecnology/ssl/789/</guid>
+      <guid>https://okanemochi.tk/web_tecnology/ssl/789/</guid>
       <description>今まで普通にSSLで運営していたので数日前から「このサイトへの接続は完全には保護されていません」とGoogle Chromeのアドレスバー左に</description>
     </item>
     

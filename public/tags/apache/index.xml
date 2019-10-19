@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>APACHE on しんこきゅう</title>
-    <link>https://okanemoti.tk/tags/apache/</link>
+    <link>https://okanemochi.tk/tags/apache/</link>
     <description>Recent content in APACHE on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Wed, 21 Feb 2018 05:50:27 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/tags/apache/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python3.6をVPS(Comoha)にインストール</title>
-      <link>https://okanemoti.tk/post/2018-02-21-python3-6%E3%82%92vpscomoha%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <link>https://okanemochi.tk/post/2018-02-21-python3-6%E3%82%92vpscomoha%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
       <pubDate>Wed, 21 Feb 2018 05:50:27 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2018-02-21-python3-6%E3%82%92vpscomoha%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <guid>https://okanemochi.tk/post/2018-02-21-python3-6%E3%82%92vpscomoha%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
       <description>■apacheからPythonをCGIとして利用できる様にする。 以下より引用 https://ponvire.com/2017/11/05/awsec2%E3%81%A8apache%E3%81%A7python%E3%82%92cgi%E3%81%A7%E5%8B%95%E3%81%8B%E3%81%99%E6%96%B9%E6%B3%95/ awsec2とapacheでpythonをcgiで動かす方法 &amp;nbsp;</description>
     </item>
     
     <item>
       <title>APACHEが味噌</title>
-      <link>https://okanemoti.tk/post/2018-02-20-apache%E3%81%8C%E5%91%B3%E5%99%8C/</link>
+      <link>https://okanemochi.tk/post/2018-02-20-apache%E3%81%8C%E5%91%B3%E5%99%8C/</link>
       <pubDate>Tue, 20 Feb 2018 09:05:22 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2018-02-20-apache%E3%81%8C%E5%91%B3%E5%99%8C/</guid>
+      <guid>https://okanemochi.tk/post/2018-02-20-apache%E3%81%8C%E5%91%B3%E5%99%8C/</guid>
       <description>アパッチはもう15年くらい前から自分の近くに居た奴です。WEBサーバーで必要な奴。ブラウザ見るには必要。 それくらの知識。後はWindowsで</description>
     </item>
     

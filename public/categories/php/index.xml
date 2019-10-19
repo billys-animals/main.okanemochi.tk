@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PHP on しんこきゅう</title>
-    <link>https://okanemoti.tk/categories/php/</link>
+    <link>https://okanemochi.tk/categories/php/</link>
     <description>Recent content in PHP on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Wed, 09 May 2018 13:39:49 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/categories/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/categories/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Amazon MWS API FEED</title>
-      <link>https://okanemoti.tk/web_tecnology/api/211/</link>
+      <link>https://okanemochi.tk/web_tecnology/api/211/</link>
       <pubDate>Wed, 09 May 2018 13:39:49 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/web_tecnology/api/211/</guid>
+      <guid>https://okanemochi.tk/web_tecnology/api/211/</guid>
       <description>//Feed用 var namespace3 = &#34;http://mws.amazonaws.com/doc/2009-01-01/&#34;; var namespace4=&#39;&#34;http://www.w3.org/2001/XMLSchema-instance&#34; xsi:noNamespaceSchemaLocation=&#34;amzn-envelope.xsd&#34;&#39;; /************************************************************************* SubmitFeed FeedType=_POST_INVENTORY_AVAILABILITY_DATA_ ＜＜トランザクショ＞＞ SubmitFeed 「リクエスト送信してFeedSubmissionIdを取得」 =&amp;gt;GetFee</description>
     </item>
     
     <item>
       <title>BracketsでPHPデバッグ</title>
-      <link>https://okanemoti.tk/computer_language/php/104/</link>
+      <link>https://okanemochi.tk/computer_language/php/104/</link>
       <pubDate>Mon, 12 Mar 2018 11:14:55 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/computer_language/php/104/</guid>
+      <guid>https://okanemochi.tk/computer_language/php/104/</guid>
       <description>大前提として、Bracketsの拡張機能のPHP DEBUGGERを追加しておきます。 BracketsでPHPデバッグするには、何らかのローカ</description>
     </item>
     

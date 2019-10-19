@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: billys-animals/sumaho.tk
+  repo: billys-animals/main.okanemochi.tk
   branch: master
 
 # publish_mode: editorial_workflow

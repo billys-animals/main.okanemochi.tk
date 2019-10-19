@@ -7,11 +7,12 @@ categories:
   - 設定
 tags:
   - さくらサーバー
-thumbnailImagePosition: left
-thumbnailImage: ''
 ---
-<pre><code class="html">#Options -indexes
-&lt;IfModule mod_rewrite.c&gt;
+さくらサーバーはOptionが使えないからコメントアウト_
+**\#Options -indexes**
+```html
+#Options -indexes
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 
@@ -23,12 +24,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # Rewrite all other URLs to index.php/URL
 
 RewriteRule ^(.*)$ index.php?/$1 \[L]
-&lt;/IfModule&gt;
-&lt;IfModule !mod_rewrite.c&gt;
+</IfModule>
+<IfModule !mod_rewrite.c>
 ErrorDocument 404 index.php
-&lt;/IfModule&gt;
-</code></pre>
-
-**\#Options -indexes**
-
-_<span style="color: #ff0000;" data-blogger-escaped-style="color: red;">さくらサーバーはOptionが使えない</span>からコメントアウト_
+</IfModule>
+```

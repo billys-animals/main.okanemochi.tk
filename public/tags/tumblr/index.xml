@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tumblr on しんこきゅう</title>
-    <link>https://okanemoti.tk/tags/tumblr/</link>
+    <link>https://okanemochi.tk/tags/tumblr/</link>
     <description>Recent content in tumblr on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Fri, 27 Jun 2014 04:43:00 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/tags/tumblr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/tags/tumblr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>TumblrでのGoogleXML Sitemapの場所</title>
-      <link>https://okanemoti.tk/post/2014-06-27-tumblr%E3%81%A7%E3%81%AEgooglexml-sitemap%E3%81%AE%E5%A0%B4%E6%89%80/</link>
+      <link>https://okanemochi.tk/post/2014-06-27-tumblr%E3%81%A7%E3%81%AEgooglexml-sitemap%E3%81%AE%E5%A0%B4%E6%89%80/</link>
       <pubDate>Fri, 27 Jun 2014 04:43:00 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2014-06-27-tumblr%E3%81%A7%E3%81%AEgooglexml-sitemap%E3%81%AE%E5%A0%B4%E6%89%80/</guid>
+      <guid>https://okanemochi.tk/post/2014-06-27-tumblr%E3%81%A7%E3%81%AEgooglexml-sitemap%E3%81%AE%E5%A0%B4%E6%89%80/</guid>
       <description>これは自動的に作られている様だがわかりにくいので備忘録。 筆者のサイトで以下のサイト、 IT.PC.MobileInfomation このTumbleブログは独自ドメイン運営しています。 ま</description>
     </item>
     
     <item>
       <title>Tumblrのスキボタン</title>
-      <link>https://okanemoti.tk/post/2014-06-24-tumblr%E3%81%AE%E3%82%B9%E3%82%AD%E3%83%9C%E3%82%BF%E3%83%B3/</link>
+      <link>https://okanemochi.tk/post/2014-06-24-tumblr%E3%81%AE%E3%82%B9%E3%82%AD%E3%83%9C%E3%82%BF%E3%83%B3/</link>
       <pubDate>Tue, 24 Jun 2014 09:45:00 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2014-06-24-tumblr%E3%81%AE%E3%82%B9%E3%82%AD%E3%83%9C%E3%82%BF%E3%83%B3/</guid>
+      <guid>https://okanemochi.tk/post/2014-06-24-tumblr%E3%81%AE%E3%82%B9%E3%82%AD%E3%83%9C%E3%82%BF%E3%83%B3/</guid>
       <description>&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;style type=&#34;text/css&#34;&amp;gt; .like_and_reblog_buttons { border: 1px solid #e8e8e8; border-radius: 3px; list-style: none; } .like_and_reblog_buttons li { float: left; margin: 0; padding: 7px 15px; height: 20px; } .like_and_reblog_buttons li:first-child { border-right: 1px solid #e8e8e8; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; {block:Posts} ... &amp;lt;ul class=&#34;like_and_reblog_buttons&#34;&amp;gt; &amp;lt;li&amp;gt;{ReblogButton}&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;{LikeButton}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; {/block:Posts} &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; &amp;nbsp; How to create a custom HTML theme ↑ここはいわゆる自分のtu</description>
     </item>
     
     <item>
       <title>Tumblrの独自ドメイン化</title>
-      <link>https://okanemoti.tk/post/2014-06-18-tumblr%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%8C%96/</link>
+      <link>https://okanemochi.tk/post/2014-06-18-tumblr%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%8C%96/</link>
       <pubDate>Wed, 18 Jun 2014 04:23:00 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2014-06-18-tumblr%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%8C%96/</guid>
+      <guid>https://okanemochi.tk/post/2014-06-18-tumblr%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%8C%96/</guid>
       <description>ホスト(wwwなど） ターゲット(domains.tumblr.com.) タイプ(CNAME)</description>
     </item>
     

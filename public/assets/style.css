@@ -1,27 +1,4 @@
 /* custom css here */
-:root {
-  /* スフィア        */
-  --charno1 : url('https://sumaho.tk/wp-content/uploads/2019/07/d79fb14872b28fd45f2eede558f64caf-300x300.jpg');
-  /* リンク          */
-  --charno2 : url('https://sumaho.tk/wp-content/uploads/2018/06/line_1529897296323-150x150.jpg');
-  /* ナッキー        */
-  --charno3 : url('https://sumaho.tk/wp-content/uploads/2018/06/nacky1-150x150.jpg');
-  /* よしこ先生      */
-  --charno4 : url('https://sumaho.tk/wp-content/uploads/2018/07/59f22304d8a98fda3cdd7ae77db8a0b3.jpg');
-  /* 500円           */
-  --charno5 : url('https://sumaho.tk/wp-content/uploads/2018/07/0ac84bd4db08be2aec828256636a5af6.jpg');
-  /* コーヒーマスター */
-  --charno6 : url('https://sumaho.tk/wp-content/uploads/2018/07/aa5fb71af70bf729ec4214aa3a663453.jpg'); 
-  /* 宇宙人           */
-  --charno7 : url('https://sumaho.tk/wp-content/uploads/2018/07/illustrain10-bennkyou10-300x300.png');
-  /* 朱紺色えんぴつ   */
-  --charno8 : url('https://sumaho.tk/wp-content/uploads/2018/08/illustrain09-utyuu1-300x300.png');
-  /* 健康じいさん     */
-  --charno9 : url('https://sumaho.tk/wp-content/uploads/2018/08/illustrain04-kaigo02.png');
-}
-    }
-
-
 html,
 body {
   height: 100%;
@@ -280,7 +257,7 @@ aside {
   float: left;
 }
 .xPrevNextLink_prev::before {
-  content: "≪";
+  content: "<<;
 }
 .xPrevNextLink_next {
   display: block;
@@ -289,5 +266,5 @@ aside {
 
 }
 .xPrevNextLink_next::after {
-  content: "≫";
+  content: ">>;
 }

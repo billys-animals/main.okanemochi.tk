@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python3 on しんこきゅう</title>
-    <link>https://okanemoti.tk/categories/python3/</link>
+    <link>https://okanemochi.tk/categories/python3/</link>
     <description>Recent content in Python3 on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Fri, 21 Sep 2018 14:43:20 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/categories/python3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/categories/python3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>高校生にPythonを教えてます</title>
-      <link>https://okanemoti.tk/computer_language/python3/860/</link>
+      <link>https://okanemochi.tk/computer_language/python3/860/</link>
       <pubDate>Fri, 21 Sep 2018 14:43:20 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/computer_language/python3/860/</guid>
+      <guid>https://okanemochi.tk/computer_language/python3/860/</guid>
       <description>高校1年生の子どもにPythonを教えてます。娘です。来週あたりから情報の授業でPythonのプログラムをするするらしく、父親がプログラマー</description>
     </item>
     
     <item>
       <title>numpyでベクトルを理解する</title>
-      <link>https://okanemoti.tk/computer_language/python3/201/</link>
+      <link>https://okanemochi.tk/computer_language/python3/201/</link>
       <pubDate>Tue, 08 May 2018 11:25:10 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/computer_language/python3/201/</guid>
+      <guid>https://okanemochi.tk/computer_language/python3/201/</guid>
       <description>機械学習の過程で避けて通れない数学知識の数々・・・。正直なところ高校数学なんて真面目にやった記憶がないので、ベクトル記号とか見覚えがある程度</description>
     </item>
     

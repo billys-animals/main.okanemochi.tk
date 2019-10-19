@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>anchorCMS on しんこきゅう</title>
-    <link>https://okanemoti.tk/tags/anchorcms/</link>
+    <link>https://okanemochi.tk/tags/anchorcms/</link>
     <description>Recent content in anchorCMS on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Thu, 19 Jun 2014 01:06:00 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/tags/anchorcms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/tags/anchorcms/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AnchorCMSの関数一覧</title>
-      <link>https://okanemoti.tk/post/2014-06-19-anchorcms%E3%81%AE%E9%96%A2%E6%95%B0%E4%B8%80%E8%A6%A7/</link>
+      <link>https://okanemochi.tk/post/2014-06-19-anchorcms%E3%81%AE%E9%96%A2%E6%95%B0%E4%B8%80%E8%A6%A7/</link>
       <pubDate>Thu, 19 Jun 2014 01:06:00 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2014-06-19-anchorcms%E3%81%AE%E9%96%A2%E6%95%B0%E4%B8%80%E8%A6%A7/</guid>
+      <guid>https://okanemochi.tk/post/2014-06-19-anchorcms%E3%81%AE%E9%96%A2%E6%95%B0%E4%B8%80%E8%A6%A7/</guid>
       <description>Articles article_author &amp;lt;br /&amp;gt; article_author_bio &amp;lt;br /&amp;gt; article_author_id &amp;lt;br /&amp;gt; article_css &amp;lt;br /&amp;gt; article_custom_field($key, $fallback = &amp;ldquo;) &amp;lt;br /&amp;gt; article_date &amp;lt;br /&amp;gt; article_description &amp;lt;br /&amp;gt; article_html &amp;lt;br /&amp;gt; article_id &amp;lt;br /&amp;gt; article_js &amp;lt;br /&amp;gt; article_slug &amp;lt;br /&amp;gt; article_status &amp;lt;br /&amp;gt; article_time &amp;lt;br /&amp;gt; article_title &amp;lt;br /&amp;gt; article_total_comments &amp;lt;br /&amp;gt; article_url &amp;lt;br /&amp;gt; Categories category_description &amp;lt;br /&amp;gt; category_id &amp;lt;br /&amp;gt; category_slug &amp;lt;br /&amp;gt; category_title &amp;lt;br /&amp;gt; category_url &amp;lt;br /&amp;gt; total_categories &amp;lt;br</description>
     </item>
     
     <item>
       <title>Themes→defualt→article.php</title>
-      <link>https://okanemoti.tk/post/2014-06-19-themesdefualtarticle-php/</link>
+      <link>https://okanemochi.tk/post/2014-06-19-themesdefualtarticle-php/</link>
       <pubDate>Thu, 19 Jun 2014 00:51:00 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2014-06-19-themesdefualtarticle-php/</guid>
+      <guid>https://okanemochi.tk/post/2014-06-19-themesdefualtarticle-php/</guid>
       <description>アンカーCMSでカスタムフィールドの値をテンプレート上で表示させるやり方 &amp;lt;span style=&amp;ldquo;color: #333333;&amp;ldquo;&amp;gt; &amp;lt;?php theme_include(&amp;lsquo;header&amp;rsquo;); ?&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;section class=&amp;ldquo;content wrap&amp;rdquo; id=&amp;ldquo;article-&amp;lt;?php echo article_id(); ?&amp;gt;&amp;ldquo;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;h1&amp;gt;&amp;lt;?php echo article_title(); ?&amp;gt;&amp;lt;/h1&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;article&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;?php echo article_markdown(); ?&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;ldquo;color: red;&amp;ldquo;&amp;gt;&amp;lt;b&amp;gt;&amp;lt;?php echo article_custom_field(&amp;lsquo;afiri01&amp;rsquo;, &amp;ldquo;); ?&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span</description>
     </item>
     

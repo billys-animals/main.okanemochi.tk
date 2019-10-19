@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>API on しんこきゅう</title>
-    <link>https://okanemoti.tk/categories/api/</link>
+    <link>https://okanemochi.tk/categories/api/</link>
     <description>Recent content in API on しんこきゅう</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>sphia</copyright>
     <lastBuildDate>Wed, 09 May 2018 13:39:49 +0000</lastBuildDate>
     
-	<atom:link href="https://okanemoti.tk/categories/api/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okanemochi.tk/categories/api/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Amazon MWS API FEED</title>
-      <link>https://okanemoti.tk/web_tecnology/api/211/</link>
+      <link>https://okanemochi.tk/web_tecnology/api/211/</link>
       <pubDate>Wed, 09 May 2018 13:39:49 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/web_tecnology/api/211/</guid>
+      <guid>https://okanemochi.tk/web_tecnology/api/211/</guid>
       <description>//Feed用 var namespace3 = &#34;http://mws.amazonaws.com/doc/2009-01-01/&#34;; var namespace4=&#39;&#34;http://www.w3.org/2001/XMLSchema-instance&#34; xsi:noNamespaceSchemaLocation=&#34;amzn-envelope.xsd&#34;&#39;; /************************************************************************* SubmitFeed FeedType=_POST_INVENTORY_AVAILABILITY_DATA_ ＜＜トランザクショ＞＞ SubmitFeed 「リクエスト送信してFeedSubmissionIdを取得」 =&amp;gt;GetFee</description>
     </item>
     
     <item>
       <title>Yahoo API ItemSeach 覚書</title>
-      <link>https://okanemoti.tk/post/2018-02-21-yahoo-api-itemseach-%E8%A6%9A%E6%9B%B8/</link>
+      <link>https://okanemochi.tk/post/2018-02-21-yahoo-api-itemseach-%E8%A6%9A%E6%9B%B8/</link>
       <pubDate>Wed, 21 Feb 2018 06:41:48 +0000</pubDate>
       
-      <guid>https://okanemoti.tk/post/2018-02-21-yahoo-api-itemseach-%E8%A6%9A%E6%9B%B8/</guid>
+      <guid>https://okanemochi.tk/post/2018-02-21-yahoo-api-itemseach-%E8%A6%9A%E6%9B%B8/</guid>
       <description>以前、開発でYahoo APIのitemSearchを扱う機会がありました。エクセルのVBAでの開発だったのですが、APIの戻りをパースする際</description>
     </item>
     
