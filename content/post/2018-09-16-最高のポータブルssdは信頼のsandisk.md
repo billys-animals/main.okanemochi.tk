@@ -5,48 +5,6 @@ type: post
 date: 2018-09-16T11:45:14+00:00
 url: /anshin/794/
 featured_image: https://okanemochi.tk/wp-content/uploads/2018/09/sandusk.jpg
-category_relation:
-  - 'y'
-tag_relation:
-  - 'y'
-disp_description_relation:
-  - 'n'
-menu_view:
-  - 'y'
-side:
-  - 'y'
-fullscreen_view:
-  - 'n'
-index:
-  - index
-follow:
-  - follow
-title_view:
-  - 'y'
-page_layout:
-  - def
-toc:
-  - def
-primary_category:
-  - 172
-page_meta_keyword:
-  - ssd おすすめ 壊れない
-pvc_views:
-  - 69
-keni_layout_post:
-  - layout-basic
-keni_layout_post_sidebar:
-  - layout-sidebar-basic
-keni_layout_post_navigation:
-  - layout-navigation-show
-keni_relation_disp_post:
-  - show
-keni_relation_post:
-  - 'a:0:{}'
-keni_tag_relation_post:
-  - 1
-keni_category_relation_post:
-  - 1
 categories:
   - 安心
 
@@ -71,17 +29,8 @@ USB3系の場合は最大440MB/秒の速度が出るという公称値。ネッ�
 
 但し、精密機器なので、水や埃、砂や土にはあまり耐性はないです。これはこの商品云々の問題ではなくSSDの様なデリケートな機器は基本的に「水砂土埃」は苦手なものなので、そういった環境でのご利用は極力避けた方が無難です。
 
-<div class="box_style box_style_blue">
-  <div class="box_inner">
-    <div class="box_style_title">
-      <span class="box_style_title_inner">防滴・防塵の耐性が優れた上位モデル</span>
-    </div>
-    
-    <div>
-      この防滴・防塵の耐性が優れたモデルは上位モデルがあってこちらであれば<span class="line-pink">IP55クラスの性能を引き出す事が可能</span>です。（有害な粉塵が入らない設計の防塵仕様で完全な防塵ではないが6階級中上から5番目の防塵効果を保証。防水機能としては完全に防水できるわけではありませんが、あらゆる方向からの噴流水による有害な影響がない（防噴流形）を採用していて、8階級中の上から5番目の防水性能をほこります）
-    </div>
-  </div>
-</div>
+#### 防滴・防塵の耐性が優れた上位モデル
+この防滴・防塵の耐性が優れたモデルは上位モデルがあってこちらであればIP55クラスの性能を引き出す事が可能です。（有害な粉塵が入らない設計の防塵仕様で完全な防塵ではないが6階級中上から5番目の防塵効果を保証。防水機能としては完全に防水できるわけではありませんが、あらゆる方向からの噴流水による有害な影響がない（防噴流形）を採用していて、8階級中の上から5番目の防水性能をほこります）
 
 <table style="border: 1px solid #ccc; width: 170px;" border="0" cellspacing="0" cellpadding="0">
   <tr style="border-style: none;">
