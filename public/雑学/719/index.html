@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  VAIO TYPE L VGC-LB50のCPUを換装してみる &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="VAIO TYPE L VGC-LB50のCPUは上記の様にCeleronモバイル420です。 上の赤枠の円の中心をマイナスドライバーで左に回すと、上の青枠のC|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">VAIO TYPE L VGC-LB50のCPUを換装してみる</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/%E9%9B%91%E5%AD%A6%E6%97%A5%E8%A8%98' class="muted-link">
+  <span class="Label Label--gray-darker">雑学・日記</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-08-22. Published at: 2018-08-22.">
+        
+          Published: 2018-08-22
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p><img class="alignnone size-medium wp-image-720" src="https://okanemochi.tk/wp-content/uploads/2018/08/celeron420-169x300.png" alt="" width="169" height="300" srcset="https://okanemochi.tk/wp-content/uploads/2018/08/celeron420-169x300.png 169w, https://okanemochi.tk/wp-content/uploads/2018/08/celeron420.png 576w" sizes="(max-width: 169px) 100vw, 169px" /></p>
+
+<p>VAIO TYPE L VGC-LB50のCPUは上記の様にCeleronモバイル420です。</p>
+
+<p>上の赤枠の円の中心をマイナスドライバーで左に回すと、上の青枠のCPUが解除されて外せます。</p>
+
+<p>この、CPUを、Intel Core2 Duo プロセッサー E8400 LGA775 SLB9J 3.00GHzに換装する予定です。</p>
+
+<p>もうすぐ届くので正に蓋を開けて待っている状態です。</p>
+
+<p>ただ、見込みで購入したCPUなので本当に正常に動作するかどうかはわかりません。ソケットは一致しているし、希望的観測で動作すると考えてヤフオクで350円で購入です。</p>
+
+<p>結果は後に追記で書きますね。</p>
+
+<p><strong>追記：</strong></p>
+
+<p>よく確認せずにソケットの異なるCPUを購入してしまいました。対応する正式なソケットはPPGA478でした。E8400はソケット775なので型が合いません。自業自得とはまさにこの事！残念！！</p>
+
+<p><strong>再追記：</strong></p>
+
+<p>メーカー品にCPUの換装とは予想以上に神経を使う必要があるようです。</p>
+
+<p>Celeronモバイル420は、</p>
+
+<p>仕様番号＝ SL8VZ 、</p>
+
+<p>ステッピング＝ C0 、</p>
+
+<p>CPU ID＝ 06E8、</p>
+
+<p>Socket Type =Socket M、</p>
+
+<p>Bus speed= 533 MHz、</p>
+
+<p>64-bit Support?= No</p>
+
+<p>命令セット拡張＝MMX ,SSE ,SSE2 ,SSE3</p>
+
+<p>など複数の項目の値を見た上で換装前のCPUとできるだけ同じ構造のものを選択する必要がある様です。また、対象のパソコンのUEFI(BIOS)の最新版の更新日よりも後に発売されたCPUは換装の対象にはなりませんので、パソコンや換装したいCPUの発売日も考慮しなければなりません。</p>
+
+<p>よって、CeleronM420の換装が成功する可能性が高く、最も効果を得られる可能性が高いCPUは「Intel Core Duo T2600 (Socket M) CPU」ではないかと考えております。</p>
+
+<p>仕様番号＝ SL8VZ 、SL9JN</p>
+
+<p>ステッピング＝ C0 、Do</p>
+
+<p>CPU ID＝ 06E8、06EC</p>
+
+<p>Socket Type =Socket M、</p>
+
+<p>Bus speed= 667 MHz、</p>
+
+<p>64-bit Support?= No</p>
+
+<p>命令セット拡張＝MMX ,SSE ,SSE2 ,SSE3</p>
+
+<p>この様に基本的な構造はほぼ同じでバススピードは少し速いのと、仕様番号が複数あるのが不一致点ですね。これで適合率が70％程度なのでおそらく換装可能なのではないかと考えております。</p>
+
+<p>もし、換装が成功した場合の性能としてはおよそ263％向上という指標になっています。早く結果をみたいこの頃です。</p>
+
+<h2 id="結果">結果</h2>
+
+<p>画面真っ暗でBIOSすら立ち上がりません。念の為CMOSのクリアも試しましたが状況は変化せず。残念、断念。</p>
+
+<p>やっぱりメーカー製のパソコンのCPU換装は難しいですね、ThinkPadはすんなりうまく出来たのにVAIOは散々でした。</p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/%E9%9B%91%E5%AD%A6/692/">mediacreationtool.exeでダウンロードできない</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/%E9%9B%91%E5%AD%A6/749/">チアダンとグッドドクターは3回見ても飽きない</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/%E9%9B%91%E5%AD%A6/958/">女子バレー（世界選手権）</a></li>
+  
+  <li><a href="/%E9%9B%91%E5%AD%A6/943/">ナンバーズ3のミニが当選しました</a></li>
+  
+  <li><a href="/%E9%9B%91%E5%AD%A6/911/">キャッシュレス&amp;銀行ATM消失する直ぐ先の明日</a></li>
+  
+  <li><a href="/%E9%9B%91%E5%AD%A6/909/">中高生の74%がiPhoneを所有している異常な国、日本</a></li>
+  
+  <li><a href="/%E9%9B%91%E5%AD%A6/907/">Android版のエクセルにOCR機能がもう直ぐ</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>VAIO TYPE L VGC-LB50のCPUを換装してみる</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#結果">結果</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  ディスク(SSD)の完全消去～データを完璧に抹消出来るか？ &ndash; パソBlog
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="ソフトウエアの性能検証の為に以下のHDDを用意しました。 昔、何かのネットブックパソコン（おそらくeeePC1015-PEM)に付いていたハー|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="パソBlog">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://sumaho.tk/">
+    パソBlog
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">ディスク(SSD)の完全消去～データを完璧に抹消出来るか？</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A8%E3%82%A2' class="muted-link">
+  <span class="Label Label--gray-darker">ソフトウエア</span>
+</a>
+
+<a href='/categories/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2' class="muted-link">
+  <span class="Label Label--gray-darker">ハードウェア</span>
+</a>
+
+<a href='/categories/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3' class="muted-link">
+  <span class="Label Label--gray-darker">パソコン</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-08-01. Published at: 2018-08-01.">
+        
+          Published: 2018-08-01
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p>ソフトウエアの性能検証の為に以下のHDDを用意しました。</p>
+
+<p>昔、何かのネットブックパソコン（おそらくeeePC1015-PEM)に付いていたハードディスクだと記憶していて、相当数の書き換えがなされたHDDです。</p>
+
+<p><img class="alignnone wp-image-758" src="https://sumaho.tk/wp-content/uploads/2018/08/P_20180801_113018-1.jpg" alt="" width="169" height="261" srcset="https://sumaho.tk/wp-content/uploads/2018/08/P_20180801_113018-1.jpg 530w, https://sumaho.tk/wp-content/uploads/2018/08/P_20180801_113018-1-194x300.jpg 194w" sizes="(max-width: 169px) 100vw, 169px" /></p>
+
+<p><img class="alignnone wp-image-759" src="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del001.png" alt="" width="777" height="478" srcset="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del001.png 832w, https://sumaho.tk/wp-content/uploads/2018/08/deisk_del001-300x185.png 300w, https://sumaho.tk/wp-content/uploads/2018/08/deisk_del001-768x473.png 768w" sizes="(max-width: 777px) 100vw, 777px" /></p>
+
+<h2 id="ハードディスクの消去方法">ハードディスクの消去方法</h2>
+
+<p>前回、LowLevelFormatで物理フォーマット（0埋め）したディスクをファイナルデータで確認したところいくつか復旧可能なファイルリストが出てきてしまっていました。</p>
+
+<p>つまり、<strong>ゼロフィルでフォーマットしただけでは復元出来る可能性がかなり高い</strong>と言う事です。</p>
+
+<p>今回利用するのは、<a href="http://hddguru.com/software/HDD-LLF-Low-Level-Format-Tool/" target="_blank" rel="noopener">HardDiskLowLevelFormatTool</a>(ゼロフィル ソフト)ではなく、AcronisDriveCleanerです。</p>
+
+<p>AcronisDriveCleanerでのハードディスク消去の初期値は「高速」です。これは前途のLowLevelFormatToolの0埋めと全く同じなので、今回は「<span class="red b">米国国防総省準拠方式</span>」を採用して完全にディスクの内容を抹消してしまおうと思います。</p>
+
+<p><img class="alignnone wp-image-761" src="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del002.png" alt="" width="518" height="164" srcset="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del002.png 570w, https://sumaho.tk/wp-content/uploads/2018/08/deisk_del002-300x95.png 300w" sizes="(max-width: 518px) 100vw, 518px" /></p>
+
+<p>&nbsp;</p>
+
+<p>約80GBのかなり古めのハードディスクでクリーニングの要した時間はおよそ3時間くらいでした。</p>
+
+<h3 id="ファイナルデータでのファイル復旧結果">ファイナルデータでのファイル復旧結果</h3>
+
+<p>開始からおよそ1時間程度で終了しました。（持ち合わせていえるのがFainal Data 2007なので最新版での検証は出来ません。）</p>
+
+<p>&nbsp;</p>
+
+<p><img class="alignnone wp-image-764" src="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del003.png" alt="" width="518" height="402" srcset="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del003.png 545w, https://sumaho.tk/wp-content/uploads/2018/08/deisk_del003-300x233.png 300w" sizes="(max-width: 518px) 100vw, 518px" /></p>
+
+<p>&nbsp;</p>
+
+<p>さすが、ペンタゴン仕様と言うべきか、何も復元対象が得られませんでした。</p>
+
+<p>&nbsp;</p>
+
+<h3 id="easeus-data-recovery-wizard-12-0でのファイル復元結果">EaseUS Data Recovery Wizard 12.0でのファイル復元結果</h3>
+
+<p><img class="alignnone wp-image-765" src="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del004.png" alt="" width="777" height="544" srcset="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del004.png 1000w, https://sumaho.tk/wp-content/uploads/2018/08/deisk_del004-300x210.png 300w, https://sumaho.tk/wp-content/uploads/2018/08/deisk_del004-768x538.png 768w" sizes="(max-width: 777px) 100vw, 777px" /></p>
+
+<p>EaseUS Data Recovery Wizard 12.0でのファイル復旧をスタートしてみました。</p>
+
+<p><img class="alignnone wp-image-767" src="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del005.png" alt="" width="777" height="530" srcset="https://sumaho.tk/wp-content/uploads/2018/08/deisk_del005.png 880w, https://sumaho.tk/wp-content/uploads/2018/08/deisk_del005-300x205.png 300w, https://sumaho.tk/wp-content/uploads/2018/08/deisk_del005-768x524.png 768w" sizes="(max-width: 777px) 100vw, 777px" /></p>
+
+<p>&nbsp;</p>
+
+<p>ペンタゴン（米国国防総省）仕様のシュレッダーからの消去なので流石の「<a href="https://sumaho.tk/lp/easeus-data-recovery-wizard-12-0-pro-vs-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF11-plus-%E7%89%B9%E5%88%A5%E5%BE%A9%E5%85%83%E7%89%88-trial-%E5%AE%8C%E5%85%A8/" target="_blank" rel="noopener">EaseUS Data Recovery Wizard 12.0</a>」でも何も復元出来ませんでした。</p>
+
+<p>&nbsp;</p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<table style="border-collapse: collapse; width: 100%;" border="1">
+  <tr style="height: 24px;">
+    <td style="width: 100%; height: 24px;">
+      <div class="chat_r ">
+        <div class="talker">
+          <b><img class="square" src="https://sumaho.tk/wp-content/uploads/2018/08/illustrain04-kaigo02.png" alt="健康じいさん" /> </b>
+        </div>
+        
+        <div class="bubble_wrap">
+          <div class="bubble" style="background-color:#f5f5a9">
+            <div class="bubble_in" style="border-color:#f5f5a9">
+              <p>
+              </p>
+              
+              <p>
+                使わなくなってネットオークションや転売サイトなどに出品する際に、HDD(ハードディスク）やSSDは単純にフォーマットするだけじゃ自分の書き込んできたデータを消去出来ていません。
+              </p>
+              
+              <p>
+                <span class="f18em">もし<a href="https://sumaho.tk/lp/hdd_to_ssd_clone_method_text_all/" target="_blank" rel="noopener">新規でSSDを購入する予定があるならばCrucialのSSD</a>を購入すればAcronisDriveCleanerが無料に手に入ります。</span>
+              </p>
+              
+              <p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  
+  <tr style="height: 24px;">
+    <td style="width: 100%; height: 24px;">
+      <div class="chat_r ">
+        <div class="talker">
+          <b><img class="circle" src="https://sumaho.tk/wp-content/uploads/2018/07/0ac84bd4db08be2aec828256636a5af6.jpg" alt="Mr.マスター" /> </b>
+        </div>
+        
+        <div class="bubble_wrap">
+          <div class="bubble rc8" style="background-color:#6db57c">
+            <div class="bubble_in" style="border-color:#6db57c">
+              <p>
+              </p>
+              
+              <p>
+                単純に見えない様に印を付けただけなので、EaseUS Data Recovery Wizard やファイナルデータを使えば簡単にデータを復活させる事ができます。
+              </p>
+              
+              <p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  
+  <tr style="height: 24px;">
+    <td style="width: 100%; height: 24px;">
+      <div class="chat_l ">
+        <div class="talker">
+          <b><img class="circle" src="https://sumaho.tk/wp-content/uploads/2018/08/illustrain09-utyuu1-300x300.png" alt="宇宙人" /> </b>
+        </div>
+        
+        <div class="bubble_wrap">
+          <div class="bubble rc8" style="background-color:#9eacd9">
+            <div class="bubble_in" style="border-color:#9eacd9">
+              <p>
+              </p>
+              
+              <p>
+                LowLevelFormatの様にゼロ埋めの物理フォーマットしたものでも性能の良いファイル復元ソフトの手にかかればファイルを復活させる事が出来ます。
+              </p>
+              
+              <p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  
+  <tr style="height: 48px;">
+    <td style="width: 100%; height: 48px;">
+      <div class="chat_l ">
+        <div class="talker">
+          <b><img class="circle" src="https://sumaho.tk/wp-content/uploads/2018/06/line_1529897296323-150x150.jpg" alt="鈴駒" /> </b>
+        </div>
+        
+        <div class="bubble_wrap">
+          <div class="bubble" style="background-color:#e8b5d4">
+            <div class="bubble_in" style="border-color:#e8b5d4">
+              <p>
+              </p>
+              
+              <p>
+                今回試した様な、米国国防総省準拠方式を始め、米国海軍仕様やロシア仕様など様々な国の国家機密を守る様な厳重な仕様でディスクを抹消するAcronisDriveCleanerというソフトウエアはCrucialのSSDを購入すると無料で使用出来るAcronisTrueImageの中に正規のソフトウエアとして付属しております。
+              </p>
+              
+              <p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://sumaho.tk/post/easeus-drw12.0-pro-vs.-fainaldata11-plus-%E5%AE%8C%E5%85%A8%E6%A4%9C%E8%A8%BC/">EaseUS DRW12.0 Pro  Vs. FainalData11 plus 完全検証</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://sumaho.tk/post/2018-08-02-amazon%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AB%E5%8A%A0%E5%85%A5%E3%81%97%E3%81%A610%E5%B9%B4%E4%BB%A5%E4%B8%8A/">Amazonプライムサービスに加入して10年以上</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/post/2018-08-14-vgc-lb50%E3%81%AEdvd-ram%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%81%AE%E7%99%96/">VGC-LB50のDVD-RAMドライブの癖？</a></li>
+  
+  <li><a href="/post/2018-08-08-ssd%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F%E3%81%8B%E3%82%89%E3%83%87%E3%83%BC%E3%82%BF%E7%BD%AE%E3%81%8D%E5%A0%B4%E3%81%AF%E3%82%84%E3%81%A3%E3%81%B1/">SSDが認識しなくなった、だからデータ置き場はやっぱりHDD</a></li>
+  
+  <li><a href="/post/2018-08-05-%E3%83%8F%E3%83%BC%E3%83%89%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%AC%E3%83%99%E3%83%AB%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%84%E3%83%BC/">ハードディスク・ローレベル・フォーマットツールについて</a></li>
+  
+  <li><a href="/post/2018-08-05-ssd%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%81%8C%E5%87%BA%E6%9D%A5%E3%82%8B%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88/">SSDのエラーチェックが出来るフリーソフト</a></li>
+  
+  <li><a href="/post/2018-07-27-easeus-todo-backup%E3%81%AE%E8%A3%BD%E5%93%81%E7%89%88%E3%81%A8%E7%84%A1%E6%96%99%E7%89%88%E3%81%AE%E9%81%95%E3%81%84%E3%82%92%E6%A4%9C%E8%A8%BC/">EaseUS Todo Backupの製品版と無料版の違いを検証</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>ディスク(SSD)の完全消去～データを完璧に抹消出来るか？</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#ハードディスクの消去方法">ハードディスクの消去方法</a>
+<ul>
+<li><a href="#ファイナルデータでのファイル復旧結果">ファイナルデータでのファイル復旧結果</a></li>
+<li><a href="#easeus-data-recovery-wizard-12-0でのファイル復元結果">EaseUS Data Recovery Wizard 12.0でのファイル復元結果</a></li>
+</ul></li>
+<li><a href="#まとめ">まとめ</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/2018/10/%E5%B0%91%E3%81%97%E5%85%88%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%81%A7%E3%83%A1%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AA%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%E3%81%AF/">少し先の未来でメジャーなスマホのスペックは</a></b>
+      <time>2018-10-14</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2018-10-13-%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3primevideo%E3%81%AB%E3%82%A8%E3%83%BC%E3%82%B9%E3%82%92%E3%81%AD%E3%82%89%E3%81%88%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/">アマゾンPrimeVIDEOに「エースをねらえ」がやってきた！！</a></b>
+      <time>2018-10-13</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E3%82%92%E7%9C%9F%E5%89%A3%E3%81%AB%E6%A4%9C%E8%A8%8E%E3%81%95%E3%82%8C%E3%81%A6/">ソーラーモバイルバッテリーを真剣に検討されては如何でしょうか？</a></b>
+      <time>2018-09-28</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/50%E9%81%8E%E3%81%8E%E3%81%AE%E3%82%AA%E3%83%A4%E3%82%B8%E3%81%8C%E3%81%82%E3%81%84%E3%81%BF%E3%82%87%E3%82%93%E8%81%B4%E3%81%84%E3%81%9F/">50過ぎのオヤジがあいみょん聴いた</a></b>
+      <time>2018-09-26</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/klevv-ssd-n600%E3%82%92%E8%AA%BF%E6%9F%BB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">KLevv SSD N600を調査してみた</a></b>
+      <time>2018-09-25</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

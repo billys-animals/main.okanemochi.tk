@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  Themes→defualt→article.php &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="アンカーCMSでカスタムフィールドの値をテンプレート上で表示させるやり方 &amp;lt;span style=&amp;ldquo;color: #333333;&amp;ldquo;&amp;gt; &amp;lt;?php theme_include(&amp;lsquo;header&amp;rsquo;); ?&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;section class=&amp;ldquo;content wrap&amp;rdquo; id=&amp;ldquo;article-&amp;lt;?php echo article_id(); ?&amp;gt;&amp;ldquo;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;h1&amp;gt;&amp;lt;?php echo article_title(); ?&amp;gt;&amp;lt;/h1&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;article&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;?php echo article_markdown(); ?&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;ldquo;color: red;&amp;ldquo;&amp;gt;&amp;lt;b&amp;gt;&amp;lt;?php echo article_custom_field(&amp;lsquo;afiri01&amp;rsquo;, &amp;ldquo;); ?&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">Themes→defualt→article.php</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/%E8%A8%AD%E5%AE%9A' class="muted-link">
+  <span class="Label Label--gray-darker">設定</span>
+</a>
+
+
+
+<a href='/tags/anchorcms' class="muted-link">
+  <span class="Label Label--gray">anchorCMS</span>
+</a>
+
+<a href='/tags/%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%88%E3%82%B3%E3%83%BC%E3%83%89' class="muted-link">
+  <span class="Label Label--gray">アフィリエイトコード</span>
+</a>
+
+<a href='/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89' class="muted-link">
+  <span class="Label Label--gray">カスタムフィールド</span>
+</a>
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2014-06-19. Published at: 2014-06-19.">
+        
+          Published: 2014-06-19
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <div data-md-url="https://www.blogger.com/blogger.g?blogID=537736377410352601#editor/target=post;postID=7439658120435222196" markdown-here-wrapper-content-modified="true">
+  <div style="margin: 1.2em 0px !important;">
+    アンカーCMSでカスタムフィールドの値をテンプレート上で表示させるやり方
+  </div>
+  
+
+<p><div style="margin: 1.2em 0px !important;">
+  </div></p>
+
+<p><blockquote style="border-left-color: rgb(221, 221, 221); border-left-style: solid; border-left-width: 4px; margin: 1.2em 0px; padding: 0px 1em; quotes: none;">
+    <pre style="font-family: Consolas, Inconsolata, Courier, monospace; font-size: 1em; line-height: 1.2em; margin: 1.2em 0px;"><code style="background-attachment: initial; background-clip: initial; background-color: ghostwhite; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 1px solid rgb(204, 204, 204); display: block !important; font-family: Consolas, Inconsolata, Courier, monospace; font-size: 0.85em; margin: 0px 0.15em; overflow: auto; padding: 0.5em; white-space: pre;">&lt;span style=&ldquo;color: #333333;&ldquo;&gt; &lt;?php theme_include(&lsquo;header&rsquo;); ?&gt;&lt;br /&gt;    &lt;section class=&ldquo;content wrap&rdquo; id=&ldquo;article-&lt;?php echo article_id(); ?&gt;&ldquo;&gt;&lt;br /&gt;        &lt;h1&gt;&lt;?php echo article_title(); ?&gt;&lt;/h1&gt;&lt;br /&gt;        &lt;article&gt;&lt;br /&gt;            &lt;?php echo article_markdown(); ?&gt;&lt;br /&gt;            &lt;/span&gt;&lt;span style=&ldquo;color: red;&ldquo;&gt;&lt;b&gt;&lt;?php echo article_custom_field(&lsquo;afiri01&rsquo;, &ldquo;); ?&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&ldquo;color: #333333;&ldquo;&gt;&lt;br /&gt;        &lt;/article&gt;&lt;br /&gt;        &lt;section class=&ldquo;footnote&rdquo;&gt;&lt;br /&gt;            &lt;!&ndash; Unfortunately, CSS means everything&rsquo;s got to be inline. &ndash;&gt;&lt;br /&gt;            &lt;p&gt;This article is my &lt;?php echo numeral(total_articles()); ?&gt; oldest. It is &lt;?php echo count_words(article_markdown()); ?&gt; words long&lt;?php if(comments_open()): ?&gt;, and it’s got &lt;?php echo total_comments() . pluralise(total_comments(), &lsquo; comment&rsquo;); ?&gt; for now.&lt;?php endif; ?&gt; &lt;?php echo article_custom_field(&lsquo;attribution&rsquo;); ?&gt;&lt;/p&gt;&lt;br /&gt;        &lt;/section&gt;&lt;br /&gt;    &lt;/section&gt;&lt;br /&gt;    &lt;?php if(comments_open()): ?&gt;&lt;br /&gt;    &lt;section class=&ldquo;comments&rdquo;&gt;&lt;br /&gt;        &lt;?php if(has_comments()): ?&gt;&lt;br /&gt;        &lt;ul class=&ldquo;commentlist&rdquo;&gt;&lt;br /&gt;            &lt;?php $i = 0; while(comments()): $i++; ?&gt;&lt;br /&gt;            &lt;li class=&ldquo;comment&rdquo; id=&ldquo;comment-&lt;?php echo comment_id(); ?&gt;&ldquo;&gt;&lt;br /&gt;                &lt;div class=&ldquo;wrap&rdquo;&gt;&lt;br /&gt;                    &lt;h2&gt;&lt;?php echo comment_name(); ?&gt;&lt;/h2&gt;&lt;br /&gt;                    &lt;time&gt;&lt;?php echo relative_time(comment_time()); ?&gt;&lt;/time&gt;&lt;br /&gt;                    &lt;div class=&ldquo;content&rdquo;&gt;&lt;br /&gt;                        &lt;?php echo comment_text(); ?&gt;&lt;br /&gt;                    &lt;/div&gt;&lt;br /&gt;                    &lt;span class=&ldquo;counter&rdquo;&gt;&lt;?php echo $i; ?&gt;&lt;/span&gt;&lt;br /&gt;                &lt;/div&gt;&lt;br /&gt;            &lt;/li&gt;&lt;br /&gt;            &lt;?php endwhile; ?&gt;&lt;br /&gt;        &lt;/ul&gt;&lt;br /&gt;        &lt;?php endif; ?&gt;&lt;br /&gt;        &lt;form id=&ldquo;comment&rdquo; class=&ldquo;commentform wrap&rdquo; method=&ldquo;post&rdquo; action=&rdquo;&lt;?php echo comment_form_url(); ?&gt;#comment&rdquo;&gt;&lt;br /&gt;            &lt;?php echo comment_form_notifications(); ?&gt;&lt;br /&gt;            &lt;p class=&ldquo;name&rdquo;&gt;&lt;br /&gt;                &lt;label for=&ldquo;name&rdquo;&gt;Your name:&lt;/label&gt;&lt;br /&gt;                &lt;?php echo comment_form_input_name(&lsquo;placeholder=&ldquo;Your name&rdquo;&rsquo;); ?&gt;&lt;br /&gt;            &lt;/p&gt;&lt;br /&gt;            &lt;p class=&ldquo;email&rdquo;&gt;&lt;br /&gt;                &lt;label for=&ldquo;email&rdquo;&gt;Your email address:&lt;/label&gt;&lt;br /&gt;                &lt;?php echo comment_form_input_email(&lsquo;placeholder=&ldquo;Your email (won’t be published)&rdquo;&rsquo;); ?&gt;&lt;br /&gt;            &lt;/p&gt;&lt;br /&gt;            &lt;p class=&ldquo;textarea&rdquo;&gt;&lt;br /&gt;                &lt;label for=&ldquo;text&rdquo;&gt;Your comment:&lt;/label&gt;&lt;br /&gt;                &lt;?php echo comment_form_input_text(&lsquo;placeholder=&ldquo;Your comment&rdquo;&rsquo;); ?&gt;&lt;br /&gt;            &lt;/p&gt;&lt;br /&gt;            &lt;p class=&ldquo;submit&rdquo;&gt;&lt;br /&gt;                &lt;?php echo comment_form_button(); ?&gt;&lt;br /&gt;            &lt;/p&gt;&lt;br /&gt;        &lt;/form&gt;&lt;br /&gt;    &lt;/section&gt;&lt;br /&gt;    &lt;?php endif; ?&gt;&lt;br /&gt; &lt;?php theme_include(&lsquo;footer&rsquo;); ?&gt;   &lt;br /&gt;&lt;/span&gt;</code></pre>
+  </blockquote></p>
+
+<p><div style="font-size: 0em; height: 0; margin: 0; padding: 0;" title="MDH:PGRpdj48ZGl2PuOCouODs+OCq+ODvENNU+OBp+OCq+OCueOCv+ODoOODleOCo+ODvOODq+ODieOB ruWApOOCkuODhuODs+ODl+ODrOODvOODiOS4iuOBp+ihqOekuuOBleOBm+OCi+OChOOCiuaWuTwv ZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXY+Jmd0OyAmbmJzcDsgJm5ic3A7Jm5ic3A7PC9kaXY+PGRp dj4mbmJzcDsgJm5ic3A7ICZuYnNwOyZsdDs/cGhwIHRoZW1lX2luY2x1ZGUoJ2hlYWRlcicpOyA/ Jmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUt c3BhY2U6cHJlIj4JCTwvc3Bhbj4mbHQ7c2VjdGlvbiBjbGFzcz0iY29udGVudCB3cmFwIiBpZD0i YXJ0aWNsZS0mbHQ7P3BocCBlY2hvIGFydGljbGVfaWQoKTsgPyZndDsiJmd0OzwvZGl2PjxkaXY+ PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQk8 L3NwYW4+Jmx0O2gxJmd0OyZsdDs/cGhwIGVjaG8gYXJ0aWNsZV90aXRsZSgpOyA/Jmd0OyZsdDsv aDEmZ3Q7PC9kaXY+PGRpdj48c3BhbiBjbGFzcz0iQXBwbGUtdGFiLXNwYW4iIHN0eWxlPSJ3aGl0 ZS1zcGFjZTpwcmUiPgkJCTwvc3Bhbj4mbHQ7YXJ0aWNsZSZndDs8L2Rpdj48ZGl2PjxzcGFuIGNs YXNzPSJBcHBsZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJCTwvc3Bhbj4m bHQ7P3BocCBlY2hvIGFydGljbGVfbWFya2Rvd24oKTsgPyZndDs8L2Rpdj48ZGl2PjxzcGFuIGNs YXNzPSJBcHBsZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJCTwvc3Bhbj4m bHQ7P3BocCBlY2hvIGFydGljbGVfY3VzdG9tX2ZpZWxkKCdhZmlyaTAxJywgJycpOyA/Jmd0Ozwv ZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6 cHJlIj4JCQk8L3NwYW4+Jmx0Oy9hcnRpY2xlJmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFw cGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQk8L3NwYW4+Jmx0O3NlY3Rp b24gY2xhc3M9ImZvb3Rub3RlIiZndDs8L2Rpdj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWIt c3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJCTwvc3Bhbj4mbHQ7IS0tIFVuZm9ydHVu YXRlbHksIENTUyBtZWFucyBldmVyeXRoaW5nJ3MgZ290IHRvIGJlIGlubGluZS4gLS0mZ3Q7PC9k aXY+PGRpdj48c3BhbiBjbGFzcz0iQXBwbGUtdGFiLXNwYW4iIHN0eWxlPSJ3aGl0ZS1zcGFjZTpw cmUiPgkJCQk8L3NwYW4+Jmx0O3AmZ3Q7VGhpcyBhcnRpY2xlIGlzIG15ICZsdDs/cGhwIGVjaG8g bnVtZXJhbCh0b3RhbF9hcnRpY2xlcygpKTsgPyZndDsgb2xkZXN0LiBJdCBpcyAmbHQ7P3BocCBl Y2hvIGNvdW50X3dvcmRzKGFydGljbGVfbWFya2Rvd24oKSk7ID8mZ3Q7IHdvcmRzIGxvbmcmbHQ7 P3BocCBpZihjb21tZW50c19vcGVuKCkpOiA/Jmd0OywgYW5kIGl04oCZcyBnb3QgJmx0Oz9waHAg ZWNobyB0b3RhbF9jb21tZW50cygpIC4gcGx1cmFsaXNlKHRvdGFsX2NvbW1lbnRzKCksICcgY29t bWVudCcpOyA/Jmd0OyBmb3Igbm93LiZsdDs/cGhwIGVuZGlmOyA/Jmd0OyAmbHQ7P3BocCBlY2hv IGFydGljbGVfY3VzdG9tX2ZpZWxkKCdhdHRyaWJ1dGlvbicpOyA/Jmd0OyZsdDsvcCZndDs8L2Rp dj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnBy ZSI+CQkJPC9zcGFuPiZsdDsvc2VjdGlvbiZndDs8L2Rpdj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBs ZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQk8L3NwYW4+Jmx0Oy9zZWN0aW9u Jmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUt c3BhY2U6cHJlIj4JCTwvc3Bhbj4mbHQ7P3BocCBpZihjb21tZW50c19vcGVuKCkpOiA/Jmd0Ozwv ZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6 cHJlIj4JCTwvc3Bhbj4mbHQ7c2VjdGlvbiBjbGFzcz0iY29tbWVudHMiJmd0OzwvZGl2PjxkaXY+ PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQk8 L3NwYW4+Jmx0Oz9waHAgaWYoaGFzX2NvbW1lbnRzKCkpOiA/Jmd0OzwvZGl2PjxkaXY+PHNwYW4g Y2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQk8L3NwYW4+ Jmx0O3VsIGNsYXNzPSJjb21tZW50bGlzdCImZ3Q7PC9kaXY+PGRpdj48c3BhbiBjbGFzcz0iQXBw bGUtdGFiLXNwYW4iIHN0eWxlPSJ3aGl0ZS1zcGFjZTpwcmUiPgkJCQk8L3NwYW4+Jmx0Oz9waHAg JGkgPSAwOyB3aGlsZShjb21tZW50cygpKTogJGkrKzsgPyZndDs8L2Rpdj48ZGl2PjxzcGFuIGNs YXNzPSJBcHBsZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJCTwvc3Bhbj4m bHQ7bGkgY2xhc3M9ImNvbW1lbnQiIGlkPSJjb21tZW50LSZsdDs/cGhwIGVjaG8gY29tbWVudF9p ZCgpOyA/Jmd0OyImZ3Q7PC9kaXY+PGRpdj48c3BhbiBjbGFzcz0iQXBwbGUtdGFiLXNwYW4iIHN0 eWxlPSJ3aGl0ZS1zcGFjZTpwcmUiPgkJCQkJPC9zcGFuPiZsdDtkaXYgY2xhc3M9IndyYXAiJmd0 OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3Bh Y2U6cHJlIj4JCQkJCQk8L3NwYW4+Jmx0O2gyJmd0OyZsdDs/cGhwIGVjaG8gY29tbWVudF9uYW1l KCk7ID8mZ3Q7Jmx0Oy9oMiZndDs8L2Rpdj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWItc3Bh biIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJCQkJPC9zcGFuPiZsdDt0aW1lJmd0OyZsdDs/ cGhwIGVjaG8gcmVsYXRpdmVfdGltZShjb21tZW50X3RpbWUoKSk7ID8mZ3Q7Jmx0Oy90aW1lJmd0 OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3Bh Y2U6cHJlIj4JCQkJCQk8L3NwYW4+Jmx0O2RpdiBjbGFzcz0iY29udGVudCImZ3Q7PC9kaXY+PGRp dj48c3BhbiBjbGFzcz0iQXBwbGUtdGFiLXNwYW4iIHN0eWxlPSJ3aGl0ZS1zcGFjZTpwcmUiPgkJ CQkJCQk8L3NwYW4+Jmx0Oz9waHAgZWNobyBjb21tZW50X3RleHQoKTsgPyZndDs8L2Rpdj48ZGl2 PjxzcGFuIGNsYXNzPSJBcHBsZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJ CQkJPC9zcGFuPiZsdDsvZGl2Jmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1z cGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQkJCQk8L3NwYW4+Jmx0O3NwYW4gY2xhc3M9 ImNvdW50ZXIiJmd0OyZsdDs/cGhwIGVjaG8gJGk7ID8mZ3Q7Jmx0Oy9zcGFuJmd0OzwvZGl2Pjxk aXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4J CQkJCTwvc3Bhbj4mbHQ7L2RpdiZndDs8L2Rpdj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWIt c3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJCTwvc3Bhbj4mbHQ7L2xpJmd0OzwvZGl2 PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJl Ij4JCQkJPC9zcGFuPiZsdDs/cGhwIGVuZHdoaWxlOyA/Jmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xh c3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQk8L3NwYW4+Jmx0 Oy91bCZndDs8L2Rpdj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWItc3BhbiIgc3R5bGU9Indo aXRlLXNwYWNlOnByZSI+CQkJPC9zcGFuPiZsdDs/cGhwIGVuZGlmOyA/Jmd0OzwvZGl2PjxkaXY+ PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQk8 L3NwYW4+Jmx0O2Zvcm0gaWQ9ImNvbW1lbnQiIGNsYXNzPSJjb21tZW50Zm9ybSB3cmFwIiBtZXRo b2Q9InBvc3QiIGFjdGlvbj0iJmx0Oz9waHAgZWNobyBjb21tZW50X2Zvcm1fdXJsKCk7ID8mZ3Q7 I2NvbW1lbnQiJmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHls ZT0id2hpdGUtc3BhY2U6cHJlIj4JCQkJPC9zcGFuPiZsdDs/cGhwIGVjaG8gY29tbWVudF9mb3Jt X25vdGlmaWNhdGlvbnMoKTsgPyZndDs8L2Rpdj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWIt c3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJCTwvc3Bhbj4mbHQ7cCBjbGFzcz0ibmFt ZSImZ3Q7PC9kaXY+PGRpdj48c3BhbiBjbGFzcz0iQXBwbGUtdGFiLXNwYW4iIHN0eWxlPSJ3aGl0 ZS1zcGFjZTpwcmUiPgkJCQkJPC9zcGFuPiZsdDtsYWJlbCBmb3I9Im5hbWUiJmd0O1lvdXIgbmFt ZTombHQ7L2xhYmVsJmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBz dHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQkJCTwvc3Bhbj4mbHQ7P3BocCBlY2hvIGNvbW1lbnRf Zm9ybV9pbnB1dF9uYW1lKCdwbGFjZWhvbGRlcj0iWW91ciBuYW1lIicpOyA/Jmd0OzwvZGl2Pjxk aXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4J CQkJPC9zcGFuPiZsdDsvcCZndDs8L2Rpdj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWItc3Bh biIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJCTwvc3Bhbj4mbHQ7cCBjbGFzcz0iZW1haWwi Jmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUt c3BhY2U6cHJlIj4JCQkJCTwvc3Bhbj4mbHQ7bGFiZWwgZm9yPSJlbWFpbCImZ3Q7WW91ciBlbWFp bCBhZGRyZXNzOiZsdDsvbGFiZWwmZ3Q7PC9kaXY+PGRpdj48c3BhbiBjbGFzcz0iQXBwbGUtdGFi LXNwYW4iIHN0eWxlPSJ3aGl0ZS1zcGFjZTpwcmUiPgkJCQkJPC9zcGFuPiZsdDs/cGhwIGVjaG8g Y29tbWVudF9mb3JtX2lucHV0X2VtYWlsKCdwbGFjZWhvbGRlcj0iWW91ciBlbWFpbCAod29u4oCZ dCBiZSBwdWJsaXNoZWQpIicpOyA/Jmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRh Yi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQkJPC9zcGFuPiZsdDsvcCZndDs8L2Rp dj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnBy ZSI+CQkJCTwvc3Bhbj4mbHQ7cCBjbGFzcz0idGV4dGFyZWEiJmd0OzwvZGl2PjxkaXY+PHNwYW4g Y2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCQkJCTwvc3Bh bj4mbHQ7bGFiZWwgZm9yPSJ0ZXh0IiZndDtZb3VyIGNvbW1lbnQ6Jmx0Oy9sYWJlbCZndDs8L2Rp dj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnBy ZSI+CQkJCQk8L3NwYW4+Jmx0Oz9waHAgZWNobyBjb21tZW50X2Zvcm1faW5wdXRfdGV4dCgncGxh Y2Vob2xkZXI9IllvdXIgY29tbWVudCInKTsgPyZndDs8L2Rpdj48ZGl2PjxzcGFuIGNsYXNzPSJB cHBsZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJCTwvc3Bhbj4mbHQ7L3Am Z3Q7PC9kaXY+PGRpdj48c3BhbiBjbGFzcz0iQXBwbGUtdGFiLXNwYW4iIHN0eWxlPSJ3aGl0ZS1z cGFjZTpwcmUiPgkJCQk8L3NwYW4+Jmx0O3AgY2xhc3M9InN1Ym1pdCImZ3Q7PC9kaXY+PGRpdj48 c3BhbiBjbGFzcz0iQXBwbGUtdGFiLXNwYW4iIHN0eWxlPSJ3aGl0ZS1zcGFjZTpwcmUiPgkJCQkJ PC9zcGFuPiZsdDs/cGhwIGVjaG8gY29tbWVudF9mb3JtX2J1dHRvbigpOyA/Jmd0OzwvZGl2Pjxk aXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRhYi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4J CQkJPC9zcGFuPiZsdDsvcCZndDs8L2Rpdj48ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWItc3Bh biIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+CQkJPC9zcGFuPiZsdDsvZm9ybSZndDs8L2Rpdj48 ZGl2PjxzcGFuIGNsYXNzPSJBcHBsZS10YWItc3BhbiIgc3R5bGU9IndoaXRlLXNwYWNlOnByZSI+ CQk8L3NwYW4+Jmx0Oy9zZWN0aW9uJmd0OzwvZGl2PjxkaXY+PHNwYW4gY2xhc3M9IkFwcGxlLXRh Yi1zcGFuIiBzdHlsZT0id2hpdGUtc3BhY2U6cHJlIj4JCTwvc3Bhbj4mbHQ7P3BocCBlbmRpZjsg PyZndDs8L2Rpdj48ZGl2PiZuYnNwOyAmbmJzcDsgJm5ic3A7Jmx0Oz9waHAgdGhlbWVfaW5jbHVk ZSgnZm9vdGVyJyk7ID8mZ3Q7ICZuYnNwOyZuYnNwOzwvZGl2PjxkaXY+PGJyPjwvZGl2PjwvZGl2 PjxkaXY+PHByZT48L3ByZT48L2Rpdj4=">
+    ​
+  </div>
+</div></p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/post/2014-06-18-google-blogger-%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%81%8B%E7%94%A8/">Google Blogger の独自ドメイン運用</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/post/2014-06-19-anchorcms%E3%81%AE%E9%96%A2%E6%95%B0%E4%B8%80%E8%A6%A7/">AnchorCMSの関数一覧</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/post/2014-06-24-tumblr%E3%81%AE%E3%82%B9%E3%82%AD%E3%83%9C%E3%82%BF%E3%83%B3/">Tumblrのスキボタン</a></li>
+  
+  <li><a href="/post/2014-06-24-twitter%E3%81%AB%E9%A3%9B%E3%81%B0%E3%81%99%E3%83%9C%E3%82%BF%E3%83%B3%E8%A8%AD%E7%BD%AE/">Twitterに飛ばすボタン設置</a></li>
+  
+  <li><a href="/post/2014-06-22-disqus%E3%82%92%E3%82%A2%E3%83%A1%E3%83%96%E3%83%AD%E3%81%AB%E8%A8%AD%E7%BD%AE%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/">DISQUSをアメブロに設置する方法</a></li>
+  
+  <li><a href="/post/2014-06-18-tumblr%E3%81%AE%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%8C%96/">Tumblrの独自ドメイン化</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>Themes→defualt→article.php</b>
+      
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

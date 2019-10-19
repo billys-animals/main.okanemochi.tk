@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VPS on しんこきゅう</title>
+    <link>https://okanemoti.tk/categories/vps/</link>
+    <description>Recent content in VPS on しんこきゅう</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>sphia</copyright>
+    <lastBuildDate>Sun, 24 Jun 2018 05:24:10 +0000</lastBuildDate>
+    
+	<atom:link href="https://okanemoti.tk/categories/vps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VPS(Conoha SSD)でKUSANAGIに感嘆</title>
+      <link>https://okanemoti.tk/web_tecnology/vps/429/</link>
+      <pubDate>Sun, 24 Jun 2018 05:24:10 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/web_tecnology/vps/429/</guid>
+      <description>wordPress用の超高速仮想環境であるKUSANAGIを導入して３日目です。最初は何だか良く分からなかったのですが、少し慣れてくるともう</description>
+    </item>
+    
+  </channel>
+</rss>

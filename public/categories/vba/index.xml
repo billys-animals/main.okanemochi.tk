@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VBA on しんこきゅう</title>
+    <link>https://okanemoti.tk/categories/vba/</link>
+    <description>Recent content in VBA on しんこきゅう</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>sphia</copyright>
+    <lastBuildDate>Wed, 28 Mar 2018 13:17:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://okanemoti.tk/categories/vba/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Officeファイルのプロパディー値の取得方法</title>
+      <link>https://okanemoti.tk/computer_language/vba/140/</link>
+      <pubDate>Wed, 28 Mar 2018 13:17:39 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/computer_language/vba/140/</guid>
+      <description>Officeファイルにはエクスプローラー上の右クリックで参照できる特有のプロパティー値が複数設定可能です。ファイルを開いてファイルメニューか</description>
+    </item>
+    
+    <item>
+      <title>Yahoo API ItemSeach 覚書</title>
+      <link>https://okanemoti.tk/post/2018-02-21-yahoo-api-itemseach-%E8%A6%9A%E6%9B%B8/</link>
+      <pubDate>Wed, 21 Feb 2018 06:41:48 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/post/2018-02-21-yahoo-api-itemseach-%E8%A6%9A%E6%9B%B8/</guid>
+      <description>以前、開発でYahoo APIのitemSearchを扱う機会がありました。エクセルのVBAでの開発だったのですが、APIの戻りをパースする際</description>
+    </item>
+    
+  </channel>
+</rss>

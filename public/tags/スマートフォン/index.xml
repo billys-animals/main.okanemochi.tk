@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>スマートフォン on パソBlog</title>
+    <link>https://sumaho.tk/tags/%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3/</link>
+    <description>Recent content in スマートフォン on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 14 Oct 2018 23:41:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>少し先の未来でメジャーなスマホのスペックは</title>
+      <link>https://sumaho.tk/2018/10/%E5%B0%91%E3%81%97%E5%85%88%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%81%A7%E3%83%A1%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AA%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%E3%81%AF/</link>
+      <pubDate>Sun, 14 Oct 2018 23:41:37 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2018/10/%E5%B0%91%E3%81%97%E5%85%88%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%81%A7%E3%83%A1%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AA%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%E3%81%AF/</guid>
+      <description>もう直ぐです、あの、Google Pixel3が11月1日(木)に販売開始されます。 賛否両論のPIXEL3 たかがスマホに10万円前後のお金をか</description>
+    </item>
+    
+    <item>
+      <title>ソーラーモバイルバッテリーを真剣に検討されては如何でしょうか？</title>
+      <link>https://sumaho.tk/2018/09/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E3%82%92%E7%9C%9F%E5%89%A3%E3%81%AB%E6%A4%9C%E8%A8%8E%E3%81%95%E3%82%8C%E3%81%A6/</link>
+      <pubDate>Fri, 28 Sep 2018 02:03:16 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2018/09/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E3%82%92%E7%9C%9F%E5%89%A3%E3%81%AB%E6%A4%9C%E8%A8%8E%E3%81%95%E3%82%8C%E3%81%A6/</guid>
+      <description>自然災害にはあまり縁の無い埼玉県に住んでいるスフィアでさえ首都直下型地震に対する恐怖を持っています。今の日本は何処に住んでいても被災者になら</description>
+    </item>
+    
+    <item>
+      <title>ROOTを取ったDELL Venue8 3840 を正常時に戻す手順(Unbricking Process)</title>
+      <link>https://sumaho.tk/2015/07/root%E3%82%92%E5%8F%96%E3%81%A3%E3%81%9Fdell-venue8-3840-%E3%82%92%E6%AD%A3%E5%B8%B8%E6%99%82%E3%81%AB%E6%88%BB%E3%81%99%E6%89%8B%E9%A0%86unbricking/</link>
+      <pubDate>Thu, 30 Jul 2015 06:35:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2015/07/root%E3%82%92%E5%8F%96%E3%81%A3%E3%81%9Fdell-venue8-3840-%E3%82%92%E6%AD%A3%E5%B8%B8%E6%99%82%E3%81%AB%E6%88%BB%E3%81%99%E6%89%8B%E9%A0%86unbricking/</guid>
+      <description>これが正解だったかどうかは良く分かりませんが、とりあえず、一旦はルートを取り、デルのファームウエアの更新も出来なくなったVenue8 3840</description>
+    </item>
+    
+  </channel>
+</rss>

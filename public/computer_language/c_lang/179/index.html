@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  Visual Studio Commuinty 2017でC言語の学習1 &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="今更ながら過去に何度も挫折したC言語の学習を始めました。昔（20年前や10年前や5年前）とは学習環境も劇的に良くなっているし、自身の知識やス|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">Visual Studio Commuinty 2017でC言語の学習1</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/c%E8%A8%80%E8%AA%9E' class="muted-link">
+  <span class="Label Label--gray-darker">C言語</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-05-03. Published at: 2018-05-03.">
+        
+          Published: 2018-05-03
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <p>今更ながら過去に何度も挫折したC言語の学習を始めました。昔（20年前や10年前や5年前）とは学習環境も劇的に良くなっているし、自身の知識やスキルもそれなりに上がっていつので今ならやりきれそうな予感がします。なにより、これからの時代を生き抜くには何らかんらでCやC++言語のスキルはやぱっり必修かと考え覚悟を決めました。</p>
+
+<p><a href="https://www.microsoft.com/ja-jp/dev/products/community.aspx" target="_blank" rel="noopener">Visual Studio Comminuty 2017 のインストール</a></p>
+
+<p><img class="alignnone wp-image-180" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic1-300x196.png" alt="" width="531" height="347" /></p>
+
+<p>基本的に<strong>「C++によるデスクトップ開発」だけ選べば大丈夫</strong>です。</p>
+
+<p>後々諸々に言語や機能が必要になるかも知れませが必要になった時に必要な機能を追加すれば良いかと思います。インストールしましょう。</p>
+
+<p>&nbsp;</p>
+
+<p>以下、新規プロジェクトファイルを作成してコンソールにHello,World.を表示させるまでのキャプチャーです。</p>
+
+<p><img class="alignnone wp-image-181" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic2-300x169.png" alt="" width="525" height="296" /></p>
+
+<p><img class="alignnone wp-image-182" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic3-300x208.png" alt="" width="526" height="365" /></p>
+
+<p><img class="alignnone wp-image-183" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic4-300x237.png" alt="" width="527" height="416" /></p>
+
+<p><img class="alignnone wp-image-184" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic5-300x208.png" alt="" width="531" height="368" /></p>
+
+<p>ソースファイルは明示的に拡張子を.cとする。.cppではCファイルでなくC++ファイルとなってしまう。</p>
+
+<p><img class="alignnone wp-image-185" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic6-300x261.png" alt="" width="533" height="464" /></p>
+
+<p><img class="alignnone wp-image-186" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic7-300x277.png" alt="" width="534" height="493" /></p>
+
+<p>もし、「デバッグなしで実行」メニューが表示されない場合は、Ctl + F9で実行可能です。</p>
+
+<p>とりあえずCファイルを実行してみる</p>
+
+<p><img class="alignnone wp-image-187" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic8-300x276.png" alt="" width="539" height="496" /></p>
+
+<p><img class="alignnone wp-image-188" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic9-284x300.png" alt="" width="542" height="573" /></p>
+
+<p>一瞬、何か画面が揺れて何も起こりません。以下の設定が必要です。</p>
+
+<p>以下の設定はソースファイルが存在していないと有効でないので上記の様にソースファイルを書いた後で設定します。</p>
+
+<p><img class="alignnone wp-image-189" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic10-258x300.png" alt="" width="543" height="631" /></p>
+
+<p><img class="alignnone wp-image-190" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic11-300x215.png" alt="" width="544" height="390" /></p>
+
+<p><img class="alignnone wp-image-191" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic12-300x215.png" alt="" width="546" height="391" /></p>
+
+<p>コンソールアプリである事や、C/C++のSDLチェックをなしにする設定が必要らしいです。</p>
+
+<p><img class="alignnone wp-image-192" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic13-300x264.png" alt="" width="550" height="484" /></p>
+
+<p><img class="alignnone wp-image-193" src="https://okanemochi.tk/wp-content/uploads/2018/05/pic14-300x300.png" alt="" width="549" height="549" /></p>
+
+<p>めでたく、コンソールが立ち上がり「Hello,World.」が表示されました。</p>
+
+<p>これで学習を開始する事が出来ます。</p>
+
+<div class="chat_l ">
+  <div class="talker">
+    <b><img class="circle" src="https://okanemochi.tk/wp-content/uploads/2018/07/%E7%AC%91%E3%81%84%E6%81%90%E7%AB%9C1-300x300.png" alt="気に入ってくれたら下のボタンで広めて下さいね" />気に入ってくれたら下のボタンで広めて下さいね </b>
+  </div>
+  
+
+<p><div class="bubble_wrap">
+    <p>
+    </p>
+  </div>
+</div></p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/mov_smaho/zenfone/154/">Qaulcomm USB Driver をWindowsにインストールする</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/computer_language/python3/201/">numpyでベクトルを理解する</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>Visual Studio Commuinty 2017でC言語の学習1</b>
+      
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  EaseUS Todo Backup（ブータブルディスクの作成の罠） &ndash; パソBlog
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="EaseUS Todo Backupでのブータブルメディア作成で色々と分かり難い部分があったので理解した事をシェアさせて頂きます。 起動 メインメニューもツールから|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="パソBlog">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://sumaho.tk/">
+    パソBlog
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">EaseUS Todo Backup（ブータブルディスクの作成の罠）</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A8%E3%82%A2' class="muted-link">
+  <span class="Label Label--gray-darker">ソフトウエア</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-07-27. Published at: 2018-07-27.">
+        
+          Published: 2018-07-27
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p><a href="https://jp.easeus.com/backup-software/free.html" target="_blank" rel="noopener">EaseUS Todo Backup</a>でのブータブルメディア作成で色々と分かり難い部分があったので理解した事をシェアさせて頂きます。</p>
+
+<h2 id="起動">起動</h2>
+
+<p>メインメニューもツールから展開しサブメニューの中にある「ブータブルディスクの作成」をクリックします。</p>
+
+<p><img class="alignnone wp-image-678" src="https://sumaho.tk/wp-content/uploads/2018/07/bootable01.png" alt="" width="388" height="776" srcset="https://sumaho.tk/wp-content/uploads/2018/07/bootable01.png 240w, https://sumaho.tk/wp-content/uploads/2018/07/bootable01-150x300.png 150w" sizes="(max-width: 388px) 100vw, 388px" /></p>
+
+<p><img class="alignnone wp-image-679" src="https://sumaho.tk/wp-content/uploads/2018/07/bootable02.png" alt="" width="777" height="578" srcset="https://sumaho.tk/wp-content/uploads/2018/07/bootable02.png 818w, https://sumaho.tk/wp-content/uploads/2018/07/bootable02-300x223.png 300w, https://sumaho.tk/wp-content/uploads/2018/07/bootable02-768x571.png 768w" sizes="(max-width: 777px) 100vw, 777px" /></p>
+
+<p>このインターフェースだけ見るととても分かり易いです。が、迷いました。</p>
+
+<h3 id="試行してうまくいかなかった作業">試行してうまくいかなかった作業</h3>
+
+<ol>
+<li>USB起動しようと思い、空いていた4GBのUSBメモリーを指定すると、途中でフォーマットエラーで止まる</li>
+<li>ISOを作成し、WindowsのソフトでUSBに書き込み。完了。それで起動しようとすると出来ない。</li>
+<li>仕方ないのでCD-R 700MBを用意しWindowsのソフトで焼き、起動させようとしても起動しない。</li>
+<li>別の用途で使っていた<strong>16GBのUSBのバックアップを取り、フォーマットし、それを使うとすんなりブータブルディスクの作成が完了</strong></li>
+</ol>
+
+<p>最初から、<span class="red b">ブータブルディスクには最低限●●GBの容量が必要とか書いてあれば良いのですがその表示もなく、操作に関しても何のエラ</span>ーも出さずに正常終了するのでとても不親切な作りだと感じました。</p>
+
+<p>また、このブータブルディスクに関しては、色々と環境によって起動しない場合もあるようです。</p>
+
+<div class="chat_l ">
+  <div class="talker">
+    <b><img class="circle" src="https://sumaho.tk/wp-content/uploads/2018/08/illustrain09-utyuu1-300x300.png" alt="宇宙人" /> </b>
+  </div>
+  
+
+<p><div class="bubble_wrap">
+    <div class="bubble rc8" style="background-color:#9eacd9">
+      <div class="bubble_in" style="border-color:#9eacd9">
+        <p>
+        </p></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    &lt;p&gt;
+      2018/8/18追記 　ここから～
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &amp;#160;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Version11.0での実験が上記でした。最新版の11.5ではこのあたりの不具合の多くが改善されていました。素晴らしいです。
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      私はDVD-RWに直接ブータブルディスク作成し、普通にできました、良かったです！！
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &amp;#160;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      ～ここまで
+    &lt;/p&gt;
+
+    &lt;p&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre></td></tr></table>
+</div>
+</div>
+<p></div>
+</div></p>
+
+<p>&nbsp;</p>
+
+<p>ブータブルディスク作成し起動させるは、どうも標準の環境を「EFIとGPT」に想定している様です。</p>
+
+<p>当方の様に「BIOSとMBR」とか「EFIとMBR」」環境の場合は環境により上の「互換モード」のチェックが必要だったり、不要だったりする様です。</p>
+
+<h2 id="ブータブルメディア起動後の画像">ブータブルメディア起動後の画像</h2>
+
+<p>起動した後の画面イメージを載せておきます。</p>
+
+<p>システムに異常があった場合に、バックアップからリストアや、バックアップクローンから書き戻し、MBRの修復など色々な事が出来ます。</p>
+
+<p>このディスクが無料で作れるだけでもこのメディアは作成しておいて損はないと思います。</p>
+
+<p><img class="alignnone wp-image-683" src="https://sumaho.tk/wp-content/uploads/2018/07/004.jpg" alt="" width="388" height="699" srcset="https://sumaho.tk/wp-content/uploads/2018/07/004.jpg 440w, https://sumaho.tk/wp-content/uploads/2018/07/004-166x300.jpg 166w" sizes="(max-width: 388px) 100vw, 388px" /></p>
+
+<p><img class="alignnone wp-image-684" src="https://sumaho.tk/wp-content/uploads/2018/07/003.jpg" alt="" width="388" height="544" srcset="https://sumaho.tk/wp-content/uploads/2018/07/003.jpg 436w, https://sumaho.tk/wp-content/uploads/2018/07/003-214x300.jpg 214w" sizes="(max-width: 388px) 100vw, 388px" /></p>
+
+<p><img class="alignnone wp-image-685" src="https://sumaho.tk/wp-content/uploads/2018/07/002.jpg" alt="" width="388" height="772" srcset="https://sumaho.tk/wp-content/uploads/2018/07/002.jpg 328w, https://sumaho.tk/wp-content/uploads/2018/07/002-151x300.jpg 151w" sizes="(max-width: 388px) 100vw, 388px" /></p>
+
+<p><img class="alignnone wp-image-686" src="https://sumaho.tk/wp-content/uploads/2018/07/001.jpg" alt="" width="777" height="381" srcset="https://sumaho.tk/wp-content/uploads/2018/07/001.jpg 904w, https://sumaho.tk/wp-content/uploads/2018/07/001-300x147.jpg 300w, https://sumaho.tk/wp-content/uploads/2018/07/001-768x376.jpg 768w" sizes="(max-width: 777px) 100vw, 777px" /></p>
+
+<p><span class="a8ad 1q0aR9M-g7-qZE7VaO"></span></p>
+
+<p><a href="https://px.a8.net/svt/ejp?a8mat=1C00JO+DSKUD6+1NCY+HUKPU&#038;a8ejpredirect=https%3A%2F%2Fpcshop.vector.co.jp%2Fservice%2Fservlet%2FCatalogue.Detail.Top%3FITEM_NO%3DSR437221" target="_blank" rel="nofollow">EaseUS Todo Backup 11.5</a></p>
+
+<p><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=1C00JO+DSKUD6+1NCY+HUKPU" alt="" /></p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://sumaho.tk/post/2018-07-27-easeus-todo-backup%E3%81%AE%E8%A3%BD%E5%93%81%E7%89%88%E3%81%A8%E7%84%A1%E6%96%99%E7%89%88%E3%81%AE%E9%81%95%E3%81%84%E3%82%92%E6%A4%9C%E8%A8%BC/">EaseUS Todo Backupの製品版と無料版の違いを検証</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://sumaho.tk/post/%E3%82%B4%E3%83%9F%E7%AE%B1%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%AA%A4%E3%81%A3%E3%81%A6%E5%89%8A%E9%99%A4%E3%81%97%E3%81%BE%E3%81%A3%E3%81%9F%E7%9B%B4%E5%BE%8C%E3%81%AE%E5%BE%A9%E5%85%83%E6%96%B9%E6%B3%95/">ゴミ箱のファイルを誤って削除しまった直後の復元方法</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/2018/09/easeus-todo-backup%E3%81%AE%E6%83%9C%E3%81%97%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D/">EaseUS todo backupの惜しいところ</a></li>
+  
+  <li><a href="/2018/08/%E8%A6%8B%E3%81%88%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9Fdvd-r%E3%81%AE%E4%B8%AD%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E6%95%91%E5%87%BA%E3%81%97%E3%81%9F/">見えなくなったDVD-Rの中のデータを救出した</a></li>
+  
+  <li><a href="/post/2018-08-23-music-center-for-pc%E3%81%8C%E5%85%83%E6%B0%97%E8%89%AF%E3%81%84/">Music Center for PCが元気良い</a></li>
+  
+  <li><a href="/post/2018-08-17-dopamine%E3%81%8C%E6%9C%80%E5%BC%B7%E3%81%AE%E9%9F%B3%E6%A5%BD%E3%83%97%E3%83%AC%E3%83%BC%E3%83%A4%E3%83%BCerror-code-2503/">Dopamineが最強の音楽プレーヤー～Error Code 2503</a></li>
+  
+  <li><a href="/post/2018-08-11-raw%E4%BF%AE%E5%BE%A9%E5%87%BA%E6%9D%A5%E3%82%8B%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%BE%A9%E6%97%A7%E3%82%BD%E3%83%95%E3%83%88/">RAW修復出来る？ファイル復旧ソフトで??</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>EaseUS Todo Backup（ブータブルディスクの作成の罠）</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#起動">起動</a>
+<ul>
+<li><a href="#試行してうまくいかなかった作業">試行してうまくいかなかった作業</a></li>
+</ul></li>
+<li><a href="#ブータブルメディア起動後の画像">ブータブルメディア起動後の画像</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/2018/10/%E5%B0%91%E3%81%97%E5%85%88%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%81%A7%E3%83%A1%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AA%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%E3%81%AF/">少し先の未来でメジャーなスマホのスペックは</a></b>
+      <time>2018-10-14</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2018-10-13-%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3primevideo%E3%81%AB%E3%82%A8%E3%83%BC%E3%82%B9%E3%82%92%E3%81%AD%E3%82%89%E3%81%88%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/">アマゾンPrimeVIDEOに「エースをねらえ」がやってきた！！</a></b>
+      <time>2018-10-13</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E3%82%92%E7%9C%9F%E5%89%A3%E3%81%AB%E6%A4%9C%E8%A8%8E%E3%81%95%E3%82%8C%E3%81%A6/">ソーラーモバイルバッテリーを真剣に検討されては如何でしょうか？</a></b>
+      <time>2018-09-28</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/50%E9%81%8E%E3%81%8E%E3%81%AE%E3%82%AA%E3%83%A4%E3%82%B8%E3%81%8C%E3%81%82%E3%81%84%E3%81%BF%E3%82%87%E3%82%93%E8%81%B4%E3%81%84%E3%81%9F/">50過ぎのオヤジがあいみょん聴いた</a></b>
+      <time>2018-09-26</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/klevv-ssd-n600%E3%82%92%E8%AA%BF%E6%9F%BB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">KLevv SSD N600を調査してみた</a></b>
+      <time>2018-09-25</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

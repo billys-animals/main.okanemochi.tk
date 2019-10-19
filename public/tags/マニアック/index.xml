@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>マニアック on パソBlog</title>
+    <link>https://sumaho.tk/tags/%E3%83%9E%E3%83%8B%E3%82%A2%E3%83%83%E3%82%AF/</link>
+    <description>Recent content in マニアック on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 01 Apr 2008 15:05:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/%E3%83%9E%E3%83%8B%E3%82%A2%E3%83%83%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>パソコン雑誌は再びマニア指向へ向かっている！？</title>
+      <link>https://sumaho.tk/post/2008-04-02-%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E9%9B%91%E8%AA%8C%E3%81%AF%E5%86%8D%E3%81%B3%E3%83%9E%E3%83%8B%E3%82%A2%E6%8C%87%E5%90%91%E3%81%B8%E5%90%91%E3%81%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B/</link>
+      <pubDate>Tue, 01 Apr 2008 15:05:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2008-04-02-%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E9%9B%91%E8%AA%8C%E3%81%AF%E5%86%8D%E3%81%B3%E3%83%9E%E3%83%8B%E3%82%A2%E6%8C%87%E5%90%91%E3%81%B8%E5%90%91%E3%81%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B/</guid>
+      <description>パソコン雑誌と言えば、そう、Windows95が発売されるまでは本当に一部のマニアックな人の為だけに作られていたと思います。それがWindo</description>
+    </item>
+    
+  </channel>
+</rss>

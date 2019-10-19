@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  GoogleDriveのフォルダ名とフォルダIDを取得する &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="件名の通り「GoogleDriveのフォルダ名とフォルダID」を取得するサンプルコートを掲載します。 function getAllFolderID(){ var all_folders = DriveApp.getFolders(); while (all_folders.hasNext()){ var folder = all_folders.next(); Logger.l|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">GoogleDriveのフォルダ名とフォルダIDを取得する</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/gas' class="muted-link">
+  <span class="Label Label--gray-darker">GAS</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-02-25. Published at: 2018-02-25.">
+        
+          Published: 2018-02-25
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <p>件名の通り「GoogleDriveのフォルダ名とフォルダID」を取得するサンプルコートを掲載します。</p>
+
+<pre class="lang:js decode:true ">function getAllFolderID(){
+  var all_folders = DriveApp.getFolders();
+  
+  while (all_folders.hasNext()){
+     var folder = all_folders.next();
+       Logger.log('Folder名:'+folder.getName() + 'FolderID:' + folder.getId());
+   }
+}</pre>
+
+<p>GoogleDrive系の処理はフォルダIDを取得しないと操作出来ないものばかりなので最初にKey,Value形式でフォルダ名とフォルダIDを連想配列にもっておくと後の処理がスピーディーになれるかもです。</p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/post/2018-02-21-yahoo-api-itemseach-%E8%A6%9A%E6%9B%B8/">Yahoo API ItemSeach 覚書</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/post/2018-02-25-gas%E3%81%AEpropertiesservice%E3%81%AF%E9%81%85%E3%81%84/">GASのPropertiesServiceは遅い</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/computer_language/gas/259/">指定日時にトリガーを設定する</a></li>
+  
+  <li><a href="/computer_language/gas/265/">Chatwork APIによる指定場所への書き込み</a></li>
+  
+  <li><a href="/computer_language/gas/256/">UrlFetchApp.fetch時のオプション値一覧</a></li>
+  
+  <li><a href="/web_tecnology/api/211/">Amazon MWS API FEED</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>GoogleDriveのフォルダ名とフォルダIDを取得する</b>
+      
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

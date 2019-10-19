@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+   &ndash; パソBlog
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="~~~~&amp;mdash; title: MS新旧OS（98,Vista）混在環境での無線LAN構築 author: スフィア type: post date: 2008-03-24T12:44:00&#43;00:00 url: /2008/03/ms新旧os（98vista）混在環境での無線lan構築/ aliases: - /2008/03/ms新旧os（98vista）混在環境での無線lan構築/ - /post/2008/03/ms新旧os 98 vista 混在環境での無線lan構築/ categories: - Windows tags: - Windows Vista - Windows98 SE
+- イーサネットコンバーター 姉の家で新しいパソコンを購入する事になりパソコン選びに一緒に行って欲しいと言われ近所の電気屋さんでWindowsVistaを搭載したSONYのVAIOを買った。
+姉の要望 今まで使っていたエプソンのプリンターPM-A700と、Windows98SEを搭載したNECのデスクトップを無線LANで繋ぎたいとの要望を受けた。
+姉の要望 今まで使っていたエプソンのプリンターPM-A700と、Windows98SEを搭載したNECのデスクトップを無線LANで繋ぎたいとの要望を受けた。 んーん！と唸ってしまいました。 プリンターはエプソンだから大丈夫だろう！という予想通りちゃんとWindowsVista用のドライバーが公開されていました。
+最大の難関 超古い仕様のWindows98SEと最新のOSであるWindowsVistaの同一ネットワーク内の共存を実現しセキュリティーも万全の体制を得られるルーターが無い事でした。 で、近所のPCショップに電話を掛け捲ってこの要望を解決出来るルーターセットを見つける事が出来ました。それがこの、バッファロー AirStation \IEEE802.11b/g\ WHR-HP-G54/EKです。
+仕組み 灰色のルーターがメインのルータでここに有線のLANや無線LANを上位OSから繋ぎにいきます。つまり今回で言えばVistaから無線LANでこのルーターに繋げます。 で、問題のWindows98SEはもう一つのイーサネットコンバーターに有線で繋ぎます。これはWindows98SEのマシンからUSBタイプのLANコネクターを付けてそのLAN線をイーサネットコンバーターに繋ぐと言う意味です。 これにより親のルーターから見たWindows98SEのマシンはセキュリティー的にもイーサネットコンバーターのセキュリティレベルが保証されますのでieee802.11gや11aの規格に則った接続が出来るのです。
+なんだよ！無線LANじゃないじゃん！
+で、近所のPCショップに電話を掛け捲ってこの要望を解決出来るルーターセットを見つける事が出来ました。それがこの、バッファロー AirStation \IEEE802.11b/g\ WHR-HP-G54/EKです。
+仕組み 灰色のルーターがメインのルータでここに有線のLANや無線LANを上位OSから繋ぎにいきます。つまり今回で言えばVistaから無線LANでこのルーターに繋げます。
+で、問題のWindows98SEはもう一つのイーサネットコンバーターに有線で繋ぎます。これはWindows98SEのマシンからUSBタイプのLANコネクターを付けてそのLAN線をイーサネットコンバーターに繋ぐと言う意味です。
+これにより親のルーターから見たWindows98SEのマシンはセキュリティー的にもイーサネットコンバーターのセキュリティレベルが保証されますのでieee802.11gや11aの規格に則った接続が出来るのです。
+なんだよ！無線LANじゃないじゃん！
+たっ&amp;hellip;確かに無線LANじゃないですね（汗）
+でも、ルーターはCATVやFFTHやADSLの線が届いている1階に設置し、無線LANで使う機器は殆どが２階という現代の家の構造（勝手につくるな！）においては２階で有線であったにしてもそのイーサネットコンバーターが無線LANの代わりをしてくれるのですから事実上は無線LANの環境と呼べると思います。 Windows98SEとWindowsVistaが同一のネットワークで無線LAN、しかもセキュリティーレベルを守りながらっていう要望は基本的には絶対に無理なんです。でも、それを実現する為にこの様なイーサネットコンバーターを利用する方法もあります。この場合の選択としてベストではないかと思っています。
+ポイント 最後に一つ私がとても苦労した部分をポイントとして挙げておきます。 イーサネットコンバーターと各種コードやPCの接続は添付の説明書通りに行ってください。手順は１から10まで手順書通りに進める事が一番大切です。
+これを守らないと私の様に何時間も唸る事になります。 概要をお話すると、最初はPCの電源をOFFにしておき、USBケーブルは外しておく。つまりイーサネットコンバーターと親機であるルーターとの接続が確立されるまで5分待とうが10分待とうが黙って待つ事が大事です。
+概要 最初はPCの電源をOFFにしておき、USBケーブルは外しておく。つまりイーサネットコンバーターと親機であるルーターとの接続が確立されるまで5分待とうが10分待とうが黙って待つ事が大事です。
+イーサネットコンバーターが親機と接続されてから手順書に従いケーブルを接続し、電源を入れるといった流れです。|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="パソBlog">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://sumaho.tk/">
+    パソBlog
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1"></div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 0001-01-01. Published at: 0001-01-01.">
+        
+          Published: 0001-01-01
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p>~~~~&mdash;
+title: MS新旧OS（98,Vista）混在環境での無線LAN構築
+author: スフィア
+type: post
+date: 2008-03-24T12:44:00+00:00
+url: /2008/03/ms新旧os（98vista）混在環境での無線lan構築/
+aliases:
+    - /2008/03/ms新旧os（98vista）混在環境での無線lan構築/
+    - /post/2008/03/ms新旧os 98 vista 混在環境での無線lan構築/
+categories:
+  - Windows
+tags:
+  - Windows Vista
+  - Windows98 SE</p>
+
+<h2 id="イーサネットコンバーター">- イーサネットコンバーター</h2>
+
+<p>姉の家で新しいパソコンを購入する事になりパソコン選びに一緒に行って欲しいと言われ近所の電気屋さんでWindowsVistaを搭載したSONYのVAIOを買った。</p>
+
+<h3 id="姉の要望">姉の要望</h3>
+
+<p>今まで使っていたエプソンのプリンターPM-A700と、Windows98SEを搭載したNECのデスクトップを無線LANで繋ぎたいとの要望を受けた。</p>
+
+<h3 id="姉の要望-1">姉の要望</h3>
+
+<p>今まで使っていたエプソンのプリンターPM-A700と、Windows98SEを搭載したNECのデスクトップを無線LANで繋ぎたいとの要望を受けた。
+んーん！と唸ってしまいました。
+プリンターはエプソンだから大丈夫だろう！という予想通りちゃんとWindowsVista用のドライバーが公開されていました。</p>
+
+<h4 id="最大の難関">最大の難関</h4>
+
+<p>超古い仕様のWindows98SEと最新のOSであるWindowsVistaの同一ネットワーク内の共存を実現しセキュリティーも万全の体制を得られるルーターが無い事でした。
+で、近所のPCショップに電話を掛け捲ってこの要望を解決出来るルーターセットを見つける事が出来ました。それがこの、バッファロー AirStation \IEEE802.11b/g\ <a target="_blank" href="https://www.amazon.co.jp/BUFFALO-%E3%83%8F%E3%82%A4%E3%83%91%E3%83%AF%E3%83%BC-%E7%84%A1%E7%B7%9ALAN%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%BC-Station-WHR-HP-G300N/dp/B002LSIXLC/ref=sr_1_fkmr0_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;keywords=WHR-HP-G54%2FEK&amp;qid=1570322371&amp;sr=8-1-fkmr0&_encoding=UTF8&tag=pasokon-news-22&linkCode=ur2&linkId=f5d74c7be152a29b6c0815b085df022e&camp=247&creative=1211">WHR-HP-G54/EK</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=pasokon-news-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />です。</p>
+
+<h4 id="仕組み">仕組み</h4>
+
+<p>灰色のルーターがメインのルータでここに有線のLANや無線LANを上位OSから繋ぎにいきます。つまり今回で言えばVistaから無線LANでこのルーターに繋げます。
+で、問題のWindows98SEはもう一つのイーサネットコンバーターに有線で繋ぎます。これはWindows98SEのマシンからUSBタイプのLANコネクターを付けてそのLAN線をイーサネットコンバーターに繋ぐと言う意味です。
+これにより親のルーターから見たWindows98SEのマシンはセキュリティー的にもイーサネットコンバーターのセキュリティレベルが保証されますのでieee802.11gや11aの規格に則った接続が出来るのです。</p>
+
+<p><strong>なんだよ！無線LANじゃないじゃん！</strong></p>
+
+<p>で、近所のPCショップに電話を掛け捲ってこの要望を解決出来るルーターセットを見つける事が出来ました。それがこの、バッファロー AirStation \IEEE802.11b/g\ <a target="_blank" href="https://www.amazon.co.jp/BUFFALO-%E3%83%8F%E3%82%A4%E3%83%91%E3%83%AF%E3%83%BC-%E7%84%A1%E7%B7%9ALAN%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%BC-Station-WHR-HP-G300N/dp/B002LSIXLC/ref=sr_1_fkmr0_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;keywords=WHR-HP-G54%2FEK&amp;qid=1570322371&amp;sr=8-1-fkmr0&_encoding=UTF8&tag=pasokon-news-22&linkCode=ur2&linkId=f5d74c7be152a29b6c0815b085df022e&camp=247&creative=1211">WHR-HP-G54/EK</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=pasokon-news-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />です。</p>
+
+<h4 id="仕組み-1">仕組み</h4>
+
+<p>灰色のルーターがメインのルータでここに有線のLANや無線LANを上位OSから繋ぎにいきます。つまり今回で言えばVistaから無線LANでこのルーターに繋げます。</p>
+
+<p>で、問題のWindows98SEはもう一つのイーサネットコンバーターに有線で繋ぎます。これはWindows98SEのマシンからUSBタイプのLANコネクターを付けてそのLAN線をイーサネットコンバーターに繋ぐと言う意味です。</p>
+
+<p>これにより親のルーターから見たWindows98SEのマシンはセキュリティー的にもイーサネットコンバーターのセキュリティレベルが保証されますのでieee802.11gや11aの規格に則った接続が出来るのです。</p>
+
+<p><strong>なんだよ！無線LANじゃないじゃん！</strong></p>
+
+<p>たっ&hellip;確かに無線LANじゃないですね（汗）</p>
+
+<p>でも、ルーターはCATVやFFTHやADSLの線が届いている1階に設置し、無線LANで使う機器は殆どが２階という現代の家の構造（勝手につくるな！）においては２階で有線であったにしてもそのイーサネットコンバーターが無線LANの代わりをしてくれるのですから事実上は無線LANの環境と呼べると思います。
+Windows98SEとWindowsVistaが同一のネットワークで無線LAN、しかもセキュリティーレベルを守りながらっていう要望は基本的には絶対に無理なんです。でも、それを実現する為にこの様なイーサネットコンバーターを利用する方法もあります。この場合の選択としてベストではないかと思っています。</p>
+
+<h4 id="ポイント">ポイント</h4>
+
+<p>最後に一つ私がとても苦労した部分をポイントとして挙げておきます。
+イーサネットコンバーターと各種コードやPCの接続は添付の説明書通りに行ってください。手順は１から10まで手順書通りに進める事が一番大切です。</p>
+
+<p>これを守らないと私の様に何時間も唸る事になります。
+概要をお話すると、最初はPCの電源をOFFにしておき、USBケーブルは外しておく。つまり<strong>イーサネットコンバーターと親機であるルーターとの接続が確立されるまで5分待とうが10分待とうが黙って待つ事が大事</strong>です。</p>
+
+<h4 id="概要">概要</h4>
+
+<p>最初はPCの電源をOFFにしておき、USBケーブルは外しておく。つまり<strong>イーサネットコンバーターと親機であるルーターとの接続が確立されるまで5分待とうが10分待とうが黙って待つ事が大事</strong>です。</p>
+
+<p>イーサネットコンバーターが親機と接続されてから手順書に従いケーブルを接続し、電源を入れるといった流れです。</p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://sumaho.tk/2008/03/%E3%83%AA%E3%83%8A%E3%82%B6%E3%82%A6%E3%83%AB%E3%82%B9%E3%81%A7%E7%84%A1%E7%B7%9Alan/">リナザウルスで無線LAN</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b></b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#イーサネットコンバーター">- イーサネットコンバーター</a>
+<ul>
+<li><a href="#姉の要望">姉の要望</a></li>
+<li><a href="#姉の要望-1">姉の要望</a>
+<ul>
+<li><a href="#最大の難関">最大の難関</a></li>
+<li><a href="#仕組み">仕組み</a></li>
+<li><a href="#仕組み-1">仕組み</a></li>
+<li><a href="#ポイント">ポイント</a></li>
+<li><a href="#概要">概要</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/2018/10/%E5%B0%91%E3%81%97%E5%85%88%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%81%A7%E3%83%A1%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AA%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%E3%81%AF/">少し先の未来でメジャーなスマホのスペックは</a></b>
+      <time>2018-10-14</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2018-10-13-%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3primevideo%E3%81%AB%E3%82%A8%E3%83%BC%E3%82%B9%E3%82%92%E3%81%AD%E3%82%89%E3%81%88%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/">アマゾンPrimeVIDEOに「エースをねらえ」がやってきた！！</a></b>
+      <time>2018-10-13</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E3%82%92%E7%9C%9F%E5%89%A3%E3%81%AB%E6%A4%9C%E8%A8%8E%E3%81%95%E3%82%8C%E3%81%A6/">ソーラーモバイルバッテリーを真剣に検討されては如何でしょうか？</a></b>
+      <time>2018-09-28</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/50%E9%81%8E%E3%81%8E%E3%81%AE%E3%82%AA%E3%83%A4%E3%82%B8%E3%81%8C%E3%81%82%E3%81%84%E3%81%BF%E3%82%87%E3%82%93%E8%81%B4%E3%81%84%E3%81%9F/">50過ぎのオヤジがあいみょん聴いた</a></b>
+      <time>2018-09-26</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/klevv-ssd-n600%E3%82%92%E8%AA%BF%E6%9F%BB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">KLevv SSD N600を調査してみた</a></b>
+      <time>2018-09-25</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

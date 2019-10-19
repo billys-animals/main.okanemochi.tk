@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DELL on パソBlog</title>
+    <link>https://sumaho.tk/tags/dell/</link>
+    <description>Recent content in DELL on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 30 Jul 2015 06:35:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/dell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ROOTを取ったDELL Venue8 3840 を正常時に戻す手順(Unbricking Process)</title>
+      <link>https://sumaho.tk/2015/07/root%E3%82%92%E5%8F%96%E3%81%A3%E3%81%9Fdell-venue8-3840-%E3%82%92%E6%AD%A3%E5%B8%B8%E6%99%82%E3%81%AB%E6%88%BB%E3%81%99%E6%89%8B%E9%A0%86unbricking/</link>
+      <pubDate>Thu, 30 Jul 2015 06:35:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2015/07/root%E3%82%92%E5%8F%96%E3%81%A3%E3%81%9Fdell-venue8-3840-%E3%82%92%E6%AD%A3%E5%B8%B8%E6%99%82%E3%81%AB%E6%88%BB%E3%81%99%E6%89%8B%E9%A0%86unbricking/</guid>
+      <description>これが正解だったかどうかは良く分かりませんが、とりあえず、一旦はルートを取り、デルのファームウエアの更新も出来なくなったVenue8 3840</description>
+    </item>
+    
+  </channel>
+</rss>

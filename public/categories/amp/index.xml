@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AMP on しんこきゅう</title>
+    <link>https://okanemoti.tk/categories/amp/</link>
+    <description>Recent content in AMP on しんこきゅう</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>sphia</copyright>
+    <lastBuildDate>Mon, 06 Aug 2018 09:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://okanemoti.tk/categories/amp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Amazonアソシエイト作成プラグインとAMPの微妙な関係</title>
+      <link>https://okanemoti.tk/web_tecnology/google-amp/681/</link>
+      <pubDate>Mon, 06 Aug 2018 09:37:00 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/web_tecnology/google-amp/681/</guid>
+      <description>つい先日、放置状態だったアマゾンアソシエイトに新規サイトを登録するべく申請を行い、4回落ちて5回目で内定を頂き、運営の趣旨やサイトの構造など</description>
+    </item>
+    
+    <item>
+      <title>アメブロのイメージ</title>
+      <link>https://okanemoti.tk/web_tecnology/google-amp/387/</link>
+      <pubDate>Thu, 21 Jun 2018 00:25:32 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/web_tecnology/google-amp/387/</guid>
+      <description>昔は「ブログと言えばアメブロ」って感じでとてもアクセスを集めやすいブログという印象だったのですが、久しぶりに記事を更新してみて昔との違いにび</description>
+    </item>
+    
+    <item>
+      <title>アメブロのAMPはいいかもしれない</title>
+      <link>https://okanemoti.tk/web_tecnology/google-amp/382/</link>
+      <pubDate>Mon, 18 Jun 2018 13:25:14 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/web_tecnology/google-amp/382/</guid>
+      <description>久しぶりにアメブロをいじりはじめたら何とAMPに対応しているじゃありませんか、びっくりしました。 https://ameblo.jp/xxxxxxx ↑がブログのアドレスだとすると、 https://gamp.ameblo.jp/xxxxxxx ↑がAM</description>
+    </item>
+    
+    <item>
+      <title>AMP対応ページでのMatomoアクセス解析 by Google Blogger</title>
+      <link>https://okanemoti.tk/web_tecnology/google-amp/368/</link>
+      <pubDate>Sun, 17 Jun 2018 07:06:09 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/web_tecnology/google-amp/368/</guid>
+      <description>Google アナリティクスに関しては以下の様にすれば、WordPressでもGoogleBloggerでも機能します。 &amp;lt;!-- Google Analytics --&amp;gt; &amp;lt;amp-analytics id=&#39;analytics1&#39; type=&#39;googleanalytics&#39;&amp;gt; &amp;lt;script type=&#39;application/json&#39;&amp;gt; { &amp;quot;vars&amp;quot;: { &amp;quot;account&amp;quot;: &amp;quot;UA-xxxxxxxxx-x&amp;quot; }, &amp;quot;triggers&amp;quot;:</description>
+    </item>
+    
+    <item>
+      <title>GoogleBloggerでAMPに対応させる備忘禄</title>
+      <link>https://okanemoti.tk/web_tecnology/google-amp/311/</link>
+      <pubDate>Mon, 11 Jun 2018 05:34:42 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/web_tecnology/google-amp/311/</guid>
+      <description>GoogleBloggerはAMPに対応していません。何でなんだろう？素朴な疑問（文句ではありません、Google神様） WordPressで</description>
+    </item>
+    
+  </channel>
+</rss>

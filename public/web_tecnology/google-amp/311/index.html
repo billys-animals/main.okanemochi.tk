@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  GoogleBloggerでAMPに対応させる備忘禄 &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="GoogleBloggerはAMPに対応していません。何でなんだろう？素朴な疑問（文句ではありません、Google神様） WordPressで|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">GoogleBloggerでAMPに対応させる備忘禄</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/amp' class="muted-link">
+  <span class="Label Label--gray-darker">AMP</span>
+</a>
+
+<a href='/categories/google-blogger' class="muted-link">
+  <span class="Label Label--gray-darker">Google Blogger</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-06-11. Published at: 2018-06-11.">
+        
+          Published: 2018-06-11
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p>GoogleBloggerはAMPに対応していません。何でなんだろう？素朴な疑問（文句ではありません、Google神様）</p>
+
+<h3 id="wordpressでなくgooglebloggerを選ぶ理由">WordPressでなくGoogleBloggerを選ぶ理由</h3>
+
+<p>WordPressはこのブログも使っているけど量産しようと思った時にまともなレンサバを借りるとお金たくさんかかります。</p>
+
+<p>ドメインの取得や更新にもお金がかかります。ブログはじめてからアクセスが流れるのも時間がかかります。AMPに対応させるにはこのブログでもやっている様にプラグイン一つで簡単なのでお金に糸目を付けなければWordPress一択でも良いのですが、現実的にそうもいかないので、全ての面で最も経済的なBloggerになって訳です。</p>
+
+<h4 id="bloggerのamp対応テーマ">BloggerのAMP対応テーマ</h4>
+
+<p>これは当初予想していたよりも多くあります。</p>
+
+<p>素に今お使いのテーマをAMP化したいならば以下の沿ってお試し下さい。</p>
+
+<pre class="lang:vim decode:true ">https://amprandom.blogspot.com/p/amp-blogger.html</pre>
+
+<p>以下は当方がテンプレートを探す際に利用したBingの検索キーワードです。</p>
+
+<pre class="lang:vim decode:true ">https://www.bing.com/search?q=google+blogger+amp+theme++language%3Aes&qs=n&form=QBRE&sp=-1
+&pq=google+blogger+amp+theme+language%3Aes&sc=0-36&sk=
+&cvid=E847C74DEF784AF2AF014738AE6AB5D9
+
+こちらは色々なダウンロードリンクです。
+
+https://amptemplates.com/downloads/
+</pre>
+
+<p>スペインではGoogleBloggerは人気なのでしょうか？</p>
+
+<pre class="lang:vim decode:true">https://ampblogbuild.blogspot.com/
+
+ただ、何処を探してもテンプレートソースの公開場所が分かりません。一旦は探してダウンロードしたはずなのですがね。
+
+このテンプレートを元にテストブログを1つ作成して、そこから本番への適用しました。
+以下がテストブログです。
+
+https://testbloggeramp2018.blogspot.com/
+
+</pre>
+
+<p>↑のテンプレートを使わせて頂き作業を進めました。</p>
+
+<h4 id="blogger-amp-テンプレートの設置">Blogger AMP テンプレートの設置</h4>
+
+<p>以下の手順で進めます。</p>
+
+<p>先ず、↑で試したいBloggerのテーマをダウンロードしておきます。</p>
+
+<p><img class="alignnone size-full wp-image-315" src="https://okanemochi.tk/wp-content/uploads/2018/06/blogger001.png" alt="" width="880" height="592" /></p>
+
+<p><img class="alignnone size-large wp-image-316" src="https://okanemochi.tk/wp-content/uploads/2018/06/blogger002-1024x489.png" alt="" width="1024" height="489" /></p>
+
+<p>&nbsp;</p>
+
+<p><img class="alignnone size-large wp-image-317" src="https://okanemochi.tk/wp-content/uploads/2018/06/blogger003.png" alt="" width="602" height="412" /></p>
+
+<p>テーマをダウンロードすれば今のテーマをローカルにバックアップ（ダウンロード）出来ます。</p>
+
+<p>新しいテーマを適用するにはファイルを選択してアップロードすればOKです。</p>
+
+<p>&nbsp;</p>
+
+<p><img class="alignnone size-large wp-image-318" src="https://okanemochi.tk/wp-content/uploads/2018/06/blogger004.png" alt="" width="946" height="533" /><img class="alignnone size-large wp-image-319" src="https://okanemochi.tk/wp-content/uploads/2018/06/blogger005-1024x728.png" alt="" width="1024" height="728" /></p>
+
+<p>&nbsp;</p>
+
+<h4 id="amp化について行った事">AMP化について行った事</h4>
+
+<p>今回利用させて頂いた「AMP Blogger design」が他と比べて何が優れていたのか？と言えば、レイアウトの工夫です。GoogleBloggerがAMPに対応していない理由というか、何処がどういう風に対応していないのか？その部分について「AMP Blogger design」は見事にクリアしていたのです。</p>
+
+<p>具体定には、</p>
+
+<p>ガジェットを構成する「画面上でのデータの見せ方」と「コードの定義し直し」です。</p>
+
+<h5 id="画面上でのデータの見せ方">画面上でのデータの見せ方</h5>
+
+<p>例えば、アーカイブガジェットは「フラットリスト」の一択です。階層とかブルダウンにするとコードに画像参照やエラーを引き起こすタグが侵入します。なので、フラットリストのみ選択させ、6月 2018 (10)などをクリックすると、その一覧のリストがメイン画面に表示されます。</p>
+
+<p>ラベルに関しては同じでクリック動作は全てメイン画面に対して行います。このあたりを徹底的にやっているのではじめてまともに100％AMP対応のBloggerが作成出来ました。</p>
+
+<h5 id="コードの定義し直し">コードの定義し直し</h5>
+
+<p>こちらは当方もこれから勉強するところなのですが、Bloggerはエリアを細かく定義する事が可能です。</p>
+
+<pre class="lang:vim decode:true">body#layout #Gadget-menu-1{*****************************************************}
+body#layout #Gadget-social {****************************************************}</pre>
+
+<p>例えばこんな感じに定義していきます。</p>
+
+<p>Gadget-menu-1とかGadget-socialはレイアウトで色々と設定出来るあのガジェットの名前とその定義です。</p>
+
+<p>このあたりを上手に定義する事でAMPにエラーを出さない様にガジェットを定義していきます。</p>
+
+<p>&nbsp;</p>
+
+<h3 id="実際に記事を書く時に注意する事">実際に記事を書く時に注意する事</h3>
+
+<ol>
+<li>アイキャッチ画像は必ず挿入する</li>
+<li>対応しているタグ以外は使わない</li>
+</ol>
+
+<p>要はこの2つなのですがなかな大変です。</p>
+
+<pre class="lang:vim decode:true ">&lt;div class="separator" style="clear: both; text-align: center;"&gt;
+&lt;a href="https://2.bp.blogspot.com/-J-chVT1S0kA/WxY3YZCuN_I/AAAAAAAABnI/XHy1pLVWhys0Mt8ciCGMo_v8YyAf5U4VQCPcBGAYYCw
+/s1600/6191634300_da7eab2476_m.jpg"
+ imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" data-original-height="240" 
+data-original-width="240" 
+src="https://2.bp.blogspot.com/-J-chVT1S0kA/WxY3YZCuN_I/AAAAAAAABnI/XHy1pLVWhys0Mt8ciCGMo_v8YyAf5U4VQCPcBGAYYCw/
+s1600/6191634300_da7eab2476_m.jpg" /&gt;
+&lt;/a&gt;&lt;/div&gt;
+&lt;br /&gt;</pre>
+
+<p>普通にBloggerで記事に画像挿入すると↑の様になります。これを↓の様に修正します。</p>
+
+<pre class="lang:vim decode:true">&lt;noscript&gt;
+&lt;a href="https://2.bp.blogspot.com/-J-chVT1S0kA/WxY3YZCuN_I/AAAAAAAABnI/XHy1pLVWhys0Mt8ciCGMo_v8YyAf5U4VQCPcBGAYYCw/
+s1600/6191634300_da7eab2476_m.jpg"&gt;
+&lt;img height="240" width="240" 
+src="https://2.bp.blogspot.com/-J-chVT1S0kA/WxY3YZCuN_I/AAAAAAAABnI/XHy1pLVWhys0Mt8ciCGMo_v8YyAf5U4VQCPcBGAYYCw/
+s1600/6191634300_da7eab2476_m.jpg" /&gt;&lt;/a&gt;
+&lt;/noscript&gt;</pre>
+
+<p>画像はアイキャッチ専用となり記事エリアには表示されません。</p>
+
+<p>もし、アイキャッチと記事内の両方に画像を表示するなら↑にコードでなく、</p>
+
+<pre class="lang:vim decode:true ">&lt;amp-img height="240" width="240" 
+src="https://2.bp.blogspot.com/-J-chVT1S0kA/WxY3YZCuN_I/AAAAAAAABnI/
+XHy1pLVWhys0Mt8ciCGMo_v8YyAf5U4VQCPcBGAYYCw/s1600/6191634300_da7eab2476_m.jpg"&gt;&lt;/amp-img&gt;
+</pre>
+
+<p>&nbsp;</p>
+
+<p>こう書きます。</p>
+
+<ol>
+<li>aタグを使う場合はnoscriptで囲む</li>
+<li>画像を単に表示するならamp-imgタグを使う</li>
+</ol>
+
+<p>基本的にjavascriptが使えません。なのでアクセス解析ツールもGoogle Analyticsもコードを成形したかたちでないと使えない様です。</p>
+
+<h3 id="まとめ">まとめ</h3>
+
+<p>Googleがこれだけ推奨しているAMPをWordPressで実装するのは簡単なので興味のある人が試すと良いかも知れません。それにしても、AMP環境でアフィリエイトするなら圧倒的にBloggerよりもWordPressの方が比べられない程、楽な事を、この記事を書きながら思い知りました（あちゃ～！！）</p>
+
+<p>でも、GoogleBloggerなら無料でSEOにもかなり強く、カスタマイズさえしっかりすれば何とかなりそうな気もしています。WordPressで量産出来る様になるまではBloggerでのAMP化を継続してやっていこうと思います。</p>
+
+<p>それではありがとうございました。</p>
+
+<p>&nbsp;</p>
+
+<h2 id="追記-カスタマイズ-knowhow">追記（カスタマイズ Knowhow)</h2>
+
+<pre class="lang:xhtml decode:true ">【その１】
+テンプレートのカスタマイズ時に新規ガジェットと追加すると、ガジェットの編集アイコンの絵が
+表示されて、これがAMPのエラーになります。その解消方法です。
+
+&lt;b:include name='quickedit'/&gt;
+　　　　　　　↓
+&lt;!-- &lt;b:include name='quickedit'/&gt; --&gt;
+
+コメントアウトする事で編集アイコンの表示を無効に出来る
+
+【その２】
+Error:
+The text inside tag 'style amp-custom' contains 'html comments', which is disallowed.
+
+この場合はCSS領域にHTMLコメント記述が混入している場合に起こるエラーの様
+
+&lt;!-- .header-AdSense{float:right;width:563px;height:90px} --&gt;
+CSS領域で↑の様に書いたら怒られるらしい。
+/* .header-AdSense{float:right;width:563px;height:90px} */
+こうすればOK
+
+【その３】
+今回利用させていただいたGoogleBlogger用のAMP対応テンプレートは「https://www.ayudadeblogger.com/」よりダウンロードさせていただいております。
+無料版と有料版があり、無料版は一見何の遜色もない様に見受けられますが、カスタマイズしていくと色々と壁ぶち当たります。
+
+各テンプレートのより「？」と思う箇所が異なるのですが、「アーティクルのタイトルが入らない（h3で投稿者と日時だけ）」とか、ページを開いた際にはヘッダスペースががら空きになって見栄えが極端に悪くなったりします。
+
+無料でお試しなので気にったら有料を買ってね！って事なのでこれはこれで良いのです。なので、カスタマイズして思うようにリメイクするには努力と根気が必要そうです。
+
+当方も有料を買おうと思ったのですが、お相手はスペインの人で、まずはメールで連絡して、その後に何らかの送金手段で購入する様に感じます。paypalで払えるなら直ぐに購入するのですが、、、、。
+</pre>
+
+<pre class="lang:xhtml decode:true">偏差値 公立高校名     種別
+74     大宮         （理数）
+73     県立浦和     （普通）
+72     浦和第一女子 （普通）
+
+↑の様なTSV形式をBloggerに表として記載する場合、簡単なのが、GoogleDocsやGoogleSpredsheetに
+表として作成してコピーし、ブロガー上で貼り付ければテーブルが完成します。
+
+ところがそれだとAMPには未対応のタグなどたくさん入り使えません。
+
+
+http://styleme.jp/tool/xls2html/#close
+こちらのサービスを利用させて頂く事で、ほぼAMPで使えるTABLEタグが生成されます。
+（先頭のstyle定義に部分はカットします）
+
+&lt;style&gt;
+table {
+border-collapse: collapse;
+}
+th {
+border: solid 1px #666666;
+color: #000000;
+background-color: #ff9999;
+}
+td {
+border: solid 1px #666666;
+color: #000000;
+background-color: #ffffff;
+}
+&lt;/style&gt;
+&lt;table&gt; &lt;thead&gt;
+&lt;tr&gt; &lt;th&gt;
+偏差値&lt;/th&gt; &lt;th&gt;
+公立高校名&lt;/th&gt; &lt;th&gt;
+種別&lt;/th&gt; &lt;/tr&gt;
+&lt;/thead&gt; &lt;tbody&gt;
+&lt;tr&gt; &lt;th&gt;
+74&lt;/th&gt; &lt;td&gt;
+大宮（理数）&lt;/td&gt; &lt;td&gt;
+（理数）&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;th&gt;
+73&lt;/th&gt; &lt;td&gt;
+県立浦和（普通）&lt;/td&gt; &lt;td&gt;
+（普通）&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;th&gt;
+72&lt;/th&gt; &lt;td&gt;
+浦和第一女子（普通）&lt;/td&gt; &lt;td&gt;
+（普通）&lt;/td&gt; &lt;/tr&gt;
+&lt;/tbody&gt; &lt;/table&gt;
+
+素晴らしいです。</pre>
+
+<pre class="lang:xhtml decode:true ">構造化テストツールのエラー
+
+datePublished   
+6:00:00 (値「6:00:00」は日時として解析できません。詳しくは、日時形式についての説明をご覧ください。)
+canceldateModified  
+6:00:00 (値「6:00:00」は日時として解析できません。詳しくは、日時形式についての説明をご覧ください。)
+
+対応策は、
+
+テーマ-&gt;HTML編集より
+datePublishedを検索する
+
+出てきた箇所、
+itemprop='datePublished'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;
+
+などを、
+
+itemprop='datePublished'&gt;&lt;data:post.timestampISO8601/&gt;&lt;/abbr&gt;
+と変更する、出てきた箇所は全て(4箇所前後）変更した方が良い。
+
+この変更をすると日時の表示が和暦から西暦表示になってしまうが、現状では構造化データのテストでエラーを出さない方法は
+これ以外見つかっておりません。
+</pre>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/computer_language/gas/259/">指定日時にトリガーを設定する</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/web_tecnology/google-amp/368/">AMP対応ページでのMatomoアクセス解析 by Google Blogger</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/web_tecnology/google-amp/368/">AMP対応ページでのMatomoアクセス解析 by Google Blogger</a></li>
+  
+  <li><a href="/web_tecnology/google-amp/681/">Amazonアソシエイト作成プラグインとAMPの微妙な関係</a></li>
+  
+  <li><a href="/web_tecnology/google-amp/387/">アメブロのイメージ</a></li>
+  
+  <li><a href="/web_tecnology/google-amp/382/">アメブロのAMPはいいかもしれない</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>GoogleBloggerでAMPに対応させる備忘禄</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#wordpressでなくgooglebloggerを選ぶ理由">WordPressでなくGoogleBloggerを選ぶ理由</a>
+<ul>
+<li><a href="#bloggerのamp対応テーマ">BloggerのAMP対応テーマ</a></li>
+<li><a href="#blogger-amp-テンプレートの設置">Blogger AMP テンプレートの設置</a></li>
+<li><a href="#amp化について行った事">AMP化について行った事</a>
+<ul>
+<li><a href="#画面上でのデータの見せ方">画面上でのデータの見せ方</a></li>
+<li><a href="#コードの定義し直し">コードの定義し直し</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#実際に記事を書く時に注意する事">実際に記事を書く時に注意する事</a></li>
+<li><a href="#まとめ">まとめ</a></li>
+</ul></li>
+<li><a href="#追記-カスタマイズ-knowhow">追記（カスタマイズ Knowhow)</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

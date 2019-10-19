@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  BIOSでIDEをAHCIに変更するとWindows10が起動できない &ndash; パソBlog
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="新たに換装したSSDの性能を引き出す為に、今まで放っておいたSATAの設定を直そうと思いました。 Windows10の自作機でBIOSを起動さ|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="パソBlog">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://sumaho.tk/">
+    パソBlog
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">BIOSでIDEをAHCIに変更するとWindows10が起動できない</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/windows' class="muted-link">
+  <span class="Label Label--gray-darker">Windows</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-07-23. Published at: 2018-07-23.">
+        
+          Published: 2018-07-23
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p>新たに換装したSSDの性能を引き出す為に、今まで放っておいたSATAの設定を直そうと思いました。</p>
+
+<p>Windows10の自作機でBIOSを起動させ、Sataの接続を、IDEからAHCIに変更するとWindws10が起動できない、あの嫌なブルー画面（QRコード付きの）が表示されてしまいます。</p>
+
+<p><img class="alignnone size-full wp-image-537" src="https://sumaho.tk/wp-content/uploads/2018/07/qrcode.png" alt="" width="255" height="82" /></p>
+
+<p>自動再起動しても、修復オプションを設定しても、セーフモードでも、何をやっても消えません。仕方なくBIOSの設定を元のIDEに変更すると正常に起動します。</p>
+
+<h2 id="考えた原因と対策">考えた原因と対策</h2>
+
+<p>Sata1とSata2が混在していたり、別途拡張SlotでIDEのHDDを接続していたので、先ずは、IDE接続用の拡張Slottを外し旧式のATA接続のHDDを外しました。</p>
+
+<p><strong>　　＝＞何も変化なし。</strong></p>
+
+<p>次に考えたのが、Sata1 1.5gタイプのHDDを6gタイプのSSDの混在が原因かもしれないと思い、1.5gタイプを外そうか？と考えたが実際に運用上困るので躊躇していました。</p>
+
+<p>別のノートＰＣでもやはり、IDEモードで動いていたので、BIOSの設定で、これをAHCIに変更すると、やはりブルー画面でエラーとなりました。</p>
+
+<p>この時点で、複数Sataバージョン混在が原因をいう説は完全否定されます。なぜなら、そのノートパソコンがCrucial SSD M4しか接続されていないからです。</p>
+
+<p>と、いう事は、BIOS側で他にも設定が必要な箇所があるかどうか？とWindowsの設定が問題かも知れないと思いました。</p>
+
+<p>検索すると直ぐに答えが見つかりました。</p>
+
+<p><a href="http://capacitor.jp/blog-entry-253.html" target="_blank" rel="noopener">　　　Windows 10でAHCIへ変更（SSD等に入替えた時)</a></p>
+
+<p>こちらの記事の通り、レジストリの設定を変更する事で正常にAHCIモードで起動出来る様になりました。
+逆に、AHCIモードで動いている状態から、EFI（BIOS)の設定をIDEモードに変更すると最初のブルー画面が表示されて起動出来ません。
+Windowsの設定が↑のレジストリ調整でAHCIモードになっているのでエラーになるのでしょう。
+つまり、EFI（BIOS)とWindowsのレジストリの両方を、IDEとかAHCIに寄せて揃えてあげないと正常起動しないって事ですね。</p>
+
+<p>ちなみに先日、デスクトップ自作パソコンのマザーボードのEFI（BIOS)を更新しました。そのせいでEFI（BIOS)は初期化されAHCIモードに変更しておいた設定も初期化されIDEに戻ってしまいました。案の定、上のブルー画面になり、EFI（BIOS)の設定でIDEをAHCIに変更する事で解決しました。</p>
+
+<h2 id="ideモードとahciモードでのssd速度結果">IDEモードとAHCIモードでのSSD速度結果</h2>
+
+<p>せっかくなので、IDEモードで測定したSSDの結果と、AHCIモードでの結果を載せておきます。</p>
+
+<p><img class="alignnone wp-image-89 size-medium" src="https://sumaho.tk/wp-content/uploads/2018/06/crucial_mx300_info-300x274.jpg" alt="" width="300" height="274" srcset="https://sumaho.tk/wp-content/uploads/2018/06/crucial_mx300_info-300x274.jpg 300w, https://sumaho.tk/wp-content/uploads/2018/06/crucial_mx300_info.jpg 402w" sizes="(max-width: 300px) 100vw, 300px" /><img class="alignnone wp-image-538 size-medium" src="https://sumaho.tk/wp-content/uploads/2018/07/crucial_mx300_ahci001-300x274.png" alt="" width="300" height="274" srcset="https://sumaho.tk/wp-content/uploads/2018/07/crucial_mx300_ahci001-300x274.png 300w, https://sumaho.tk/wp-content/uploads/2018/07/crucial_mx300_ahci001.png 402w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+
+<p>左がIDEで右がAHCIモードです。SSDはCrucialMX300 275GBです。</p>
+
+<p>期待していたほどの効果は無いようですね。ただ、地味に性能は上がったので嬉しいことです。このままの設定で運用します。</p>
+
+<p>その状態で<a href="https://sumaho.tk/2018/06/crucial-mx300%e3%80%80275gb-ssd-%E8%B3%BC%E5%85%A5%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/" target="_blank" rel="noopener">Crucial Storage Executive</a>を使って一時キャッシュ適用後のクリスタルディスクマークの結果が以下です。</p>
+
+<p><img class="alignnone wp-image-539 size-medium" src="https://sumaho.tk/wp-content/uploads/2018/07/crucial_mx300_ahci002-300x274.png" alt="" width="300" height="274" srcset="https://sumaho.tk/wp-content/uploads/2018/07/crucial_mx300_ahci002-300x274.png 300w, https://sumaho.tk/wp-content/uploads/2018/07/crucial_mx300_ahci002.png 402w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+
+<p>全体的にレスポンスは向上しています。これはオマケの参考情報です。</p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://sumaho.tk/post/2018-07-22-275gb%E3%81%AEssd%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%AB256gb%E3%81%97%E3%81%8B%E4%BD%BF%E3%81%88%E3%81%AA%E3%81%84%E4%BD%95%E3%81%A7/">275GBのSSDを買ったのに256GBしか使えない！何で？</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://sumaho.tk/post/2018-07-26-%E7%84%A1%E6%96%99usb%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%BE%A9%E6%97%A7%E3%82%92%E3%81%97%E3%81%A6%E6%B6%88%E3%81%88%E3%81%9F%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%BE%A9/">無料！！USBデータの復旧をして消えたデータを復元する</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/post/2018-08-16-sony%E3%81%AEvaio%E3%81%8Cwindows8-1%E3%81%A7%E8%98%87%E3%82%8A/">SONYのVAIOがWindows8.1で蘇り</a></li>
+  
+  <li><a href="/2018/05/windows10%E3%81%A7%E3%83%9E%E3%83%AB%E3%83%81%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E3%82%89%E4%BE%BF%E5%88%A9%E3%81%A7%E3%81%97/">Windows10でマルチデスクトップを使ってみたら便利でした</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>BIOSでIDEをAHCIに変更するとWindows10が起動できない</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#考えた原因と対策">考えた原因と対策</a></li>
+<li><a href="#ideモードとahciモードでのssd速度結果">IDEモードとAHCIモードでのSSD速度結果</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/2018/10/%E5%B0%91%E3%81%97%E5%85%88%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%81%A7%E3%83%A1%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AA%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%E3%81%AF/">少し先の未来でメジャーなスマホのスペックは</a></b>
+      <time>2018-10-14</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2018-10-13-%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3primevideo%E3%81%AB%E3%82%A8%E3%83%BC%E3%82%B9%E3%82%92%E3%81%AD%E3%82%89%E3%81%88%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/">アマゾンPrimeVIDEOに「エースをねらえ」がやってきた！！</a></b>
+      <time>2018-10-13</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E3%82%92%E7%9C%9F%E5%89%A3%E3%81%AB%E6%A4%9C%E8%A8%8E%E3%81%95%E3%82%8C%E3%81%A6/">ソーラーモバイルバッテリーを真剣に検討されては如何でしょうか？</a></b>
+      <time>2018-09-28</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/50%E9%81%8E%E3%81%8E%E3%81%AE%E3%82%AA%E3%83%A4%E3%82%B8%E3%81%8C%E3%81%82%E3%81%84%E3%81%BF%E3%82%87%E3%82%93%E8%81%B4%E3%81%84%E3%81%9F/">50過ぎのオヤジがあいみょん聴いた</a></b>
+      <time>2018-09-26</time>
+    </li>
+  
+    <li>
+      <b><a href="/2018/09/klevv-ssd-n600%E3%82%92%E8%AA%BF%E6%9F%BB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">KLevv SSD N600を調査してみた</a></b>
+      <time>2018-09-25</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

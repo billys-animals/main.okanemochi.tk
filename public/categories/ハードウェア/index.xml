@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ハードウェア on パソBlog</title>
+    <link>https://sumaho.tk/categories/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/</link>
+    <description>Recent content in ハードウェア on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 24 Sep 2018 05:19:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/categories/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PSION Series 5 MX PROを復活させたいけど</title>
+      <link>https://sumaho.tk/2018/09/psion-series-5-mx-pro%E3%82%92%E5%BE%A9%E6%B4%BB%E3%81%95%E3%81%9B%E3%81%9F%E3%81%84%E3%81%91%E3%81%A9/</link>
+      <pubDate>Mon, 24 Sep 2018 05:19:26 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2018/09/psion-series-5-mx-pro%E3%82%92%E5%BE%A9%E6%B4%BB%E3%81%95%E3%81%9B%E3%81%9F%E3%81%84%E3%81%91%E3%81%A9/</guid>
+      <description>物置整理をしていたら懐かしいPDAが出てきました。往年の名機「PSION Series 5 MX PRO」です。 おそらく15年以上前に購入して3年くらは使ってい</description>
+    </item>
+    
+    <item>
+      <title>IDEにSSD！PATAにmSataや2.5インチのSSDを繋ぐには？</title>
+      <link>https://sumaho.tk/post/2018-09-17-ide%E3%81%ABssdpata%E3%81%ABmsata%E3%82%842-5%E3%82%A4%E3%83%B3%E3%83%81%E3%81%AEssd%E3%82%92%E7%B9%8B%E3%81%90%E3%81%AB%E3%81%AF/</link>
+      <pubDate>Mon, 17 Sep 2018 07:48:53 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-09-17-ide%E3%81%ABssdpata%E3%81%ABmsata%E3%82%842-5%E3%82%A4%E3%83%B3%E3%83%81%E3%81%AEssd%E3%82%92%E7%B9%8B%E3%81%90%E3%81%AB%E3%81%AF/</guid>
+      <description>昔懐かしいPATA(IDE)の端子も最近はあまり見なくなりました。現行で販売されているマザーボードでPATA（IDE)を備えているものはおそ</description>
+    </item>
+    
+    <item>
+      <title>VGC-LB50のDVD-RAMドライブの癖？</title>
+      <link>https://sumaho.tk/post/2018-08-14-vgc-lb50%E3%81%AEdvd-ram%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%81%AE%E7%99%96/</link>
+      <pubDate>Tue, 14 Aug 2018 07:26:54 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-08-14-vgc-lb50%E3%81%AEdvd-ram%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%81%AE%E7%99%96/</guid>
+      <description>SONYのVAIO TYPE L VGC-LB50のDVDドライブが全然認識しないのでWindows8.1化は正直諦めています。 でも、一つ癖を見つけまし</description>
+    </item>
+    
+    <item>
+      <title>SSDが激安すぎる謎を考えた</title>
+      <link>https://sumaho.tk/post/2018-08-10-ssd%E3%81%8C%E6%BF%80%E5%AE%89%E3%81%99%E3%81%8E%E3%82%8B%E8%AC%8E%E3%82%92%E8%80%83%E3%81%88%E3%81%9F/</link>
+      <pubDate>Fri, 10 Aug 2018 08:16:51 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-08-10-ssd%E3%81%8C%E6%BF%80%E5%AE%89%E3%81%99%E3%81%8E%E3%82%8B%E8%AC%8E%E3%82%92%E8%80%83%E3%81%88%E3%81%9F/</guid>
+      <description>KingDian 2.5inch Stata3 60GB 120GB 128GB 240GB 256GB SSD Solid State Drive 型番S280はTLCタイプのSSDです。120GBと240GBのモデルです。 メーカーホームページの情報では、この企業</description>
+    </item>
+    
+    <item>
+      <title>SSDが認識しなくなった、だからデータ置き場はやっぱりHDD</title>
+      <link>https://sumaho.tk/post/2018-08-08-ssd%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F%E3%81%8B%E3%82%89%E3%83%87%E3%83%BC%E3%82%BF%E7%BD%AE%E3%81%8D%E5%A0%B4%E3%81%AF%E3%82%84%E3%81%A3%E3%81%B1/</link>
+      <pubDate>Wed, 08 Aug 2018 04:18:09 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-08-08-ssd%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F%E3%81%8B%E3%82%89%E3%83%87%E3%83%BC%E3%82%BF%E7%BD%AE%E3%81%8D%E5%A0%B4%E3%81%AF%E3%82%84%E3%81%A3%E3%81%B1/</guid>
+      <description>SSDの圧倒的なスピードに慣れると「いっそデータ保存用にもSSDを使おうか！」的な発想になるのですが、ちょっと考えてしまう事象があったので思</description>
+    </item>
+    
+    <item>
+      <title>ハードディスク・ローレベル・フォーマットツールについて</title>
+      <link>https://sumaho.tk/post/2018-08-05-%E3%83%8F%E3%83%BC%E3%83%89%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%AC%E3%83%99%E3%83%AB%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%84%E3%83%BC/</link>
+      <pubDate>Sun, 05 Aug 2018 10:56:49 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-08-05-%E3%83%8F%E3%83%BC%E3%83%89%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%AC%E3%83%99%E3%83%AB%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%84%E3%83%BC/</guid>
+      <description>HDD LLF Low Level Format Tool HDD LLF Low Level Format Toolはとても格安でハードディスクやSSDやUSBメモリーなどを物理フォーマット出来るツールです。 勿論、無料でも使え</description>
+    </item>
+    
+    <item>
+      <title>SSDのエラーチェックが出来るフリーソフト</title>
+      <link>https://sumaho.tk/post/2018-08-05-ssd%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%81%8C%E5%87%BA%E6%9D%A5%E3%82%8B%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88/</link>
+      <pubDate>Sun, 05 Aug 2018 02:10:39 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-08-05-ssd%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%81%8C%E5%87%BA%E6%9D%A5%E3%82%8B%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88/</guid>
+      <description>Windowsにも標準でチェックディスク機能はありますが、現在では昔のスキャンディスクの様な機能は無い様な気がします。 以下のツールは「サーフ</description>
+    </item>
+    
+    <item>
+      <title>Amazonプライムサービスに加入して10年以上</title>
+      <link>https://sumaho.tk/post/2018-08-02-amazon%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AB%E5%8A%A0%E5%85%A5%E3%81%97%E3%81%A610%E5%B9%B4%E4%BB%A5%E4%B8%8A/</link>
+      <pubDate>Thu, 02 Aug 2018 14:52:15 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-08-02-amazon%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AB%E5%8A%A0%E5%85%A5%E3%81%97%E3%81%A610%E5%B9%B4%E4%BB%A5%E4%B8%8A/</guid>
+      <description>Windows3.1の登場時よりパソコン通信を行い、その後、Windows95でモデムを使ったはじめてのインターネット体験。 そんなデジタル世</description>
+    </item>
+    
+    <item>
+      <title>ディスク(SSD)の完全消去～データを完璧に抹消出来るか？</title>
+      <link>https://sumaho.tk/post/2018-08-01-%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%81%AE%E5%AE%8C%E5%85%A8%E6%B6%88%E5%8E%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%AE%8C%E7%92%A7%E3%81%AB%E6%8A%B9%E6%B6%88%E5%87%BA%E6%9D%A5%E3%82%8B/</link>
+      <pubDate>Wed, 01 Aug 2018 05:06:48 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-08-01-%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%81%AE%E5%AE%8C%E5%85%A8%E6%B6%88%E5%8E%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%AE%8C%E7%92%A7%E3%81%AB%E6%8A%B9%E6%B6%88%E5%87%BA%E6%9D%A5%E3%82%8B/</guid>
+      <description>ソフトウエアの性能検証の為に以下のHDDを用意しました。 昔、何かのネットブックパソコン（おそらくeeePC1015-PEM)に付いていたハー</description>
+    </item>
+    
+    <item>
+      <title>EaseUS Todo Backupの製品版と無料版の違いを検証</title>
+      <link>https://sumaho.tk/post/2018-07-27-easeus-todo-backup%E3%81%AE%E8%A3%BD%E5%93%81%E7%89%88%E3%81%A8%E7%84%A1%E6%96%99%E7%89%88%E3%81%AE%E9%81%95%E3%81%84%E3%82%92%E6%A4%9C%E8%A8%BC/</link>
+      <pubDate>Fri, 27 Jul 2018 09:49:09 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-07-27-easeus-todo-backup%E3%81%AE%E8%A3%BD%E5%93%81%E7%89%88%E3%81%A8%E7%84%A1%E6%96%99%E7%89%88%E3%81%AE%E9%81%95%E3%81%84%E3%82%92%E6%A4%9C%E8%A8%BC/</guid>
+      <description>EaseUS Todo Backup には2つのエディションがあります。 Home 11.0 FREE 機能的には全く同じなのですが、1は有料版の30日限定利用なので30日間は試用期間として有料版と</description>
+    </item>
+    
+    <item>
+      <title>275GBのSSDを買ったのに256GBしか使えない！何で？</title>
+      <link>https://sumaho.tk/post/2018-07-22-275gb%E3%81%AEssd%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%AB256gb%E3%81%97%E3%81%8B%E4%BD%BF%E3%81%88%E3%81%AA%E3%81%84%E4%BD%95%E3%81%A7/</link>
+      <pubDate>Sun, 22 Jul 2018 10:05:10 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-07-22-275gb%E3%81%AEssd%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%AB256gb%E3%81%97%E3%81%8B%E4%BD%BF%E3%81%88%E3%81%AA%E3%81%84%E4%BD%95%E3%81%A7/</guid>
+      <description>275GBのSSDを買ったのに256GBしか使えない！何で？という疑問を持つ事が多いと思います。 SSDの実際に使用可能な容量はおよそ全体の9</description>
+    </item>
+    
+    <item>
+      <title>HDDを換装してSSD(crucial)が認識されない。フォーマットできない</title>
+      <link>https://sumaho.tk/post/2018-07-19-hdd%E3%82%92%E6%8F%9B%E8%A3%85%E3%81%97%E3%81%A6ssd%E3%81%AB%E3%81%99%E3%82%8B%E6%99%82%E3%81%ABssd%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84%E5%88%9D%E6%9C%9F%E5%8C%96/</link>
+      <pubDate>Thu, 19 Jul 2018 12:13:20 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-07-19-hdd%E3%82%92%E6%8F%9B%E8%A3%85%E3%81%97%E3%81%A6ssd%E3%81%AB%E3%81%99%E3%82%8B%E6%99%82%E3%81%ABssd%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84%E5%88%9D%E6%9C%9F%E5%8C%96/</guid>
+      <description>購入したCrucialなどのSSDが認識しない時には以下を確認してみて下さいね。(ssdはフォーマットする前に新しいディスクの追加操作が必要</description>
+    </item>
+    
+    <item>
+      <title>HDD(3.5インチ)のクローンをSSD(2.5インチ）にボタン１つでコピー</title>
+      <link>https://sumaho.tk/post/2018-07-05-hdd3-5%E3%82%A4%E3%83%B3%E3%83%81%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3%E3%82%92ssd2-5%E3%82%A4%E3%83%B3%E3%83%81%E3%81%AB%E3%83%9C%E3%82%BF%E3%83%B3%EF%BC%91%E3%81%A4%E3%81%A7/</link>
+      <pubDate>Thu, 05 Jul 2018 11:06:04 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-07-05-hdd3-5%E3%82%A4%E3%83%B3%E3%83%81%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3%E3%82%92ssd2-5%E3%82%A4%E3%83%B3%E3%83%81%E3%81%AB%E3%83%9C%E3%82%BF%E3%83%B3%EF%BC%91%E3%81%A4%E3%81%A7/</guid>
+      <description>Amazonさんで見かけたこの商品がとても強力でもの凄く欲しい病気が騒ぎ出しました。 SataⅠ、Ⅱ、Ⅲに対応しているのでコピースピードもかな</description>
+    </item>
+    
+    <item>
+      <title>SSDを買うならAcronis True Image付きにしよう</title>
+      <link>https://sumaho.tk/post/2018-06-27-ssd%E3%82%92%E8%B2%B7%E3%81%86%E3%81%AA%E3%82%89acronis-true-image%E4%BB%98%E3%81%8D%E3%81%AB%E3%81%97%E3%82%88%E3%81%86/</link>
+      <pubDate>Wed, 27 Jun 2018 11:21:20 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-06-27-ssd%E3%82%92%E8%B2%B7%E3%81%86%E3%81%AA%E3%82%89acronis-true-image%E4%BB%98%E3%81%8D%E3%81%AB%E3%81%97%E3%82%88%E3%81%86/</guid>
+      <description>今、当方のデスクトップには「Acronis True Image2018」がインストールされています。お金を出して購入したわけでも、どこかからユーザー</description>
+    </item>
+    
+    <item>
+      <title>Amazonで購入したCrucial-MX300　275GB SSD 購入レビュー</title>
+      <link>https://sumaho.tk/post/2018-06-17-crucial-mx300-275gb-ssd-%E8%B3%BC%E5%85%A5%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link>
+      <pubDate>Sun, 17 Jun 2018 01:21:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2018-06-17-crucial-mx300-275gb-ssd-%E8%B3%BC%E5%85%A5%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid>
+      <description>現在、使用しているデスクトップ用のHDDがちょっと古くなってきた事もあり、SSDに置き換えようと思い、Crucial-MX300 275GB SSD を購入し</description>
+    </item>
+    
+    <item>
+      <title>無停電装置(UPS)</title>
+      <link>https://sumaho.tk/post/2011-04-29-%E7%84%A1%E5%81%9C%E9%9B%BB%E8%A3%85%E7%BD%AEups/</link>
+      <pubDate>Fri, 29 Apr 2011 02:44:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2011-04-29-%E7%84%A1%E5%81%9C%E9%9B%BB%E8%A3%85%E7%BD%AEups/</guid>
+      <description>企業やクリティカルな業務（突然の停電が莫大な損失に繋がる業務）を運営されている方々にとって停電は脅威です。 個人であれば突然自分のパソコンがブ</description>
+    </item>
+    
+    <item>
+      <title>今更ながらDVD-RAMの虜になった！</title>
+      <link>https://sumaho.tk/post/2008-05-21-%E4%BB%8A%E6%9B%B4%E3%81%AA%E3%81%8C%E3%82%89dvd-ram%E3%81%AE%E8%99%9C%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F/</link>
+      <pubDate>Tue, 20 May 2008 15:04:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2008-05-21-%E4%BB%8A%E6%9B%B4%E3%81%AA%E3%81%8C%E3%82%89dvd-ram%E3%81%AE%E8%99%9C%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F/</guid>
+      <description>DVDの規格って色々あって今でも良くわからないっていうのが本音です。その中でも最近はDVD-RAMの魅力にクビッタケ（笑）な私です。 一番一般</description>
+    </item>
+    
+  </channel>
+</rss>

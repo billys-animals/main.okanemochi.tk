@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows7 on パソBlog</title>
+    <link>https://sumaho.tk/tags/windows7/</link>
+    <description>Recent content in windows7 on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 18 Jul 2014 01:25:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/windows7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>狭い画面を広く使うTips</title>
+      <link>https://sumaho.tk/post/2014-07-18-%E7%8B%AD%E3%81%84%E7%94%BB%E9%9D%A2%E3%82%92%E5%BA%83%E3%81%8F%E4%BD%BF%E3%81%86tips/</link>
+      <pubDate>Fri, 18 Jul 2014 01:25:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2014-07-18-%E7%8B%AD%E3%81%84%E7%94%BB%E9%9D%A2%E3%82%92%E5%BA%83%E3%81%8F%E4%BD%BF%E3%81%86tips/</guid>
+      <description>ネットブックパソコンは今では新品ではほとんど売られていません。 もともと、WindowsXPが好きで、WindowsVistaに好感をもってい</description>
+    </item>
+    
+    <item>
+      <title>WindowsXPダウングレード出荷の期限</title>
+      <link>https://sumaho.tk/2010/10/windowsxp%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E5%87%BA%E8%8D%B7%E3%81%AE%E6%9C%9F%E9%99%90/</link>
+      <pubDate>Fri, 15 Oct 2010 16:20:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2010/10/windowsxp%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E5%87%BA%E8%8D%B7%E3%81%AE%E6%9C%9F%E9%99%90/</guid>
+      <description>もう直ぐ、というかあと数日でWindowsXPを載せた新品のパソコンが購入出来なくなります。 現在、何処のパソコンメーカーもWindows7を</description>
+    </item>
+    
+    <item>
+      <title>EeePCでなくLENOVOのThinkPadを購入</title>
+      <link>https://sumaho.tk/2010/08/eeepc%E3%81%A7%E3%81%AA%E3%81%8Flenovo%E3%81%AEthinkpad%E3%82%92%E8%B3%BC%E5%85%A5/</link>
+      <pubDate>Sat, 21 Aug 2010 09:57:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2010/08/eeepc%E3%81%A7%E3%81%AA%E3%81%8Flenovo%E3%81%AEthinkpad%E3%82%92%E8%B3%BC%E5%85%A5/</guid>
+      <description>先日、LENOVO(旧IBM)のThinkPad（SL-510）を購入しました。本当はEeePCが欲しかったのですが、妻が「小さいノートパソ</description>
+    </item>
+    
+  </channel>
+</rss>

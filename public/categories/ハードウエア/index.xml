@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ハードウエア on パソBlog</title>
+    <link>https://sumaho.tk/categories/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A8%E3%82%A2/</link>
+    <description>Recent content in ハードウエア on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 24 Sep 2018 12:08:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/categories/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A8%E3%82%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>カラフルで色分けできるマイクロSDカードが欲しい</title>
+      <link>https://sumaho.tk/2018/09/%E3%82%AB%E3%83%A9%E3%83%95%E3%83%AB%E3%81%A7%E8%89%B2%E5%88%86%E3%81%91%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%ADsd%E3%82%AB%E3%83%BC%E3%83%89%E3%81%8C%E6%AC%B2%E3%81%97%E3%81%84/</link>
+      <pubDate>Mon, 24 Sep 2018 12:08:06 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2018/09/%E3%82%AB%E3%83%A9%E3%83%95%E3%83%AB%E3%81%A7%E8%89%B2%E5%88%86%E3%81%91%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%ADsd%E3%82%AB%E3%83%BC%E3%83%89%E3%81%8C%E6%AC%B2%E3%81%97%E3%81%84/</guid>
+      <description>MicroSDの下に色々な文字列が連なっていますよね、最近は。MicroSDの他にMicroSDHCとMicroSDXCです。最大容量の定義</description>
+    </item>
+    
+    <item>
+      <title>ドラフトn（ieee802.11n）の実力</title>
+      <link>https://sumaho.tk/post/2008-04-19-%E3%83%89%E3%83%A9%E3%83%95%E3%83%88nieee802-11n%E3%81%AE%E5%AE%9F%E5%8A%9B/</link>
+      <pubDate>Fri, 18 Apr 2008 17:27:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2008-04-19-%E3%83%89%E3%83%A9%E3%83%95%E3%83%88nieee802-11n%E3%81%AE%E5%AE%9F%E5%8A%9B/</guid>
+      <description>ドラフトn（ieee802.11n）は、今の私には不要です。無用の長物と言っても過言ではありません。だけど、欲しい！です（笑）。 ちなみの現在</description>
+    </item>
+    
+    <item>
+      <title>リナザウルスで無線LAN</title>
+      <link>https://sumaho.tk/2008/03/%E3%83%AA%E3%83%8A%E3%82%B6%E3%82%A6%E3%83%AB%E3%82%B9%E3%81%A7%E7%84%A1%E7%B7%9Alan/</link>
+      <pubDate>Mon, 24 Mar 2008 11:44:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2008/03/%E3%83%AA%E3%83%8A%E3%82%B6%E3%82%A6%E3%83%AB%E3%82%B9%E3%81%A7%E7%84%A1%E7%B7%9Alan/</guid>
+      <description>ある日、数年前に購入したシャープのリナックスザウルスのSL-C860に無線LANを設置したくなった（笑）。むしょうに試したくて堪らなくなった</description>
+    </item>
+    
+  </channel>
+</rss>

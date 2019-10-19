@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PC DEPO on パソBlog</title>
+    <link>https://sumaho.tk/tags/pc-depo/</link>
+    <description>Recent content in PC DEPO on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 04 Apr 2008 15:50:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/pc-depo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PC DEPOTの店員さんは優しい</title>
+      <link>https://sumaho.tk/post/2008-04-05-pc-depot%E3%81%AE%E5%BA%97%E5%93%A1%E3%81%95%E3%82%93%E3%81%AF%E5%84%AA%E3%81%97%E3%81%84/</link>
+      <pubDate>Fri, 04 Apr 2008 15:50:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2008-04-05-pc-depot%E3%81%AE%E5%BA%97%E5%93%A1%E3%81%95%E3%82%93%E3%81%AF%E5%84%AA%E3%81%97%E3%81%84/</guid>
+      <description>以前に投稿した記事で「MS新旧OS（98,Vista）混在環境での無線LAN構築」のルータ要件について色々なパソコン関連のお店に電話しました</description>
+    </item>
+    
+  </channel>
+</rss>

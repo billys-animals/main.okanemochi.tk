@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  Amazon MWS API FEED &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="//Feed用 var namespace3 = &#34;http://mws.amazonaws.com/doc/2009-01-01/&#34;; var namespace4=&#39;&#34;http://www.w3.org/2001/XMLSchema-instance&#34; xsi:noNamespaceSchemaLocation=&#34;amzn-envelope.xsd&#34;&#39;; /************************************************************************* SubmitFeed FeedType=_POST_INVENTORY_AVAILABILITY_DATA_ ＜＜トランザクショ＞＞ SubmitFeed 「リクエスト送信してFeedSubmissionIdを取得」 =&amp;gt;GetFee|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">Amazon MWS API FEED</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/api' class="muted-link">
+  <span class="Label Label--gray-darker">API</span>
+</a>
+
+<a href='/categories/gas' class="muted-link">
+  <span class="Label Label--gray-darker">GAS</span>
+</a>
+
+<a href='/categories/php' class="muted-link">
+  <span class="Label Label--gray-darker">PHP</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-05-09. Published at: 2018-05-09.">
+        
+          Published: 2018-05-09
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <pre class="lang:js decode:true ">//Feed用
+var namespace3 = "http://mws.amazonaws.com/doc/2009-01-01/";
+var namespace4='"http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd"';
+
+/*************************************************************************
+ SubmitFeed
+ FeedType=_POST_INVENTORY_AVAILABILITY_DATA_
+ 
+ ＜＜トランザクショ＞＞
+ SubmitFeed　「リクエスト送信してFeedSubmissionIdを取得」
+  =&gt;GetFeedSubmissionList(FeedSubmissionId)「FeedSubmissionIdにてオペレーション送信」
+     =&gt;GetFeedSubmissionResult(FeedSubmissionId)「オペレーション完了する」
+*************************************************************************/
+function putFeedSubmit() {
+    var u = "https://" + mws_address + "/?";
+
+    //任意の値を設定します
+    var sku1        = "test-6";
+    var quantity1   = "1";
+    var leadTimeToShip1 = "7";
+
+    var AWS_KEYS = "XXXXXXXXXX";
+    var AWS_SCEC="11444AAAAAAADDDDDD";
+    var SellerId= "AAAAQ44444444";
+    var MWS_VERSION="2009-01-01";
+    var mws_address = "mws.amazonservices.jp";
+
+    //XMLファイルのひな形にパラメータを埋め込む
+    var payload = '&lt;?xml version="1.0" encoding="utf-8"?&gt;';
+        payload += '&lt;AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd"&gt;';
+        payload += "&lt;Header&gt;";
+        payload += "&lt;DocumentVersion&gt;1.01&lt;/DocumentVersion&gt;";
+        payload += "&lt;MerchantIdentifier&gt;"+SellerId+"&lt;/MerchantIdentifier&gt;";
+        payload += "&lt;/Header&gt;";
+        payload += "&lt;MessageType&gt;Inventory&lt;/MessageType&gt;";
+        payload += "&lt;Message&gt;";
+        payload += "&lt;MessageID&gt;1&lt;/MessageID&gt;";
+        payload += "&lt;OperationType&gt;Update&lt;/OperationType&gt;";
+        payload += "&lt;Inventory&gt;";
+        payload += "&lt;SKU&gt;"+sku1+"&lt;/SKU&gt;";
+        payload += "&lt;Quantity&gt;"+quantity1+"&lt;/Quantity&gt;";
+        payload += "&lt;FulfillmentLatency&gt;"+leadTimeToShip1+"&lt;/FulfillmentLatency&gt;";
+        payload += "&lt;/Inventory&gt;";
+        payload += "&lt;/Message&gt;";
+        payload += " &lt;/AmazonEnvelope&gt;";
+
+    /*******************************************************************************
+    　ContentMD5Value用のMD5ハッシュ（バイナリー値）取得の為にPHPプログラムを呼出しする（ここから）
+　　　 Google Apps ScriptよりPHPを呼出しPOSTするサンプル
+    *******************************************************************************/
+    //＜＜＊＊　自運営サイト参照用　＊＊＞＞
+    //var url = 'https://okanemochi.tk/md5/index5.php';
+        //＜＜＊＊　heroku登録APP参照用　＊＊＞＞
+    var url = 'https://getmd5hushed.herokuapp.com/';   
+    
+    var option = {
+      "method":"POST",
+      "Content-Type": "application/json",
+      "payload": payload,
+      "muteHttpExceptions" : true,
+    }   
+    var response = UrlFetchApp.fetch(url,option);  
+    var data = JSON.parse(response.getContentText());
+  　f_hush=data["message"];
+   
+    /*******************************************************************************
+    　ContentMD5Value用のMD5ハッシュ（バイナリー値）取得の為にPHPプログラムを呼出しする（ここまで）
+    *******************************************************************************/
+     
+    //　＊＊＊　以下、署名に必要なパラメーター　（ここから）＊＊＊
+    var o1 = {
+        "Version": MWS_VERSION,
+        "Action": "SubmitFeed",
+        "AWSAccessKeyId": AWS_KEYS,
+        "Merchant": SellerId,
+        "SignatureVersion": "2",
+        "Timestamp": new Date().toISOString(),
+        "SignatureMethod": "HmacSHA256",
+        "MarketplaceIdList.Id.1": "A1VC38T7YXB528",
+        "FeedType":"_POST_INVENTORY_AVAILABILITY_DATA_",
+        //"FeedType":"_POST_PRODUCT_DATA_",
+        "PurgeAndReplace":"false",
+        "ContentMD5Value": f_hush
+    }
+    var a = Object.keys(o1).sort();
+    a = a.map(function (key) {
+        return key + "=" + encodeURIComponent(o1[key]);
+    });   
+    var sign  = "POST" + "\n";
+    sign += mws_address + "\n";
+    sign += "/\n";
+    sign += a.join("&");
+    var x = Utilities.base64Encode(Utilities.computeHmacSha256Signature(sign, AWS_SCEC));
+    
+    //　＊＊＊　署名作成(変数x)　（ここまで）＊＊＊
+ 
+    //API接続用のURL生成
+    var uri = "https://"+ mws_address +"/?";
+    uri += a.join("&")+ "&Signature=" + encodeURIComponent(x);
+    
+    //API接続時のPOST情報生成
+    var urlFetchOption = {
+        "method" : "POST",
+        "Content-Type": "application / xml; charset = utf-8 ",
+        "payload": payload,
+        "muteHttpExceptions" : true
+    };
+    
+    var r = UrlFetchApp.fetch(uri, urlFetchOption);
+    var document = XmlService.parse(r.getContentText());
+    
+    var root = document.getRootElement();
+    var NS3 = XmlService.getNamespace(namespace3);
+    var respone_node = root.getQualifiedName();
+    
+    //エラー確認
+    if (respone_node == "ErrorResponse") {
+        //var res = _sleep(10);
+        return 9999;
+    }
+
+　　//データ取得
+    var AttributeSets = root.getChild("SubmitFeedResult", NS3).getChild("FeedSubmissionInfo", NS3);
+    var FeedSubmissionId = AttributeSets.getChild("FeedSubmissionId", NS3).getValue();
+    var FeedType = AttributeSets.getChild("FeedType", NS3).getValue();
+    var SubmittedDate = AttributeSets.getChild("SubmittedDate", NS3).getValue();
+    var FeedProcessingStatus = AttributeSets.getChild("FeedProcessingStatus", NS3).getValue();
+
+    return 0;
+}</pre>
+
+<p>外部からPOSTされた文字列に対するMD5ハッシュ値を呼出し元に返す関数は以下に記載。</p>
+
+<p>上記の62行目の</p>
+
+<pre class="lang:php decode:true ">var response = UrlFetchApp.fetch(url,option);</pre>
+
+<p>で呼ぶ</p>
+
+<pre class="lang:php decode:true ">var url = 'https://getmd5hushed.herokuapp.com/';</pre>
+
+<p>このサイトのindex.phpが以下です。</p>
+
+<pre class="lang:php decode:true ">&lt;?php
+
+/* 外部からPOST呼出しされた場合の$_POST変数の取得方法 */
+$request_body = file_get_contents('php://input');
+/* 「$request_body」に対してデコードが必要な場合もある */
+
+$xml=$request_body;
+$data = array(
+  'message' =&gt; base64_encode(md5($xml, true))
+);
+header('Content-Type: application/json');
+echo json_encode($data);
+?&gt;</pre>
+
+<p>GASからのPOST変数(payload)を受けてMD5ハッシュ値を呼び出し元のGASに返します。</p>
+
+<p><a href="https://px.a8.net/svt/ejp?a8mat=2ZH6XJ+E4HG5E+3L4M+BW8O2&a8ejpredirect=https%3A%2F%2Fudemy-images.udemy.com%2Fcourse%2F240x135%2F647944_cb57_2.jpg" target="_blank" rel="nofollow noopener">今日から実践で使える！Google アナリティクス講座</a></p>
+
+<p><img src="https://www12.a8.net/0.gif?a8mat=2ZH6XJ+E4HG5E+3L4M+BW8O2" alt="" width="1" height="1" border="0" /></p>
+
+<div class="chat_l ">
+  <div class="talker">
+    <b><img class="square" src="https://okanemochi.tk/wp-content/uploads/2018/07/%E3%82%AB%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0-300x204.png" alt="もし、参考になったならTwitterシェアお願いします" />もし、参考になったならTwitterシェアお願いします </b>
+  </div>
+  
+
+<p><div class="bubble_wrap">
+    <p>
+    </p>
+  </div>
+</div></p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/computer_language/python3/201/">numpyでベクトルを理解する</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/computer_language/gas/256/">UrlFetchApp.fetch時のオプション値一覧</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/computer_language/gas/259/">指定日時にトリガーを設定する</a></li>
+  
+  <li><a href="/computer_language/gas/265/">Chatwork APIによる指定場所への書き込み</a></li>
+  
+  <li><a href="/computer_language/gas/256/">UrlFetchApp.fetch時のオプション値一覧</a></li>
+  
+  <li><a href="/computer_language/php/104/">BracketsでPHPデバッグ</a></li>
+  
+  <li><a href="/computer_language/gas/64/">GoogleDriveのフォルダ名とフォルダIDを取得する</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>Amazon MWS API FEED</b>
+      
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

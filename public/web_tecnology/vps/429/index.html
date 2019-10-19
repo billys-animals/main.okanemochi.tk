@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  VPS(Conoha SSD)でKUSANAGIに感嘆 &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="wordPress用の超高速仮想環境であるKUSANAGIを導入して３日目です。最初は何だか良く分からなかったのですが、少し慣れてくるともう|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">VPS(Conoha SSD)でKUSANAGIに感嘆</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/vps' class="muted-link">
+  <span class="Label Label--gray-darker">VPS</span>
+</a>
+
+<a href='/categories/wordpress' class="muted-link">
+  <span class="Label Label--gray-darker">wordpress</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-06-24. Published at: 2018-06-24.">
+        
+          Published: 2018-06-24
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p>wordPress用の超高速仮想環境であるKUSANAGIを導入して３日目です。最初は何だか良く分からなかったのですが、少し慣れてくるともう夢中です。KUSANAGI以外の環境でWordPressを使うのはちょっと嫌だと思う様にさえなっています。</p>
+
+<h2 id="vpsでkusanagi">VPSでKUSANAGI</h2>
+
+<p>別にVPSを借りなくてもKUSANAGIは使えます。WindowsでもDokerとか使えば大丈夫だと思います。私はCONOHAというVPSを借りてそこでKUSANAGIを使ってWodPressのブログを複数作成して運用を始めています。</p>
+
+<h3 id="kusanagiのイメージ">KUSANAGIのイメージ</h3>
+
+<blockquote>
+<h2 id="仮想マシン構成">仮想マシン構成</h2>
+
+<p>・WordPress 最新版（KUSANAGI 専用プラグイン同梱）</p>
+
+<p>・CentOS 7.x</p>
+
+<p>・Nginx 1.13.x</p>
+
+<p>・Apache 2.4.x</p>
+
+<p>・HHVM 3.11.x</p>
+
+<p>・PHP 7.2.x（php-fpm, Cli）</p>
+
+<p>・PHP 5.6.x（php-fpm, Cli）</p>
+
+<p>・MariaDB Galera Server 10.1.x</p>
+
+<p>・Ruby2.4.x</p>
+
+<p>・Ruby on Rails最新版</p>
+
+<p>・PostgreSQL 9.7</p>
+
+<p>・pgpool-II 3.7.2</p>
+
+<p>※PHP7.2の利用は、WordPress4.4以上、および対応プラグインが必須です。</p>
+
+<p>引用元：<a href="https://kusanagi.tokyo/about/">https://kusanagi.tokyo/about/</a></p>
+</blockquote>
+
+<p>上記の様に、複数の環境を１つの箱にまとめて、その中にインストールされたWordPressを使い自分のブログを作りましょうといった感じの流れです。</p>
+
+<pre class="lang:xhtml decode:true ">kusanagi provision kusanagi_html</pre>
+
+<p>上記の様に「kusanagi provision XXXXX」kusanagi provisionコマンドで新規の「XXXXX」という名前の箱を作り、その箱の中をカスタマイズしてWordPressを運用します。</p>
+
+<p>KUSANAGIを使う目的は色々あると思いますが<strong>最大の理由は「速い」に尽きる</strong>んじゃないかと思います。</p>
+
+<h3 id="vpsでkusanagiを使う利点-理由">VPSでKUSANAGIを使う利点（理由）</h3>
+
+<p>KUSANAGIは何度も触って覚えます。少なくとも自分はそうでした。VPSのサーバー設定も何度もやり直して覚えます。で、それがVPSでなく自宅のサーバーとか、レンタルサーバーだったらと思うと挫折します。</p>
+
+<p>１から１００の設定を完結するのに、１から１０で１回イメージ保存でバックアップ、１から３０まででバックアップ、１～８０まででバックアップの様に途中でも「ここまでは大丈夫」というポイントで環境を保存出来ていれば、失敗しても１からでなく前回保存の最新箇所からのやり直しで済みます。<strong>VPSならこのイメージ保存が簡単にできます。時間にして４GBくらいなら３分前後です。</strong></p>
+
+<p>要所でこのイメージ保存をする事で毎回１からやり直しがなくなり、挫折する事なくサーバー構築が出来る様になるのです。こうやって文章で書くと当たり前なのですが、実際の作業でこのイメージ保存機能があると最高の保険だと思います。</p>
+
+<p>レンタルサーバーでもイメージバックアップは出来るでしょうが、おそらく数時間レベルの作業になり、その間作業が止まります。最近の格安のVPSならば月額９００円前後からそういった環境が使えるのでとても便利だと思います。</p>
+
+<p>ちょと調べてみると、KUSANAGI搭載のレンタルサーバーはある様ですが月額2000円以上の高額サービスばかりなのです。当方の様の低所得者には格安のVPSが嬉しいです。</p>
+
+<h5 id="vpsでkusanagiを使って一番嬉しかった利点">VPSでKUSANAGIを使って一番嬉しかった利点</h5>
+
+<h6 id="1つのvps-1サーバーで1つのipアドレス-で幾つでもwordpressのブログを作成可能-複数ドメイン対応">1つのVPS（1サーバーで1つのIPアドレス）で幾つでもWordPressのブログを作成可能（複数ドメイン対応）</h6>
+
+<p>今まで自分の中の常識がドメインと場所は1対1でした。（例えば、okanemochi.tk＝150.95.149.122）の場所だと。VPS側の150.95.149.122というIPにokanemochi.tkよいうドメインが紐付いた場合に、150.95.149.122というIPアドレスに対して複数のドメインを割り当てられないと思っていました。</p>
+
+<p>要は<strong><span style="color: #008000;">IPアドレスが唯一、サーバーの場所を示す目印で、ドメインのレジストラとそこで1対1に紐付くものだと理解していました。それだ正しい理解です。</span></strong></p>
+
+<p>厳密に言えばローカルセグメント化を行い、1つのIPアドレスを内部的に複数の場所に区切りマルチドメインを実現出来る方法はありますが、ちょと今の当方には荷が重い作業でした。</p>
+
+<p>なので、2つ目のドメインを利用しようと思い、1つのサーバーの2つ目のIPアドレスを追加しました。でも、結果的には不要でした。</p>
+
+<p>現状はこの1つのIPアドレス（1つのサーバー）に対して複数のドメインを割り当てて運用を始めています。</p>
+
+<p>&nbsp;</p>
+
+<p><img class=" wp-image-434 alignleft" src="https://okanemochi.tk/wp-content/uploads/2018/06/domain1-300x146.png" alt="" width="438" height="213" srcset="https://okanemochi.tk/wp-content/uploads/2018/06/domain1-300x146.png 300w, https://okanemochi.tk/wp-content/uploads/2018/06/domain1-768x374.png 768w, https://okanemochi.tk/wp-content/uploads/2018/06/domain1-1024x499.png 1024w, https://okanemochi.tk/wp-content/uploads/2018/06/domain1.png 1245w" sizes="(max-width: 438px) 100vw, 438px" /></p>
+
+<p>この写真の様に他のドメイン（サブドメイン）をレジストラから150.95.149.122に割り当ててVPSで運用出来ています。</p>
+
+<p>つまりは、150.95.149.122というIPに複数のドメインを割り当てていると「いう事です。</p>
+
+<p>レンタルサーバーなどでは、<span style="color: #ff0000;"><strong>「ドメインをこのフォルダに割り当てる様な機能」</strong></span>があるのでそれで実現出来ているのですが、VPSではそういう機能はないと思うので無理だと考えていました。</p>
+
+<p>ですが、KUSANAGIを利用する事でこれが簡単にできる事が分かりました。上で説明したセグメント化をKUSANAGIが片代わりしてくれている様な格好になっています。</p>
+
+<p>↑で説明したprovision が1つの識別要素になっているので、言い方を変えれば<span style="color: #008000;"><strong>「provision 毎にドメインの特定が出来る」のです。</strong></span></p>
+
+<p>つまり、VPSの容量やスペックが許容する範囲内であれば、1つのサーバーで複数のドメインを割り当てて複数のWordPressをKUSANAGI環境で動作させる事が可能なのです。もう、この環境以外は使いたくありません。（サーバーによりセグメントの数や1サーバー内に追加出来るIPアドレスの制限があります）</p>
+
+<h6 id="1つのkusanagiのprovision-の中に他のアプリを設置してkusanagi環境で利用可能">1つのKUSANAGIのprovision の中に他のアプリを設置してKUSANAGI環境で利用可能</h6>
+
+<p>これは良い面と悪い面があります。先ずは悪い面を紹介します。</p>
+
+<p>↑の方法で<strong>1つのサーバー内に複数のprovision で複数のWordPressを稼働されるので、MySqlデータベースは各provision 毎に作成します。</strong>なので、phpMyAdminなどでVPS内のデータベースを一カ所集中でメンテするなどの処理は出来ません。必要であれば各provision 毎にphpMyAdminを配置するしかありません。これは仕方ないですがちょと残念です。</p>
+
+<p>次に良い面です。</p>
+
+<p>当方はアクセス解析にGoogleアナリティクス以外にも、PIWIK(現MATOMO)を使っています。今まではKUSANAGI以外のサーバーに配置していましたが、1つのサーバーでKUSANAGIのみの運用になりMATOMOを設置する事が出来ない状態になりました。過去記事など検索するとKUSANAGI環境でもインストール出来る様な事がありましたが現環境で簡単に通用する方法は見つかりませんでした。</p>
+
+<p>でも、答えは凄く簡単な場所にありました。</p>
+
+<p>kusanagi provisionで作成した個人の備忘禄的な検索エンジンに公開しないWordPressがあったので、そのprovision内のDocumentRootフォルダにpiwikを仕込み、その環境内のKUSANAGIに同居させてもらい、MySQLデータベースも使わせてもらう感じでMATOMOをインストールしました。つまり、<span style="color: #008000;"><strong>MATOMOを使う目的で空のWordPress環境をKUSANAGIで作成するという手法でOKという事です。</strong></span></p>
+
+<p>順序が遅れましたが、<span style="color: #008000;"><strong>上のphpMyAdminも入れるのであればこのMATOMOと同じ様にそのprovision内のDocumentRootフォルダに仕込みインストールします。</strong></span></p>
+
+<p>これで、<span style="color: #ff0000;">当方が毎月680円で借りているconohaで、WordPress環境＋「KUSANAGI環境でのPIWIK（MATOMO）やphpMyAdminを稼働させる」事が可能になります。</span></p>
+
+<p>conohaのVPS：SSDタイプでメモリ2GB容量50GBだと月額1,750円ですね。当方はメモリ512MBで容量50GBで月額680円の一番安いサーバーでテスト運用中です。十分早いです。</p>
+
+<p><a href="https://px.a8.net/svt/ejp?a8mat=2ZGZ31+26LTGQ+50+4YSWE9" target="_blank" rel="nofollow noopener"><br /> <img src="https://www22.a8.net/svt/bgt?aid=180510877132&wid=028&eno=01&mid=s00000000018030032000&mc=1" alt="" width="336" height="280" border="0" /></a></p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/wordpress/424/">kusanagi環境に移行した経緯</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/post/2018-06-25-kusanagi%E3%81%A7%E5%B8%B8%E6%99%82ssl%E5%8C%96/">KUSANAGIで常時SSL化＆WWW無し設定の統一</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/wordpress/823/">賢威ver 8.0.0.0b2をkusanagi環境のこのサイトで試稼働</a></li>
+  
+  <li><a href="/wordpress/565/">WordPressテンプレート 賢威７使ってます（感想・口コミ・本音）レビュー</a></li>
+  
+  <li><a href="/post/2018-06-25-kusanagi%E3%81%A7%E5%B8%B8%E6%99%82ssl%E5%8C%96/">KUSANAGIで常時SSL化＆WWW無し設定の統一</a></li>
+  
+  <li><a href="/wordpress/424/">kusanagi環境に移行した経緯</a></li>
+  
+  <li><a href="/wordpress/422/">WordPressのネットワーク構築をやめた</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>VPS(Conoha SSD)でKUSANAGIに感嘆</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#vpsでkusanagi">VPSでKUSANAGI</a>
+<ul>
+<li><a href="#kusanagiのイメージ">KUSANAGIのイメージ</a></li>
+</ul></li>
+<li><a href="#仮想マシン構成">仮想マシン構成</a>
+<ul>
+<li><a href="#vpsでkusanagiを使う利点-理由">VPSでKUSANAGIを使う利点（理由）</a>
+<ul>
+<li>
+<ul>
+<li><a href="#vpsでkusanagiを使って一番嬉しかった利点">VPSでKUSANAGIを使って一番嬉しかった利点</a>
+<ul>
+<li><a href="#1つのvps-1サーバーで1つのipアドレス-で幾つでもwordpressのブログを作成可能-複数ドメイン対応">1つのVPS（1サーバーで1つのIPアドレス）で幾つでもWordPressのブログを作成可能（複数ドメイン対応）</a></li>
+<li><a href="#1つのkusanagiのprovision-の中に他のアプリを設置してkusanagi環境で利用可能">1つのKUSANAGIのprovision の中に他のアプリを設置してKUSANAGI環境で利用可能</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

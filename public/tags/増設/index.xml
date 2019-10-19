@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>増設 on パソBlog</title>
+    <link>https://sumaho.tk/tags/%E5%A2%97%E8%A8%AD/</link>
+    <description>Recent content in 増設 on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 13 Apr 2008 15:35:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/%E5%A2%97%E8%A8%AD/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>増設メモリを選ぶポイント</title>
+      <link>https://sumaho.tk/2008/04/%E5%A2%97%E8%A8%AD%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%92%E9%81%B8%E3%81%B6%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88/</link>
+      <pubDate>Sun, 13 Apr 2008 15:35:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2008/04/%E5%A2%97%E8%A8%AD%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%92%E9%81%B8%E3%81%B6%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88/</guid>
+      <description>パソコンへの増設メモリの問題って後から襲いかかってくる最大の難題かも知れません。 新しいパソコンを購入する際にその機種でMAXの積載可能メモリ</description>
+    </item>
+    
+    <item>
+      <title>VAIOへのメモリ増設</title>
+      <link>https://sumaho.tk/2008/04/vaio%E3%81%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%83%AA%E5%A2%97%E8%A8%AD/</link>
+      <pubDate>Mon, 31 Mar 2008 16:47:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2008/04/vaio%E3%81%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%83%AA%E5%A2%97%E8%A8%AD/</guid>
+      <description>さて、VAIOへのメモリ増設という記事を書くには理由があるのです。まぁ別にVAIOに限った事では無いんです。 「メモリの増設はケチらないで性能</description>
+    </item>
+    
+  </channel>
+</rss>

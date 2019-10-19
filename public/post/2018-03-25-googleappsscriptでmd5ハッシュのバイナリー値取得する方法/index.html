@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  GoogleAppsScriptでMD5ハッシュのバイナリー値取得する方法 &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="アマゾンMWSでSubmitFeedというAPIがあります。このAPI、「ContentMD5Value」というMD5ハッシュ値をパラメータ|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">GoogleAppsScriptでMD5ハッシュのバイナリー値取得する方法</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E8%A8%80%E8%AA%9E' class="muted-link">
+  <span class="Label Label--gray-darker">プログラム言語</span>
+</a>
+
+
+
+<a href='/tags/gas' class="muted-link">
+  <span class="Label Label--gray">GAS</span>
+</a>
+
+<a href='/tags/php' class="muted-link">
+  <span class="Label Label--gray">PHP</span>
+</a>
+
+<a href='/tags/google-apps-script' class="muted-link">
+  <span class="Label Label--gray">google apps script</span>
+</a>
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-03-25. Published at: 2018-03-25.">
+        
+          Published: 2018-03-25
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <p>アマゾンMWSで<a href="https://docs.developer.amazonservices.com/ja_JP/feeds/Feeds_SubmitFeed.html" target="_blank" rel="noopener">SubmitFeed</a>というAPIがあります。このAPI、「ContentMD5Value」というMD5ハッシュ値をパラメータに沿える必要があったりします。</p>
+
+<p>GoogleAppsScriptでMD5ハッシュ値を取得するなら以下でOKです。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">https://gist.github.com/mogsdad/5464686</code></pre></td></tr></table>
+</div>
+</div>
+<p>このモジュールの例で言えば、（変数xmlに対象のファイル内容を保有）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">payload</span> <span class="o">=</span> <span class="nx">xml</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">md5_hush</span> <span class="o">=</span> <span class="nx">Utilities</span><span class="p">.</span><span class="nx">base64Encode</span><span class="p">(</span><span class="nx">signMd5</span><span class="p">(</span><span class="nx">payload</span><span class="p">));</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>普通はこれでOKです。でも、今回のAPIで必要なのは↑のMD5ハッシュ値でなく、対象のファイルのバイナリー値に対するMD5ハッシュ値が必要なんです。</p>
+
+<p>色々と調べましたが、上記で言うpayloadのバイナリー値に対するMD5ハッシュが必要なので、</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">blob1</span> <span class="o">=</span> <span class="nx">Utilities</span><span class="p">.</span><span class="nx">newBlob</span><span class="p">(</span><span class="nx">payload</span><span class="p">).</span><span class="nx">getBytes</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">md5_hush</span> <span class="o">=</span> <span class="nx">Utilities</span><span class="p">.</span><span class="nx">base64Encode</span><span class="p">(</span><span class="nx">signMd5</span><span class="p">(</span><span class="nx">blob1</span> <span class="p">));</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>こんな事も試しましたがうまくいきませんでした。</p>
+
+<p>今回の問題の内容は以下のサイトの記事が解決方法を記載しています。</p>
+
+<p><a href="http://cloudway.io/post/base64-encoded-128-bit/">http://cloudway.io/post/base64-encoded-128-bit/</a></p>
+
+<p>ですが、やはりGoogleAppsScriptでは無理なのか？も知れないと思い、諦めてPHPを利用する事にしました。</p>
+
+<p><a href="https://stackoverflow.com/questions/29820014/issue-calculating-md5-hash-of-amazon-marketplace-feed">https://stackoverflow.com/questions/29820014/issue-calculating-md5-hash-of-amazon-marketplace-feed</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php3" data-lang="php3"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php3" data-lang="php3">Content-MD5 =&gt; base64_encode(md5($xml, true))</code></pre></td></tr></table>
+</div>
+</div>
+<p>GASからPHPが使えるサーバ上の↑のコードを仕込んだPHPファイルを呼出し、MD5ハッシュしたいファイルの中身をPOSTしてハッシュ値をGASに戻してあげればOKです。</p>
+
+<p>でも、できればPHPを使わないで目的が達成できると嬉しいですね。</p>
+
+<p>追記</p>
+
+<p>上記の総合的な記載記事を追加しました。</p>
+
+<p><a href="https://okanemochi.tk/api/211/">Amazon MWS API FEED</a></p>
+
+<div class="chat_l ">
+  <div class="talker">
+    <b><img class="square" src="https://okanemochi.tk/wp-content/uploads/2018/07/%E3%82%AB%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0-300x204.png" alt="もし、参考になったならTwitterシェアお願いします" />もし、参考になったならTwitterシェアお願いします </b>
+  </div>
+  
+
+<p><div class="bubble_wrap">
+    <p>
+    </p>
+  </div>
+</div></p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/helth_and_beauty/ketontai/124/">糖質制限すると経済破綻に繋がる</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/computer_language/vba/140/">Officeファイルのプロパディー値の取得方法</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/post/2018-02-25-gas%E3%81%AEpropertiesservice%E3%81%AF%E9%81%85%E3%81%84/">GASのPropertiesServiceは遅い</a></li>
+  
+  <li><a href="/post/2018-06-03-%E3%83%AA%E3%82%B9%E3%83%88%E3%82%BB%E3%83%83%E3%83%88%E5%86%85%E5%8C%85%E8%A1%A8%E8%A8%98-%E5%8C%85%E6%8B%AC%E8%A1%A8%E8%A8%98/">リスト(セット)内包表記/包括表記</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>GoogleAppsScriptでMD5ハッシュのバイナリー値取得する方法</b>
+      
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

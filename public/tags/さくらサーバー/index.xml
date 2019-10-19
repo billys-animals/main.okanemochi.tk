@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>さくらサーバー on しんこきゅう</title>
+    <link>https://okanemoti.tk/tags/%E3%81%95%E3%81%8F%E3%82%89%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
+    <description>Recent content in さくらサーバー on しんこきゅう</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>sphia</copyright>
+    <lastBuildDate>Tue, 10 Sep 2019 15:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://okanemoti.tk/tags/%E3%81%95%E3%81%8F%E3%82%89%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>.htaccess←AnchorCMS</title>
+      <link>https://okanemoti.tk/post/2014-06-18-htaccessanchorcms/</link>
+      <pubDate>Tue, 10 Sep 2019 15:00:00 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/post/2014-06-18-htaccessanchorcms/</guid>
+      <description>#Options -indexes &amp;lt;IfModule mod_rewrite.c&amp;gt; RewriteEngine On RewriteBase / # Allow any files or directories that exist to be displayed directly RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d # Rewrite all other URLs to index.php/URL RewriteRule ^(.*)$ index.php?/$1 \[L] &amp;lt;/IfModule&amp;gt; &amp;lt;IfModule !mod_rewrite.c&amp;gt; ErrorDocument 404 index.php &amp;lt;/IfModule&amp;gt; #Options -indexes さくらサーバーはOptionが使えないからコメン</description>
+    </item>
+    
+  </channel>
+</rss>

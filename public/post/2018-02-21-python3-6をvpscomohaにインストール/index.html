@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  Python3.6をVPS(Comoha)にインストール &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="■apacheからPythonをCGIとして利用できる様にする。 以下より引用 https://ponvire.com/2017/11/05/awsec2%E3%81%A8apache%E3%81%A7python%E3%82%92cgi%E3%81%A7%E5%8B%95%E3%81%8B%E3%81%99%E6%96%B9%E6%B3%95/ awsec2とapacheでpythonをcgiで動かす方法 &amp;nbsp;|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">Python3.6をVPS(Comoha)にインストール</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/%E8%A8%AD%E5%AE%9A' class="muted-link">
+  <span class="Label Label--gray-darker">設定</span>
+</a>
+
+
+
+<a href='/tags/apache' class="muted-link">
+  <span class="Label Label--gray">APACHE</span>
+</a>
+
+<a href='/tags/python3' class="muted-link">
+  <span class="Label Label--gray">Python3</span>
+</a>
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-02-21. Published at: 2018-02-21.">
+        
+          Published: 2018-02-21
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p>■apacheからPythonをCGIとして利用できる様にする。</p>
+
+<p>以下より引用</p>
+
+<blockquote>
+<p><a href="https://ponvire.com/2017/11/05/awsec2%E3%81%A8apache%E3%81%A7python%E3%82%92cgi%E3%81%A7%E5%8B%95%E3%81%8B%E3%81%99%E6%96%B9%E6%B3%95/">https://ponvire.com/2017/11/05/awsec2%E3%81%A8apache%E3%81%A7python%E3%82%92cgi%E3%81%A7%E5%8B%95%E3%81%8B%E3%81%99%E6%96%B9%E6%B3%95/</a></p>
+
+<p>awsec2とapacheでpythonをcgiで動かす方法</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<h3 id="span-id-apache1-class-ez-toc-section-apacheの設定-span"><span id="Apache1" class="ez-toc-section">Apacheの設定</span></h3>
+
+<pre class="lang:vim decode:true EnlighterJSRAW">下記コマンドでApacheの設定ファイルを開きます。
+sudo vi /etc/httpd/conf/httpd.conf
+332行目の&lt;Directory “/var/www/html”&gt;のOptionsを下記のように「ExecCGI」を追加します。
+Options Indexes FollowSymLinks
+↓
+Options Indexes FollowSymLinks ExecCGI
+797行目を下記のようにコメントを削除し、「.py」を追加します。
+#AddHandler cgi-script .cgi
+↓
+AddHandler cgi-script .cgi .py</pre>
+
+<p>&nbsp;</p>
+
+<p>■まずはpython3.6をソースよりインストール</p>
+
+<pre class="lang:vim decode:true EnlighterJSRAW">cd /usr/local/src
+wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
+tar -xzvf Python-3.6.1.tgz
+cd Python-3.6.1
+./configure --enable-shared --prefix=/usr/local LDFLAGS="-Wl,-rpath /usr/local/lib"
+make
+make altinstall</pre>
+
+<p>■次にシンボリックリンクの設定</p>
+
+<pre class="lang:vim decode:true EnlighterJSRAW">ln -s /usr/local/bin/python3.6 /usr/local/bin/python3
+ln -s /usr/local/bin/pip3.6 /usr/local/bin/pip3</pre>
+
+<p>python2がyumやら色々と参照したりしているのでpythonのシンボリックリンクはそのまま2.7を残す。</p>
+
+<p>インストールしたパスを1行目に書くことでPython3.6を使うことが出来る</p>
+
+<pre class="lang:python decode:true EnlighterJSRAW ">#!/usr/local/bin/python3
+# coding:utf-8
+
+def main():
+    # HTMLに出力
+    print("Content-Type: text/html\n");
+    print("Hello World!!");
+
+if __name__ == "__main__":
+    main()</pre>
+
+<p>&nbsp;</p>
+
+<p>この状態から↑のプログラムを実行する。</p>
+
+<p>を実行する事で、Pythonの拡張子のまま(.py)ブラウザからプログラムを実行させる事が出来ます。Python3.6を指定しているのでバージョンも2.7でなく3.6で実行が可能となります。</p>
+
+<p><a href="https://px.a8.net/svt/ejp?a8mat=2ZH6XJ+E4HHOY+3L4M+6MROH" target="_blank" rel="nofollow noopener"><br /> <img src="https://www28.a8.net/svt/bgt?aid=180521047854&wid=061&eno=01&mid=s00000016735001114000&mc=1" alt="" width="300" height="250" border="0" /></a></p>
+
+<p><img src="https://www11.a8.net/0.gif?a8mat=2ZH6XJ+E4HHOY+3L4M+6MROH" alt="" width="1" height="1" border="0" /></p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/post/2018-02-20-product_advertising_pa_api_guideline/">Product Advertising API (PA-API) の利用ガイドライン</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/post/2018-02-21-yahoo-api-itemseach-%E8%A6%9A%E6%9B%B8/">Yahoo API ItemSeach 覚書</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/post/2018-02-20-apache%E3%81%8C%E5%91%B3%E5%99%8C/">APACHEが味噌</a></li>
+  
+  <li><a href="/post/2018-02-20-vps%E3%81%AEssh%E8%AA%8D%E8%A8%BC%E3%81%AE%E5%BD%93%E3%81%9F%E3%82%8A%E5%89%8D%E3%81%AE%E4%BA%8B%E5%AE%9F/">VPSのSSH認証の当たり前の事実</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>Python3.6をVPS(Comoha)にインストール</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#span-id-apache1-class-ez-toc-section-apacheの設定-span"><span id="Apache1" class="ez-toc-section">Apacheの設定</span></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

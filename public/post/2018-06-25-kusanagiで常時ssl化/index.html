@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  KUSANAGIで常時SSL化＆WWW無し設定の統一 &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="Apacheの場合は.htaccessでhttpをhttpsに書き換えたりしますが、KUSANAGIは仮想空間ですし、nginxで動いている|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">KUSANAGIで常時SSL化＆WWW無し設定の統一</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/wordpress' class="muted-link">
+  <span class="Label Label--gray-darker">wordpress</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-06-25. Published at: 2018-06-25.">
+        
+          Published: 2018-06-25
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p>Apacheの場合は.htaccessでhttpをhttpsに書き換えたりしますが、KUSANAGIは仮想空間ですし、nginxで動いているので正直なところ、httpでアクセスされた場合にhttpsに変換する手法が調べても分からず迷っていました。</p>
+
+<h2 id="kusanagiで-nginx環境の時のhttp-https処理">KUSANAGIで、nginx環境の時のhttp-&gt;https処理</h2>
+
+<p>ネットでは色々な人が色々書いていてどれも本当なのでしょうが、バージョンが古かったり、スペルの打ち間違いたオプションの書き間違いがあった様で上手く機能しませんでしたが、先ほど出来たので備忘の為に残しておきます。</p>
+
+<p>出来てしまえばコマンド一発で簡単なのですが、分かるまでに時間がたくさんかかりました。同じお悩みの方のお力になれれば嬉しいです。</p>
+
+<p>&nbsp;</p>
+
+<p><img class="alignnone wp-image-506" src="https://okanemochi.tk/wp-content/uploads/2018/06/kusanagi_ssl-1-300x125.png" alt="" width="564" height="235" srcset="https://okanemochi.tk/wp-content/uploads/2018/06/kusanagi_ssl-1-300x125.png 300w, https://okanemochi.tk/wp-content/uploads/2018/06/kusanagi_ssl-1.png 717w" sizes="(max-width: 564px) 100vw, 564px" /></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-vim" data-lang="vim"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-vim" data-lang="vim"><span class="nx">cd</span> <span class="sr">/home/</span><span class="nx">kusanagi</span>/<span class="nx">該当するプロビジョン</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="nx">常時SSL化するプロビジョンディレクトリ内で以下を実行</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="nx">kusanagi</span> <span class="nx">ssl</span> <span class="p">--</span><span class="nx">https</span> <span class="nx">redirect</span> <span class="nx">プロビジョン名</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="kusanagiで-nginx環境の時の常時www無しの設定">KUSANAGIで、nginx環境の時の常時www無しの設定</h2>
+
+<p>加えて、常時www無しの設定にするには、当サイトで言えば、</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-vim" data-lang="vim"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-vim" data-lang="vim"><span class="nx">server</span> {<span class="err">
+</span><span class="err"></span>    <span class="nx">listen</span>       <span class="m">80</span>;<span class="err">
+</span><span class="err"></span>    <span class="nx">server_name</span>  <span class="nx">okanemochi</span>.<span class="nx">tk</span>;<span class="err">
+</span><span class="err"></span>    <span class="nx">return</span>       <span class="m">301</span> <span class="nx">https</span>:<span class="sr">//</span><span class="nx">okanemochi</span>.<span class="nx">tk</span>$<span class="nx">request_uri</span>;<span class="err">
+</span><span class="err"></span>}</code></pre></td></tr></table>
+</div>
+</div>
+<p>上の様に書いたものを以下のファイルの先頭に加える。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-vim" data-lang="vim"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-vim" data-lang="vim"><span class="sr">/etc/</span><span class="nx">nginx</span><span class="sr">/conf.d/</span><span class="nx">プロビジョンのhttp</span>.<span class="nx">conf</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>加えた後で、nginx を再起動します。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">/bin/systemctl restart nginx.service</code></pre></td></tr></table>
+</div>
+</div>
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/web_tecnology/vps/429/">VPS(Conoha SSD)でKUSANAGIに感嘆</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/sns/521/">【失敗】FaceBookのメッセージを一括削除出来なかった</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/wordpress/823/">賢威ver 8.0.0.0b2をkusanagi環境のこのサイトで試稼働</a></li>
+  
+  <li><a href="/wordpress/565/">WordPressテンプレート 賢威７使ってます（感想・口コミ・本音）レビュー</a></li>
+  
+  <li><a href="/web_tecnology/vps/429/">VPS(Conoha SSD)でKUSANAGIに感嘆</a></li>
+  
+  <li><a href="/wordpress/424/">kusanagi環境に移行した経緯</a></li>
+  
+  <li><a href="/wordpress/422/">WordPressのネットワーク構築をやめた</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>KUSANAGIで常時SSL化＆WWW無し設定の統一</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#kusanagiで-nginx環境の時のhttp-https処理">KUSANAGIで、nginx環境の時のhttp-&gt;https処理</a></li>
+<li><a href="#kusanagiで-nginx環境の時の常時www無しの設定">KUSANAGIで、nginx環境の時の常時www無しの設定</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

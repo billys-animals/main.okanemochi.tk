@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>スゴ録 on パソBlog</title>
+    <link>https://sumaho.tk/tags/%E3%82%B9%E3%82%B4%E9%8C%B2/</link>
+    <description>Recent content in スゴ録 on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 07 May 2008 02:24:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/%E3%82%B9%E3%82%B4%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>番外編：スゴ録でDVD-RWが初期化出来ない！</title>
+      <link>https://sumaho.tk/post/2008-05-07-%E7%95%AA%E5%A4%96%E7%B7%A8%E3%82%B9%E3%82%B4%E9%8C%B2%E3%81%A7dvd-rw%E3%81%8C%E5%88%9D%E6%9C%9F%E5%8C%96%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84/</link>
+      <pubDate>Wed, 07 May 2008 02:24:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2008-05-07-%E7%95%AA%E5%A4%96%E7%B7%A8%E3%82%B9%E3%82%B4%E9%8C%B2%E3%81%A7dvd-rw%E3%81%8C%E5%88%9D%E6%9C%9F%E5%8C%96%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84/</guid>
+      <description>スゴ録でSONYの新品DVDを使おうと思い挿入したところ初期化出来ずにディスクエラー（「このディスクは再生できません」）になってしまった！ 5</description>
+    </item>
+    
+  </channel>
+</rss>

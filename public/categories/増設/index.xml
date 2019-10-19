@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>増設 on パソBlog</title>
+    <link>https://sumaho.tk/categories/%E5%A2%97%E8%A8%AD/</link>
+    <description>Recent content in 増設 on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 31 Mar 2008 16:47:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/categories/%E5%A2%97%E8%A8%AD/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VAIOへのメモリ増設</title>
+      <link>https://sumaho.tk/2008/04/vaio%E3%81%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%83%AA%E5%A2%97%E8%A8%AD/</link>
+      <pubDate>Mon, 31 Mar 2008 16:47:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2008/04/vaio%E3%81%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%83%AA%E5%A2%97%E8%A8%AD/</guid>
+      <description>私はVAIOのVGC-LB50を所有しております。今、この投稿もそのパソコンを使って書いているんです。 さて、VAIOへのメモリ増設という記事</description>
+    </item>
+    
+  </channel>
+</rss>

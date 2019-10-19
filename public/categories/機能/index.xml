@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>機能 on しんこきゅう</title>
+    <link>https://okanemoti.tk/categories/%E6%A9%9F%E8%83%BD/</link>
+    <description>Recent content in 機能 on しんこきゅう</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>sphia</copyright>
+    <lastBuildDate>Thu, 19 Jun 2014 01:06:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://okanemoti.tk/categories/%E6%A9%9F%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AnchorCMSの関数一覧</title>
+      <link>https://okanemoti.tk/post/2014-06-19-anchorcms%E3%81%AE%E9%96%A2%E6%95%B0%E4%B8%80%E8%A6%A7/</link>
+      <pubDate>Thu, 19 Jun 2014 01:06:00 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/post/2014-06-19-anchorcms%E3%81%AE%E9%96%A2%E6%95%B0%E4%B8%80%E8%A6%A7/</guid>
+      <description>Articles article_author &amp;lt;br /&amp;gt; article_author_bio &amp;lt;br /&amp;gt; article_author_id &amp;lt;br /&amp;gt; article_css &amp;lt;br /&amp;gt; article_custom_field($key, $fallback = &amp;ldquo;) &amp;lt;br /&amp;gt; article_date &amp;lt;br /&amp;gt; article_description &amp;lt;br /&amp;gt; article_html &amp;lt;br /&amp;gt; article_id &amp;lt;br /&amp;gt; article_js &amp;lt;br /&amp;gt; article_slug &amp;lt;br /&amp;gt; article_status &amp;lt;br /&amp;gt; article_time &amp;lt;br /&amp;gt; article_title &amp;lt;br /&amp;gt; article_total_comments &amp;lt;br /&amp;gt; article_url &amp;lt;br /&amp;gt; Categories category_description &amp;lt;br /&amp;gt; category_id &amp;lt;br /&amp;gt; category_slug &amp;lt;br /&amp;gt; category_title &amp;lt;br /&amp;gt; category_url &amp;lt;br /&amp;gt; total_categories &amp;lt;br</description>
+    </item>
+    
+  </channel>
+</rss>

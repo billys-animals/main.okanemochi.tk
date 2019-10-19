@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SEO on パソBlog</title>
+    <link>https://sumaho.tk/tags/seo/</link>
+    <description>Recent content in SEO on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 31 Mar 2008 15:27:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google ブロガー（BLOGER)の可能性に期待！</title>
+      <link>https://sumaho.tk/post/2008-04-01-google-%E3%83%96%E3%83%AD%E3%82%AC%E3%83%BCbloger%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%AB%E6%9C%9F%E5%BE%85/</link>
+      <pubDate>Mon, 31 Mar 2008 15:27:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/2008-04-01-google-%E3%83%96%E3%83%AD%E3%82%AC%E3%83%BCbloger%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%AB%E6%9C%9F%E5%BE%85/</guid>
+      <description>最近はGoogleのブロガーを主力にブログの運営をしております。 YSTのアルゴリズム変動に影響されないサイト作りを目指し、とにかくGoogl</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  VPSのSSH認証の当たり前の事実 &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="VPSでSSH接続する際にパスワード認証と鍵認証というのがあります。パスワード認証は通信の中で平文が外部に流出するリスクや他人にのぞき見され|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">VPSのSSH認証の当たり前の事実</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/%E8%A8%AD%E5%AE%9A' class="muted-link">
+  <span class="Label Label--gray-darker">設定</span>
+</a>
+
+
+
+<a href='/tags/vps' class="muted-link">
+  <span class="Label Label--gray">VPS</span>
+</a>
+
+<a href='/tags/ssh' class="muted-link">
+  <span class="Label Label--gray">ssh</span>
+</a>
+
+<a href='/tags/%E8%AA%8D%E8%A8%BC' class="muted-link">
+  <span class="Label Label--gray">認証</span>
+</a>
+
+<a href='/tags/%E5%85%AC%E9%96%8B%E9%8D%B5' class="muted-link">
+  <span class="Label Label--gray">公開鍵</span>
+</a>
+
+<a href='/tags/%E7%A7%98%E5%AF%86%E9%8D%B5' class="muted-link">
+  <span class="Label Label--gray">秘密鍵</span>
+</a>
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-02-20. Published at: 2018-02-20.">
+        
+          Published: 2018-02-20
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <p>VPSでSSH接続する際にパスワード認証と鍵認証というのがあります。パスワード認証は通信の中で平文が外部に流出するリスクや他人にのぞき見されるリスクが高いのであまりお勧めできません。鍵認証はファイルを持っていないと出来ないのでより安全ですし、暗号化されているので平文のパスワードより断然安心といえます。</p>
+
+<p>よく鍵認証の認証の方法など見かけますが根本的な意味が分からない人にとってはとても厳しいです。</p>
+
+<p>なので、<strong>根本的な事を書きます。</strong></p>
+
+<p>鍵とは、「公開鍵」と「プライベート鍵」の２つがあります。</p>
+
+<p>例えばAさんが市民体育館に入る際に、市民体育館はAさん情報を予め利用者として登録しておきます。これが公開鍵と同等のものです。Aさんは市民体育館に入る際に会員カードを提示します。これがプレイベート鍵です。</p>
+
+<p>PUBLICとPRIVATEを照らし合わせてOKならば体育館を利用できるという仕組みですね。</p>
+
+<p>VPSではROOTユーザー向けに1組の公開鍵とプライベート鍵を発行してくれます。適切なあるべき場所に配置する事で鍵認証を利用する事が出来る様になります。</p>
+
+<p>ここまではおおよそどこにでも書かれているのですが、一般ユーザーの鍵認証について言及している記事は意外に少なかったと思います。</p>
+
+<p>先ず、一般ユーザーを追加します。（以下、CentOS7で#ルートで入った状態です）</p>
+
+<pre class="lang:vim decode:true EnlighterJSRAW">useradd bobobrajiru
+passwd jumboturuta</pre>
+
+<p>ユーザーを追加して、パスワードを設定します。</p>
+
+<pre class="lang:vim decode:true EnlighterJSRAW">/home/bobobrajiru/</pre>
+
+<p>新規ユーザーを作成すると、HOME配下にユーザーディレクトリが作成されます。</p>
+
+<p>ここに、.sshというディレクトリを作成してその中に公開鍵を配置します。</p>
+
+<p><strong><em>※rootの鍵ペア(publicとprivate)はVPSでダウンロードする事が可能です（最初の1回のみ）が、一般ユーザー用の鍵は自分でソフトなどを使い作成する必要があります。</em></strong></p>
+
+<p>ROOTの場合も同じで、</p>
+
+<pre class="lang:vim decode:true EnlighterJSRAW ">/home/root/</pre>
+
+<p>ここに、.sshというディレクトリを作成してその中に公開鍵を配置します。</p>
+
+<p>なので、ユーザー数毎に公開鍵の配置が必要で、プライべート鍵は各PCの中に置き都度指定します。</p>
+
+<p>こえを上手に利用すると、Wordpressの更新をクリック１つで行う事も出来る様になります。</p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/post/2018-02-20-vps%E3%81%8C%E6%9C%88630%E5%86%86%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E7%84%A1%E6%96%99ssl%E7%84%A1%E6%96%99/">VPSが月630円＋ドメイン無料＋SSL無料</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/post/2018-02-20-product_advertising_pa_api_guideline/">Product Advertising API (PA-API) の利用ガイドライン</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/post/2018-02-21-python3-6%E3%82%92vpscomoha%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/">Python3.6をVPS(Comoha)にインストール</a></li>
+  
+  <li><a href="/post/2018-02-20-apache%E3%81%8C%E5%91%B3%E5%99%8C/">APACHEが味噌</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>VPSのSSH認証の当たり前の事実</b>
+      
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

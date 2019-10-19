@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>イーサネットコンバーター on パソBlog</title>
+    <link>https://sumaho.tk/tags/%E3%82%A4%E3%83%BC%E3%82%B5%E3%83%8D%E3%83%83%E3%83%88%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%BF%E3%83%BC/</link>
+    <description>Recent content in イーサネットコンバーター on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 24 Mar 2008 12:44:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/%E3%82%A4%E3%83%BC%E3%82%B5%E3%83%8D%E3%83%83%E3%83%88%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%BF%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MS新旧OS（98,Vista）混在環境での無線LAN構築</title>
+      <link>https://sumaho.tk/2008/03/ms%E6%96%B0%E6%97%A7os98vista%E6%B7%B7%E5%9C%A8%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AE%E7%84%A1%E7%B7%9Alan%E6%A7%8B%E7%AF%89/</link>
+      <pubDate>Mon, 24 Mar 2008 12:44:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2008/03/ms%E6%96%B0%E6%97%A7os98vista%E6%B7%B7%E5%9C%A8%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AE%E7%84%A1%E7%B7%9Alan%E6%A7%8B%E7%AF%89/</guid>
+      <description>姉の家で新しいパソコンを購入する事になりパソコン選びに一緒に行って欲しいと言われ近所の電気屋さんでWindowsVistaを搭載したSONY</description>
+    </item>
+    
+  </channel>
+</rss>

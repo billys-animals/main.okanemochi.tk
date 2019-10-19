@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  指定日時にトリガーを設定する &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="function setTrigger() { // 2017年2月21日 7時30分に実行 var triggerDay = new Date(2016, (2 - 1), 21, 7, 30, 0, 0); ScriptApp.newTrigger(&#39;sendMail&#39;).timeBased().at(triggerDay).create(); } // 実行する関数 function sendMail() { // 自分へのメールの送信 var email = Session.getActiveUser().getEmail(); var subject = &#39;タイトル|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">指定日時にトリガーを設定する</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/gas' class="muted-link">
+  <span class="Label Label--gray-darker">GAS</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-06-03. Published at: 2018-06-03.">
+        
+          Published: 2018-06-03
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <pre class="lang:js decode:true ">function setTrigger() {
+  // 2017年2月21日 7時30分に実行
+  var triggerDay = new Date(2016, (2 - 1), 21, 7, 30, 0, 0);
+  ScriptApp.newTrigger('sendMail').timeBased().at(triggerDay).create();
+}
+ 
+// 実行する関数
+function sendMail() {
+  // 自分へのメールの送信
+  var email = Session.getActiveUser().getEmail();
+  var subject = 'タイトル';
+  var body = '本文';
+  GmailApp.sendEmail(email, subject, body);
+}</pre>
+
+<p>&nbsp;</p>
+
+<p><a href="https://px.a8.net/svt/ejp?a8mat=2ZH6XJ+E4HG5E+3L4M+BW8O2&a8ejpredirect=https%3A%2F%2Fudemy-images.udemy.com%2Fcourse%2F240x135%2F647944_cb57_2.jpg" target="_blank" rel="nofollow noopener">今日から実践で使える！Google アナリティクス講座</a></p>
+
+<p><img src="https://www12.a8.net/0.gif?a8mat=2ZH6XJ+E4HG5E+3L4M+BW8O2" alt="" width="1" height="1" border="0" /></p>
+
+<div class="chat_l ">
+  <div class="talker">
+    <b><img class="square" src="https://okanemochi.tk/wp-content/uploads/2018/07/%E3%82%AB%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0-300x204.png" alt="もし、参考になったならTwitterシェアお願いします" />もし、参考になったならTwitterシェアお願いします </b>
+  </div>
+  
+
+<p><div class="bubble_wrap">
+    <p>
+    </p>
+  </div>
+</div></p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/post/2018-06-03-%E3%83%AA%E3%82%B9%E3%83%88%E3%82%BB%E3%83%83%E3%83%88%E5%86%85%E5%8C%85%E8%A1%A8%E8%A8%98-%E5%8C%85%E6%8B%AC%E8%A1%A8%E8%A8%98/">リスト(セット)内包表記/包括表記</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/web_tecnology/google-amp/311/">GoogleBloggerでAMPに対応させる備忘禄</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/computer_language/gas/265/">Chatwork APIによる指定場所への書き込み</a></li>
+  
+  <li><a href="/computer_language/gas/256/">UrlFetchApp.fetch時のオプション値一覧</a></li>
+  
+  <li><a href="/web_tecnology/api/211/">Amazon MWS API FEED</a></li>
+  
+  <li><a href="/computer_language/gas/64/">GoogleDriveのフォルダ名とフォルダIDを取得する</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>指定日時にトリガーを設定する</b>
+      
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

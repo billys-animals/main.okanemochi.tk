@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on しんこきゅう</title>
+    <link>https://okanemoti.tk/categories/css/</link>
+    <description>Recent content in CSS on しんこきゅう</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>sphia</copyright>
+    <lastBuildDate>Tue, 18 Sep 2018 01:05:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://okanemoti.tk/categories/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>賢威ver 8.0.0.0b2をkusanagi環境のこのサイトで試稼働</title>
+      <link>https://okanemoti.tk/wordpress/823/</link>
+      <pubDate>Tue, 18 Sep 2018 01:05:52 +0000</pubDate>
+      
+      <guid>https://okanemoti.tk/wordpress/823/</guid>
+      <description>賢威8がベータ公開されているとの事でしたのでテストサイトを作り試してみたところCSSが反映されずに少し困りました。適用したのが、CONOHA</description>
+    </item>
+    
+  </channel>
+</rss>

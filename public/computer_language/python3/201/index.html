@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-114508959-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  numpyでベクトルを理解する &ndash; しんこきゅう
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="機械学習の過程で避けて通れない数学知識の数々・・・。正直なところ高校数学なんて真面目にやった記憶がないので、ベクトル記号とか見覚えがある程度|">
+    
+
+    <meta name="apple-mobile-web-app-title" content="しんこきゅう">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://okanemoti.tk/">
+    しんこきゅう
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>記事</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/tags/">
+      
+      <span>タグ</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/categories/">
+      
+      <span>カテゴリー</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>執筆者</span>
+    </a>
+    
+    
+    
+    <a class="UnderlineNav-item " href="/privacy-policy/">
+      
+      <span>ポリシー</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">numpyでベクトルを理解する</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/python3' class="muted-link">
+  <span class="Label Label--gray-darker">Python3</span>
+</a>
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2018-05-08. Published at: 2018-05-08.">
+        
+          Published: 2018-05-08
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+
+<article>
+
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <p>機械学習の過程で避けて通れない数学知識の数々・・・。正直なところ高校数学なんて真面目にやった記憶がないので、ベクトル記号とか見覚えがある程度で全く理解出来ないので再度（と言うより初学に等しい）勉強する事にしました。</p>
+
+<p>&nbsp;</p>
+
+<p><img class="alignnone wp-image-202" src="https://okanemochi.tk/wp-content/uploads/2018/05/img01-300x178.png" alt="" width="975" height="579" /></p>
+
+<p>&nbsp;</p>
+
+<p>ベクトルに関しては一応概要だけは理解しました。</p>
+
+<pre class="lang:python decode:true">import numpy as np
+
+x = np.array([3,4])
+y = np.array([33,56])
+
+print(np.linalg.norm(x))
+
+print(np.linalg.norm(y))</pre>
+
+<p>このコードを実行すると5が表示されます。</p>
+
+<p>numpyを使って変数xに行3列4の配列をセットしました。この時の、</p>
+
+<p>ベクトル（位置を問題にせず、向きと大きさ（長さ）だけを考えた長さ）が5になります。って話です。</p>
+
+<p>&nbsp;</p>
+
+<p>下記にて、D1からA1に向いた線分と、A1からA3に向いた線分が考えられます。</p>
+
+<p>よって（A1が交点）、ベクトルは下の図で言えば、D1からA3への向きで表せます。</p>
+
+<p><img class="alignnone wp-image-204" src="https://okanemochi.tk/wp-content/uploads/2018/05/img02-225x300.png" alt="" width="357" height="476" /></p>
+
+<p>赤い斜め線が上の答え5になっています。</p>
+
+<p>直角三角形が出来ているので三平方の定理で、「赤い斜め線^2＝ 3^2 + 4^2」なので、9＋16＝25となり、２乗して25になるのは5なので答えは5で、ベクトルは5となります。</p>
+
+<p>&nbsp;</p>
+
+<p>同様に</p>
+
+<p>変数ｙに行33列56の配列をセットすると、この時の、</p>
+
+<p>33の二乗は1089で、56の二乗は3136です。加算して、4225になり、根号を外すと65になります。</p>
+
+<p>ベクトル（位置を問題にせず、向きと大きさ（長さ）だけを考えた長さ）が65になります。って話です。</p>
+
+<p><a href="https://px.a8.net/svt/ejp?a8mat=2ZH6XJ+E4HHOY+3L4M+6MROH" target="_blank" rel="nofollow noopener"><br /> <img src="https://www28.a8.net/svt/bgt?aid=180521047854&wid=061&eno=01&mid=s00000016735001114000&mc=1" alt="" width="300" height="250" border="0" /></a></p>
+
+<p><img src="https://www11.a8.net/0.gif?a8mat=2ZH6XJ+E4HHOY+3L4M+6MROH" alt="" width="1" height="1" border="0" /></p>
+
+<div class="chat_l ">
+  <div class="talker">
+    <b><img class="square" src="https://okanemochi.tk/wp-content/uploads/2018/07/%E3%82%AB%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0-300x204.png" alt="もし、参考になったならTwitterシェアお願いします" />もし、参考になったならTwitterシェアお願いします </b>
+  </div>
+  
+
+<p><div class="bubble_wrap">
+    <p>
+    </p>
+  </div>
+</div></p>
+
+  </section>
+  
+  <div class="xPrevNextLink">
+  
+    <div class="xPrevNextLink_prev">
+      <a href="https://okanemoti.tk/computer_language/c_lang/179/">Visual Studio Commuinty 2017でC言語の学習1</a>
+    </div>
+  
+  
+    <div class="xPrevNextLink_next">
+      <a href="https://okanemoti.tk/web_tecnology/api/211/">Amazon MWS API FEED</a>
+    </div>
+  
+</div>
+  
+</article>
+
+
+
+
+<h3>関連記事</h3>
+<ul>
+  
+  <li><a href="/computer_language/python3/860/">高校生にPythonを教えてます</a></li>
+  
+</ul>
+
+
+
+
+
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>numpyでベクトルを理解する</b>
+      
+    </div>
+  
+
+  
+    <div>
+
+      
+<div class="Box Box--blue p-2 mb-3">
+<h3>最新記事</h3>
+<ul>
+  
+    <li>
+      <b><a href="/post/2014-06-18-htaccessanchorcms/">.htaccess←AnchorCMS</a></b>
+      <time>2019-09-10</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-07-19-%E8%87%AA%E6%B0%91%E5%85%9A%E3%81%AF%E5%AB%8C%E3%81%84%E3%81%A0%E3%81%91%E3%81%A9/">自民党は嫌いだけど</a></b>
+      <time>2019-07-18</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-21-%E5%85%88%E3%81%BB%E3%81%A9%E3%82%84%E3%81%A3%E3%81%A8tl40%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/">先ほどやっとTL40になれました</a></b>
+      <time>2019-06-21</time>
+    </li>
+  
+    <li>
+      <b><a href="/%E9%9B%91%E5%AD%A6/1028/">令和という時代に入ってから、、、。</a></b>
+      <time>2019-06-06</time>
+    </li>
+  
+    <li>
+      <b><a href="/post/2019-06-03-%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3go%E9%9B%91%E6%84%9F/">ポケモンGO雑感</a></b>
+      <time>2019-06-03</time>
+    </li>
+  
+</ul>
+</div>
+    </div>
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    sphia &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+	<script type="text/javascript">
+	    amzn_assoc_ad_type = "link_enhancement_widget";
+	    amzn_assoc_tracking_id = "pasokon-news-22";
+	    amzn_assoc_linkid = "5d961039d13a5190e1ea2fb9081d0bd3";
+	    amzn_assoc_placement = "";
+	    amzn_assoc_marketplace = "amazon";
+	    amzn_assoc_region = "JP";
+	</script>
+	<script src="//ws-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+
+  </body>
+</html>

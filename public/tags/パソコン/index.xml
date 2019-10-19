@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>パソコン on パソBlog</title>
+    <link>https://sumaho.tk/tags/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/</link>
+    <description>Recent content in パソコン on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 12 Apr 2008 15:26:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/tags/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>安くなったWindows Xp 搭載パソコン</title>
+      <link>https://sumaho.tk/2008/04/%E5%AE%89%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9Fwindows-xp-%E6%90%AD%E8%BC%89%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/</link>
+      <pubDate>Sat, 12 Apr 2008 15:26:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2008/04/%E5%AE%89%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9Fwindows-xp-%E6%90%AD%E8%BC%89%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/</guid>
+      <description>Windows XPを搭載したパソコンの価格がずいぶんと安くなってきました。私ももう一台欲しいなと思っていたので大変有り難いご時世になったものだと思ってい</description>
+    </item>
+    
+    <item>
+      <title>モバイルパソコンの動向</title>
+      <link>https://sumaho.tk/2008/04/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%81%AE%E5%8B%95%E5%90%91/</link>
+      <pubDate>Thu, 10 Apr 2008 01:19:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/2008/04/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%81%AE%E5%8B%95%E5%90%91/</guid>
+      <description>私の所有するモバイルツールはこのザウルスSL-C860です。本当なら他のモバイルパソコンは要らないのですが如何せん無線LANのアクセスポイン</description>
+    </item>
+    
+  </channel>
+</rss>

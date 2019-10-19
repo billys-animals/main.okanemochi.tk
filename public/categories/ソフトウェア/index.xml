@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ソフトウェア on パソBlog</title>
+    <link>https://sumaho.tk/categories/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/</link>
+    <description>Recent content in ソフトウェア on パソBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 30 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sumaho.tk/categories/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>引っ越しソフトが無料で使えるSSDメーカーが５社もあったなんて！？</title>
+      <link>https://sumaho.tk/post/%E5%BC%95%E3%81%A3%E8%B6%8A%E3%81%97%E3%82%BD%E3%83%95%E3%83%88%E3%81%8C%E7%84%A1%E6%96%99%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8Bssd%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E3%81%8C%EF%BC%95%E7%A4%BE%E3%82%82%E3%81%82%E3%81%A3%E3%81%9F%E3%81%AA%E3%82%93%E3%81%A6/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/%E5%BC%95%E3%81%A3%E8%B6%8A%E3%81%97%E3%82%BD%E3%83%95%E3%83%88%E3%81%8C%E7%84%A1%E6%96%99%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8Bssd%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E3%81%8C%EF%BC%95%E7%A4%BE%E3%82%82%E3%81%82%E3%81%A3%E3%81%9F%E3%81%AA%E3%82%93%E3%81%A6/</guid>
+      <description>ハードディスクからSSDへの換装作業をする上で、HDDのクローンをSSDにコピーする移行ソフトは絶対に必要になります。 SSDへの換装ソフトの</description>
+    </item>
+    
+    <item>
+      <title>起動ドライブのディスクをフォーマットから復旧</title>
+      <link>https://sumaho.tk/post/%E8%B5%B7%E5%8B%95%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%92%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E5%BE%A9%E6%97%A7/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/%E8%B5%B7%E5%8B%95%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%92%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E5%BE%A9%E6%97%A7/</guid>
+      <description>ファイル復元ソフトを使ってCドライブ（起動ドライブ）のファイルを復元する事は出来ても、起動しなくなったCドライブを元通り起動させる事は出来ま</description>
+    </item>
+    
+    <item>
+      <title>ゴミ箱のファイルを誤って削除しまった直後の復元方法</title>
+      <link>https://sumaho.tk/post/%E3%82%B4%E3%83%9F%E7%AE%B1%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%AA%A4%E3%81%A3%E3%81%A6%E5%89%8A%E9%99%A4%E3%81%97%E3%81%BE%E3%81%A3%E3%81%9F%E7%9B%B4%E5%BE%8C%E3%81%AE%E5%BE%A9%E5%85%83%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sumaho.tk/post/%E3%82%B4%E3%83%9F%E7%AE%B1%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%AA%A4%E3%81%A3%E3%81%A6%E5%89%8A%E9%99%A4%E3%81%97%E3%81%BE%E3%81%A3%E3%81%9F%E7%9B%B4%E5%BE%8C%E3%81%AE%E5%BE%A9%E5%85%83%E6%96%B9%E6%B3%95/</guid>
+      <description>ゴミ箱のファイルを誤って削除しまった直後の復元方法 ゴミ箱の中のファイルは消去してしまったその直後であれば簡単に復活できる可能性があります。 無</description>
+    </item>
+    
+  </channel>
+</rss>

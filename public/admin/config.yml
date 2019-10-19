@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: billys-animals/sumaho.tk
+  branch: master
+
+# publish_mode: editorial_workflow
+
+media_folder: "static/img"
+public_folder: "img"
+
+collections:
+ - name: "post"
+   label: "post"
+   folder: "content/post"
+   create: true
+   slug: "{{slug}}"
+   fields:
+   - {label: "Title", name: "title", widget: "string"}
+   - {label: "Publish Date", name: "date", widget: "datetime"}
+   - {label: "Category", name: "categories", widget: "list", required: false}
+   - {label: "Tag", name: "tags", widget: "list", required: false}
+   - {label: "Body", name: "body", widget: "markdown"}
