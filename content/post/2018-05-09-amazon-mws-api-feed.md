@@ -5,66 +5,14 @@ type: post
 date: 2018-05-09T13:39:49+00:00
 url: /web_tecnology/api/211/
 featured_image: https://okanemochi.tk/wp-content/uploads/2018/09/99095312_947217f5d3_o.png
-category_relation:
-  - 'n'
-  - 'n'
-tag_relation:
-  - 'n'
-  - 'n'
-disp_description_relation:
-  - 'n'
-  - 'n'
-menu_view:
-  - 'y'
-  - 'y'
-side:
-  - 'y'
-  - 'y'
-fullscreen_view:
-  - 'n'
-  - 'n'
-index:
-  - index
-  - index
-follow:
-  - follow
-  - follow
-title_view:
-  - 'y'
-  - 'y'
-catch_text:
-  - 
-  - 
-header_image:
-  - 
-  - 
-page_layout:
-  - def
-toc:
-  - def
-pvc_views:
-  - 264
-ampforwp-amp-on-off:
-  - default
-primary_category:
-  - 4
-keni_layout_post:
-  - layout-basic
-keni_layout_post_sidebar:
-  - layout-sidebar-basic
-keni_layout_post_navigation:
-  - layout-navigation-show
-keni_relation_post:
-  - 'a:0:{}'
-keni_post_fb_time:
-  - 1568279990
 categories:
   - API
   - GAS
   - PHP
 
 ---
-<pre class="lang:js decode:true ">//Feed用
+```js
+//Feed用
 var namespace3 = "http://mws.amazonaws.com/doc/2009-01-01/";
 var namespace4='"http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd"';
 
@@ -193,21 +141,28 @@ function putFeedSubmit() {
     var FeedProcessingStatus = AttributeSets.getChild("FeedProcessingStatus", NS3).getValue();
 
     return 0;
-}</pre>
+}
+
+```
+
 
 外部からPOSTされた文字列に対するMD5ハッシュ値を呼出し元に返す関数は以下に記載。
 
 上記の62行目の
 
-<pre class="lang:php decode:true ">var response = UrlFetchApp.fetch(url,option);</pre>
+```php3
+var response = UrlFetchApp.fetch(url,option);</pre>
+```
 
 で呼ぶ
 
-<pre class="lang:php decode:true ">var url = 'https://getmd5hushed.herokuapp.com/';</pre>
+```php3
+var url = 'https://getmd5hushed.herokuapp.com/';
+```
 
 このサイトのindex.phpが以下です。
-
-<pre class="lang:php decode:true ">&lt;?php
+```php3
+<?php
 
 /* 外部からPOST呼出しされた場合の$_POST変数の取得方法 */
 $request_body = file_get_contents('php://input');
@@ -219,7 +174,9 @@ $data = array(
 );
 header('Content-Type: application/json');
 echo json_encode($data);
-?&gt;</pre>
+?>
+```
+
 
 GASからのPOST変数(payload)を受けてMD5ハッシュ値を呼び出し元のGASに返します。
 
