@@ -23,7 +23,7 @@ http://shopping.yahooapis.jp/ShoppingWebService/V1/itemSearch.xsd
 
 なので、プログラムからは公式でなく、ローカルファイルの「itemSearch.xsd」(<span>修正版のxsdファイル</span>)を参照してパースしました。
 
-```vb
+```vba
 Dim xmlschema As MSXML2.XMLSchemaCache60
 Dim xmldom As MSXML2.DOMDocument60
 
