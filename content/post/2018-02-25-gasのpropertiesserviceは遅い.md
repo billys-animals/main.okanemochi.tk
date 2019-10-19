@@ -10,7 +10,7 @@ tags:
 ---
 簡易データベース的に使えるかも知れないと思い、PropertiesServiceを試してみました。A列にAmazon ASINコードを100件入力して、そのASINコードの行番号をPropertiesServiceで覚えさせようとプログラムで書き込みました。ASINの処理を行った際に１件ずるでなく、10件処理や複数処理をした際のAPIの戻りをセットする際にどの行に戻せば良いか連想配列に入っていると便路だと思い試してみましたがちょと厳しいみたいです。
 
-``` gas
+``` js
 var dp = PropertiesService.getScriptProperties();`
 
 //最終列を取得する関数を呼び出す
