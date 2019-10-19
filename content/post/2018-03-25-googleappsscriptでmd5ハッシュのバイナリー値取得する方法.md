@@ -44,7 +44,7 @@ http://cloudway.io/post/base64-encoded-128-bit/
 
 https://stackoverflow.com/questions/29820014/issue-calculating-md5-hash-of-amazon-marketplace-feed
 
-```php3
+```php
 Content-MD5 => base64_encode(md5($xml, true))
 ```
 
