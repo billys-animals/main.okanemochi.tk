@@ -5,61 +5,6 @@ type: post
 date: 2018-06-17T07:06:09+00:00
 url: /web_tecnology/google-amp/368/
 featured_image: https://okanemochi.tk/wp-content/uploads/2018/06/4517201939_10217eee03_q.jpg
-category_relation:
-  - 'y'
-  - 'y'
-tag_relation:
-  - 'y'
-  - 'y'
-disp_description_relation:
-  - 'n'
-  - 'n'
-menu_view:
-  - 'y'
-  - 'y'
-side:
-  - 'y'
-  - 'y'
-fullscreen_view:
-  - 'n'
-  - 'n'
-index:
-  - index
-  - index
-follow:
-  - follow
-  - follow
-title_view:
-  - 'y'
-  - 'y'
-catch_text:
-  - 
-  - 
-header_image:
-  - 
-  - 
-page_layout:
-  - def
-toc:
-  - def
-ampforwp-amp-on-off:
-  - default
-pvc_views:
-  - 282
-primary_category:
-  - 83
-keni_layout_post:
-  - layout-basic
-keni_layout_post_sidebar:
-  - layout-sidebar-basic
-keni_layout_post_navigation:
-  - layout-navigation-show
-keni_primary_category_post:
-  - 2
-keni_relation_post:
-  - 'a:0:{}'
-keni_post_fb_time:
-  - 1568363937
 categories:
   - AMP
   - Google Blogger
@@ -67,7 +12,8 @@ categories:
 ---
 Google アナリティクスに関しては以下の様にすれば、WordPressでもGoogleBloggerでも機能します。
 
-<pre class="lang:xhtml decode:true">&lt;!-- Google Analytics --&gt;
+```js
+&lt;!-- Google Analytics --&gt;
 &lt;amp-analytics id='analytics1' type='googleanalytics'&gt;
 &lt;script type='application/json'&gt;
 {
@@ -82,7 +28,8 @@ Google アナリティクスに関しては以下の様にすれば、WordPress�
   }
 }
 &lt;/script&gt;
-&lt;/amp-analytics&gt;</pre>
+&lt;/amp-analytics&gt;
+```
 
 ↑の様にアナリティクスIDを設定したタグを貼り付ければOKです。
 
