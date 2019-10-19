@@ -13,17 +13,17 @@ tags:
 ``` gas
 var dp = PropertiesService.getScriptProperties();`
 
-`/`` `_`最終列を取得する関数を呼び出す`_` ``/
-var lastRows = getLastRowNum();`
+//最終列を取得する関数を呼び出す
+var lastRows = getLastRowNum();
 
-`var clsRange = "A2:A"+ String(lastRows);
+var clsRange = "A2:A"+ String(lastRows);
 var dataRange = sheet_main.getRange(clsRange);
 var data = dataRange.getValues();`
 
-`for(i=2;i&lt;=lastRows;i++){
-  /`` `_`プロパティーにINDEX番号を書き込む処理`_` ``/
+for(i=2;i&lt;=lastRows;i++){
+  //プロパティーにINDEX番号を書き込む処理
   dp.setProperty(data[i-2], i);
-}`
+}
 ```
 
 プロパティーにINDEX番号を書き込む処理があるとこの処理は１分くらいかかります。プロパティーにINDEX番号を書き込む処理をコメントアウトすると２秒か３秒で終わります。
