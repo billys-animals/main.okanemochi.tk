@@ -4,11 +4,13 @@ author: スフィア
 type: post
 date: 2018-03-25T13:03:11.000Z
 categories:
-  - プログラム言語
-tags:
   - GAS
+tags:
+  - MD5
   - PHP
   - google apps script
+  - ハッシュ
+  - バイナリー値
 ---
 アマゾンMWSで<a href="https://docs.developer.amazonservices.com/ja_JP/feeds/Feeds_SubmitFeed.html" target="_blank" rel="noopener">SubmitFeed</a>というAPIがあります。このAPI、「ContentMD5Value」というMD5ハッシュ値をパラメータに沿える必要があったりします。
 
