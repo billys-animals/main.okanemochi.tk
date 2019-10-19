@@ -13,22 +13,22 @@ categories:
 Google アナリティクスに関しては以下の様にすれば、WordPressでもGoogleBloggerでも機能します。
 
 ```js
-&lt;!-- Google Analytics --&gt;
-&lt;amp-analytics id='analytics1' type='googleanalytics'&gt;
-&lt;script type='application/json'&gt;
+<!-- Google Analytics -->
+<amp-analytics id='analytics1' type='googleanalytics'>
+<script type='application/json'>
 {
-  &quot;vars&quot;: {
-    &quot;account&quot;: &quot;UA-xxxxxxxxx-x&quot;
+  "vars": {
+    "account": "UA-xxxxxxxxx-x"
   },
-  &quot;triggers&quot;: {
-    &quot;trackPageview&quot;: {
-      &quot;on&quot;: &quot;visible&quot;,
-      &quot;request&quot;: &quot;pageview&quot;
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
     }
   }
 }
-&lt;/script&gt;
-&lt;/amp-analytics&gt;
+</script>
+</amp-analytics>
 ```
 
 ↑の様にアナリティクスIDを設定したタグを貼り付ければOKです。
