@@ -18,7 +18,7 @@ var lastRows = getLastRowNum();
 
 var clsRange = "A2:A"+ String(lastRows);
 var dataRange = sheet_main.getRange(clsRange);
-var data = dataRange.getValues();`
+var data = dataRange.getValues();
 
 for(i=2;i&lt;=lastRows;i++){
   //プロパティーにINDEX番号を書き込む処理
