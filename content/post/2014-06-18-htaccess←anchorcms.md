@@ -10,7 +10,7 @@ tags:
 ---
 さくらサーバーはOptionが使えないからコメントアウト_
 **\#Options -indexes**
-{{< highlight html >}}
+{{% highlight html %}}
 #Options -indexes
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -28,4 +28,4 @@ RewriteRule ^(.*)$ index.php?/$1 \[L]
 <IfModule !mod_rewrite.c>
 ErrorDocument 404 index.php
 </IfModule>
-{{< /highlight html >}}
+{{% /highlight html %}}
