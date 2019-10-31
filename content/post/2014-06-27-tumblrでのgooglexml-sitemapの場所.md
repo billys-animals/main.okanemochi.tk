@@ -25,7 +25,7 @@ This XML file does not appear to have any style information associated with it. 
 </sitemapindex>
 ```
 
-でも、これってXML Sitemapの場所を示しているんですね＾＾<br /> ここに書かれている様にサイトマップのアドレスは、<a href="http://exsample.com/sitemap1.xml">sitemap1.xml</a>となるのですね。
+でも、これってXML Sitemapの場所を示しているんですね＾＾<br /> ここに書かれている様にサイトマップのアドレスは、sitemap1.xmlとなるのですね。
 
 
 
